@@ -1,0 +1,54 @@
+@font-face {
+  font-family: 'Gilroy';
+  font-style: normal;
+  font-weight: 400;
+  display: swap;
+  src: local('Gilroy-Regular'),
+       url("../fonts/Gilroy-Regular.woff2") format("woff2"),
+       url("../fonts/Gilroy-Regular.woff") format("woff");
+}
+
+@font-face {
+  font-family: 'Gilroy';
+  font-style: normal;
+  font-weight: 500;
+  display: swap;
+  src: local('Gilroy-Medium'),
+       url("../fonts/Gilroy-Medium.woff2") format("woff2"),
+       url("../fonts/Gilroy-Medium.woff") format("woff");
+}
+
+@font-face {
+  font-family: 'Gilroy';
+  font-style: normal;
+  font-weight: 600;
+  display: swap;
+  src: local('Gilroy-SemiBold'),
+       url("../fonts/Gilroy-SemiBold.woff2") format("woff2"),
+       url("../fonts/Gilroy-SemiBold.woff") format("woff");
+}
+
+@font-face {
+  font-family: 'Gilroy';
+  font-style: normal;
+  font-weight: 700;
+  display: swap;
+  src: local('Gilroy-Bold'),
+       url("../fonts/Gilroy-Bold.woff2") format("woff2"),
+       url("../fonts/Gilroy-Bold.woff") format("woff");
+}
+
+
+/* Начертания
+
+100 - thin
+200 - extra light
+300 - light
+400 - regular ( normal )
+500 - medium
+600 - semi bold
+700 - bold
+800 - extra bold
+900 - black 
+
+*/

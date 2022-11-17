@@ -1,0 +1,351 @@
+.main-table {
+
+  padding-top: 104px;
+  padding-bottom: 148px;
+
+  background: var(--white-color);
+
+  &__container {
+
+    max-width: 1140px;
+    padding-left: 25px;
+    padding-right: 25px;
+  }
+
+  &__title {
+    display: block;
+    margin-right: 5px;
+    position: relative;
+    margin-bottom: 17px;
+    font-weight: 500;
+    font-size: 32px;
+    line-height: 38px;
+    letter-spacing: 0.005em;
+    color: #06070A;
+  }
+
+  &__select {
+    display: contents;
+    cursor: pointer;
+  }
+
+  &__select::before {
+    content: "";
+    position: absolute;
+    height: 13px;
+    width: 14px;
+    z-index: 15;
+    top: 29%;
+    left: 205px;
+    border: 3px solid var(--main-black);
+    border-width: 0 0 2px 2px;
+    transform: rotate(-45deg);
+    transition: .3s;
+  }
+
+  .table {
+    box-shadow: -2px -4px 10px rgb(80 91 117 / 10%), 2px 4px 10px rgb(6 7 10 / 50%), -2px -4px 10px rgb(80 91 117 / 50%), 2px 4px 13px rgb(6 7 10 / 50%);
+
+    .thead {
+      background: #222837;
+    }
+
+    .thead th {
+      font-size: 14px;
+      line-height: 31px;
+      letter-spacing: 0.02em;
+      color: var(--white-color);
+    }
+
+    .network {
+      width: 111px;
+    }
+
+    .hesh-action {
+      width: 200px;
+    }
+
+    .color-black {
+
+      font-weight: 400;
+      font-size: 14px;
+      line-height: 32px;
+
+      letter-spacing: 0.02em;
+      color: #06070A;
+    }
+
+    .color-grey {
+      font-size: 14px;
+      line-height: 32px;
+      letter-spacing: 0.01em;
+      color: #5C6987;
+    }
+
+    .color-black:first-child span {
+      padding-left: 5px;
+    }
+
+    .color-black:nth-child(2) span {
+      padding-right: 10px;
+    }
+
+    .color-black a {
+      transition: .3s ease;
+    }
+
+    .color-black a:hover {
+      color: black;
+      text-decoration: underline;
+    }
+
+    .for-mobile {
+      display: none;
+    }
+
+    .hesh {
+      fill: #222837;
+      transition: .3s ease;
+    }
+
+    .hesh path {
+      fill: #222837;
+    }
+
+    .hover-effect:hover svg {
+      transform: scale(1.2);
+    }
+
+    .cur span {
+      padding-left: 5px;
+    }
+
+    .-right {
+      display: flex;
+      justify-content: end;
+    }
+
+    .thead .-right {
+      border: none;
+    }
+
+  }
+
+  .filter {
+
+    display: flex;
+    justify-content: space-between;
+    padding-top: 9px;
+
+    &__left {
+      width: 140px;
+    }
+
+    &__mid {
+      display: flex;
+      align-items: center;
+    }
+
+    &__mid span {
+      padding-left: 8px;
+      padding-right: 20px;
+      font-size: 14px;
+      line-height: 16px;
+      letter-spacing: 0.01em;
+      color: #06070A;
+    }
+
+
+    &__btn-digit {
+      padding: 11px;
+      border: 1px solid #222837;
+      border-radius: 10px;
+      font-weight: 500;
+      font-size: 14px;
+      line-height: 8px;
+      letter-spacing: .015em;
+      color: #222837;
+      transition: .3s ease;
+    }
+
+    .digit-for-mobile {
+      display: none;
+    }
+
+    &__btn-digit:hover,
+    &__btn-digit:active {
+      background: var(--yellow-color);
+      border-color: var(--yellow-color);
+    }
+
+    &__btn-arrow {
+      position: relative;
+      width: 32px;
+      height: 32px;
+      background: #f2f4f7;
+      border: 2px solid #f2f4f7;
+      border-radius: 10px;
+      line-height: 12px;
+      transition: .3s ease;
+    }
+
+    &__btn-arrow:hover,
+    &__btn-arrow:active {
+      background: var(--yellow-color);
+      border-color: var(--yellow-color);
+    }
+
+    &__btn-arrow::before {
+      position: absolute;
+      content: "";
+      height: 8px;
+      width: 8px;
+      z-index: 15;
+      top: 36%;
+      right: 11px;
+      border: 2px solid #222837;
+      border-width: 0 0 1px 1px;
+      transform: rotate(-135deg);
+      transition: .3s;
+    }
+
+    .left::before {
+      transform: rotate(-317deg);
+    }
+
+    .arrow2 {
+      position: relative;
+    }
+
+    .arrow2::after {
+      position: absolute;
+      content: "";
+      height: 8px;
+      width: 8px;
+      z-index: 15;
+      top: 37%;
+      right: 16px;
+      border: 2px solid #222837;
+      border-width: 0 0 1px 1px;
+      transform: rotate(-135deg);
+      transition: .3s;
+    }
+
+    .left2::after {
+      position: absolute;
+      content: "";
+      height: 8px;
+      width: 8px;
+      z-index: 15;
+      top: 37%;
+      right: 7px;
+      border: 2px solid #222837;
+      border-width: 0 0 1px 1px;
+      transform: rotate(44deg);
+      transition: .3s;
+    }
+
+    .disable::after,
+    .disable::before {
+      border-color: #A4AAC2;
+    }
+
+    &__btn-arrow:not(:last-child) {
+      margin-right: 18px;
+    }
+
+
+    &__right {
+      margin-top: 10px;
+      font-size: 14px;
+      line-height: 16px;
+      letter-spacing: 0.01em;
+      color: #06070A;
+    }
+
+    &__digit {
+      position: relative;
+      margin-left: 7px;
+      border: 1px solid;
+      border-radius: 10px;
+      padding: 8px 38px 5px 11px;
+    }
+
+    &__digit::before {
+      content: "";
+      position: absolute;
+      height: 8px;
+      width: 8px;
+      z-index: 15;
+      top: 29%;
+      right: 17px;
+      border: 4px solid var(--main-black);
+      border-width: 0 0 1px 1px;
+      transform: rotate(-45deg);
+      transition: .3s;
+    }
+  }
+}
+
+
+@media (max-width: 950px) {
+  .main-table {
+
+    padding-top: calc(40px + 60 * (100vw - 320px)/ 680);
+    padding-bottom: calc(40px + 100 * (100vw - 320px)/ 680);
+
+    .for-tablet {
+      overflow-x: auto;
+    }
+
+    .table {
+      min-width: 923px;
+      box-shadow: none;
+    }
+
+    .table::-webkit-scrollbar {
+      width: 0;
+    }
+  }
+}
+
+@media (max-width: 767.98px) {
+  .main-table {
+
+    .table {
+      .for-desktop {
+        display: none;
+      }
+
+      .for-mobile {
+        display: block;
+      }
+
+      .hesh-action {
+        width: 135px;
+      }
+    }
+
+    .filter {
+      flex-direction: column;
+      align-items: center;
+
+
+      .digit-for-mobile {
+        display: block;
+
+        padding-left: 7px;
+        padding-right: 13px;
+      }
+
+      .digit-for-desktop {
+        display: none;
+      }
+
+      &__right {
+        margin-top: 30px;
+        align-self: flex-end;
+      }
+    }
+  }
+}

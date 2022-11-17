@@ -1,0 +1,299 @@
+:root {
+  --colorBlack: #3a3a3a;
+  --colorGray: #898989;
+  --colorRedLight: #e97171;
+  --colorGreenLight: #2ec1ac;
+  --colorOrangePrimary: #e89f71;
+  --colorWhite: #ffffff;
+  --colorGrayWhite: #f4f5f7;
+  --colorLightYellow: #f9f1e7;
+}
+
+
+.container {
+  max-width: 1275px;
+  padding: 0 15px;
+  margin: 0 auto;
+}
+
+body {
+  font-family: 'Gilroy';
+}
+
+.body-block {
+  overflow: hidden;
+}
+
+.text {
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 150%;
+  color: var(--colorBlack);
+}
+
+.title {
+  font-style: normal;
+  font-weight: 700;
+  font-size: 56px;
+  line-height: 120%;
+  color: var(--colorBlack);
+}
+
+.subtitle {
+  font-style: normal;
+  font-weight: 600;
+  font-size: 24px;
+  line-height: 120%;
+  color: var(--colorBlack);
+}
+
+.btn {
+  display: inline-block;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 150%;
+  color: var(--colorWhite);
+  background-color: #FF6E30;
+  padding: 12px 40px;
+  border: 2px solid transparent;
+  transition: all .2s ease-in-out;
+}
+
+@media (min-width: 1024px) {
+  .header {
+    &__link {
+      &:hover {
+        color: var(--colorOrangePrimary);
+        & + .header__sublist {
+          opacity: 1;
+          pointer-events: auto;
+          visibility: visible;
+          transform: translateY(-5px);
+        }
+        & svg {
+          stroke: var(--colorOrangePrimary);
+          transform: rotate(180deg);
+        }
+      }
+    }
+    &__sublist {
+      &:hover {
+        opacity: 1;
+        pointer-events: auto;
+        visibility: visible;
+        transform: translateY(-5px);
+      }
+    }
+    &__sublink {
+      &:hover {
+        color: var(--colorWhite);
+      }
+    }
+    &__btn {
+      &:hover {
+        & svg {
+          stroke: var(--colorOrangePrimary);
+        }
+      }
+    }
+    &__input {
+     &:hover {
+       background-color: var(--colorOrangePrimary);
+     }
+    }
+    &__favorite {
+      &:hover {
+        & svg {
+          stroke: var(--colorOrangePrimary);
+        }
+      }
+    }
+    &__cart {
+      &:hover {
+        & svg {
+          stroke: var(--colorOrangePrimary);
+        }
+      }
+    }
+  }
+  .hero {
+    &__btn {
+      &:hover {
+        background-color: var(--colorOrangePrimary);
+      }
+    }
+    &__button-prev {
+      &:hover {
+        opacity: .7;
+      }
+    }
+    &__button-next {
+      &:hover {
+        opacity: .7;
+      }
+    }
+    &__link {
+      &:hover::before {
+        background-color: rgba(255,255,255,.6);
+      }
+    }
+  }
+  .products {
+    &__item {
+      &:hover .mask {
+        opacity: 1;
+        pointer-events: visible;
+        visibility: visible;
+      }
+    }
+    &__button {
+      &:hover {
+        color: var(--colorWhite);
+        background-color: var(--colorOrangePrimary);
+      }
+    }
+  }
+  .mask {
+    &__btn {
+      &:hover {
+        color: var(--colorWhite);
+        background-color: var(--colorOrangePrimary);
+      }
+    }
+    &__share {
+      &:hover {
+        color: var(--colorOrangePrimary);
+        & svg {
+          fill: var(--colorOrangePrimary);
+        }
+      }
+    }
+    &__favorite {
+      &:hover {
+        color: var(--colorOrangePrimary);
+        & svg {
+          fill: var(--colorOrangePrimary);
+        }
+      }
+    }
+  }
+  .rooms {
+    &__link {
+      &:hover {
+        background-color: var(--colorOrangePrimary);
+      }
+    }
+    &__sublink {
+      &:hover::before {
+        background-color: rgba(255,255,255,.6);
+      }
+    }
+    &__arrow {
+      &:hover {
+        opacity: .7;
+      }
+    }
+    &__button-prev {
+      &:hover {
+        background-color: var(--colorOrangePrimary);
+        & svg {
+          stroke: var(--colorWhite);
+        }
+      }
+    }
+    &__button-next {
+      &:hover {
+        background-color: var(--colorOrangePrimary);
+        & svg {
+          stroke: var(--colorWhite);
+        }
+      }
+    }
+  }
+  .tips {
+    &__slide {
+      &:hover {
+        background-color: var(--colorWhite);
+        box-shadow: 0 0 32px rgba(97, 97, 97, .2);
+      }
+    }
+    &__button-prev {
+      &:hover {
+        background-color: var(--colorOrangePrimary);
+        & svg {
+          stroke: var(--colorWhite);
+        }
+      }
+    }
+    &__button-next {
+      &:hover {
+        background-color: var(--colorOrangePrimary);
+        & svg {
+          stroke: var(--colorWhite);
+        }
+      }
+    }
+  }
+  .footer {
+    &__tel {
+      &:hover {
+        color: var(--colorOrangePrimary);
+        & svg {
+          fill: var(--colorOrangePrimary);
+        }
+      }
+    }
+    &__geo {
+      &:hover {
+        color: var(--colorOrangePrimary);
+        & svg {
+          fill: var(--colorOrangePrimary);
+        }
+      }
+    }
+    &__site {
+      &:hover {
+        color: var(--colorOrangePrimary);
+      }
+    }
+  }
+  .menu {
+    &__link {
+      &:hover {
+        color: var(--colorOrangePrimary);
+      }
+    }
+  }
+  .account {
+    &__link {
+      &:hover {
+        color: var(--colorOrangePrimary);
+      }
+    }
+  }
+  .stay {
+    &__link {
+      &:hover {
+        color: var(--colorOrangePrimary);
+      }
+    }
+  }
+  .form {
+    &__input {
+      &:hover {
+        background-color: var(--colorOrangePrimary);
+        opacity: .7;
+        &::placeholder {
+          color: var(--colorWhite);
+        }
+      }
+    }
+    &__btn {
+      &:hover {
+        opacity: .7;
+      }
+    }
+  }
+}

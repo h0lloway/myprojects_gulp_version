@@ -1,0 +1,309 @@
+$maxWidth: 1920;
+$maxWidthContainer: 1275;
+
+@mixin adaptive ($property, $startSize, $minSize, $type) {
+  $addSize: $startSize - $minSize;
+  @if $type==1 {
+    // Только если меньше контейнера
+    #{$property}: $startSize + px;
+    @media (max-width: #{$maxWidthContainer + px}) {
+      #{$property}: calc(#{$minSize + px} + #{$addSize} * ((100vw - 320px) / #{$maxWidthContainer - 320}));
+    }
+  } @else if $type==2 {
+    // Только если больше контейнера 
+    #{$property}: $startSize + px;
+    @media (min-width: #{$maxWidthContainer + px}) {
+      #{$property}: calc(#{$minSize + px} + #{$addSize} * ((100vw - 320px) / #{$maxWidth - 320}));
+    }
+  } @else {
+    // Всегда
+    #{$property}: calc(#{$minSize + px} + #{$addSize} * ((100vw - 320px) / #{$maxWidth - 320}));
+  }
+}
+
+
+.rooms {
+  position: relative;
+  background-color: #FCF8F3;
+  overflow: hidden;
+  min-height: 670px;
+  @include adaptive ("padding-bottom", 87, 40, 0);
+  &::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 42%;
+    height: 100%;
+    background-color: #FCF8F3;
+    z-index: 3;
+  }
+  &__container {
+    position: relative;
+    display: flex;
+    padding-top: 45px;
+  }
+  &__left {
+    position: relative;
+    width: 473px;
+    z-index: 5;
+  }
+  &__body {
+    @include adaptive ("top", 176, 100, 0);
+    left: 3px;
+    padding-right: 20px;
+  }
+  &__title {
+    font-size: 40px;
+    &:not(:last-child) {
+      margin-bottom: 8px;
+    }
+  }
+  &__text {
+    width: 80%;
+    &:not(:last-child) {
+      margin-bottom: 25px;
+    }
+  }
+  &__link {
+    padding: 11px 38px;
+    transition: all .2s ease-in-out;
+  }
+  &__swiper {
+    position: relative;
+    width: 448px;
+    min-height: 582px;
+    & .swiper-slide-active {
+      & img {
+        height: 100%;
+      }
+      & .rooms__descr {
+        opacity: 1;
+        pointer-events: visible;
+        visibility: visible;
+      }
+    }
+  }
+  &__descr {
+    position: relative;
+    margin-bottom: 26px;
+    width: 66.4%;
+    @include adaptive ("margin-left", 30, 100, 0);
+    opacity: 0;
+    pointer-events: none;
+    visibility: hidden;
+    transition: all .2s ease-in-out;
+  }
+  &__wrp {
+    width: 82%;
+    @supports ((-webkit-backdrop-filter: blur(31px)) or (backdrop-filter: blur(31px))) {
+      background: rgba(255,255,255,0.72);
+      backdrop-filter: blur(31px);
+    }
+    background-color: rgba(255,255,255,0.72);
+    padding: 34px 24px 30px 32px;
+  }
+  &__subtext {
+    display: flex;
+    align-items: center;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 150%;
+    color: #616161;
+    margin-bottom: 10px;
+  }
+  &__span {
+    display: inline-block;
+    width: 27px;
+    border-top: 1px solid #616161;
+    margin-left: 7px;
+    margin-right: 10px;
+  }
+  &__sublink {
+    font-style: normal;
+    font-weight: 600;
+    font-size: 28px;
+    line-height: 120%;
+    color: var(--colorBlack);
+    &::before {
+      content: "";
+      position: absolute;
+      top: 0;
+      right: 0;
+      bottom: 0;
+      left: 0;
+      background-color: transparent;
+      transition: all .2s ease-in-out;
+    }
+  }
+  &__arrow {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    width: 48px;
+    height: 48px;
+    background-color: var(--colorOrangePrimary);
+    transition: all .2s ease-in-out;
+    & svg {
+      fill: var(--colorWhite);
+    }
+  }
+  &__button-prev {
+    width: 48px;
+    height: 48px;
+    flex-shrink: 0;
+    background-color: var(--colorWhite);
+    border-radius: 50%;
+    margin-right: 8px;
+    z-index: 5;
+    transition: all .2s ease-in-out;
+    &::after {
+      display: none;
+    }
+    & svg {
+      transform: rotate(180deg);
+      stroke: var(--colorOrangePrimary);
+      fill: transparent;
+      transition: all .2s ease-in-out;
+    }
+  }
+  &__button-next {
+    width: 48px;
+    height: 48px;
+    flex-shrink: 0;
+    background-color: var(--colorWhite);
+    border-radius: 50%;
+    margin-right: 4px;
+    z-index: 2;
+    transform: translateY(50%);
+    transition: all .2s ease-in-out;
+    &::after {
+      display: none;
+    }
+    & svg {
+      stroke: var(--colorOrangePrimary);
+      fill: transparent;
+      transition: all .2s ease-in-out;
+    }
+  }
+  &__pagination {
+    display: inline-block;
+    text-align: left;
+    z-index: 2;
+  }
+  &__slide {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    width: 89%;
+    & img {
+      position: absolute;
+      width: 100%;
+      height: 83%;
+      top: 0;
+      left: 0;
+      transition: all .2s ease-in-out;
+    }
+  }
+  .swiper-pagination-bullet {
+    position: relative;
+    width: 11px;
+    height: 11px;
+    background-color: #d8d8d8;
+    opacity: 1;
+    &::before {
+      content: "";
+      position: absolute;
+      top: -8.5px;
+      left: -9px;
+      width: 260%;
+      height: 250%;
+      border: 1px solid transparent;
+      border-radius: 50%;
+      transition: all .3s ease-in-out;
+    }
+  }
+  .swiper-pagination-bullets.swiper-pagination-horizontal {
+    width: max-content;
+    left: auto;
+    right: -97px;
+    bottom: 38px;
+  }
+  .swiper-pagination-horizontal.swiper-pagination-bullets .swiper-pagination-bullet {
+    margin-right: 15px;
+  }
+  .swiper-pagination-bullet.swiper-pagination-bullet-active {
+    background-color: var(--colorOrangePrimary);
+    &::before {
+      border-color: var(--colorOrangePrimary);
+    }
+  }
+}
+
+@media (max-width: 1050px) { 
+  .rooms {
+    padding-bottom: 30px;
+    &::before {
+      display: none;
+    }
+    &__container {
+      flex-direction: column;
+      padding-bottom: 50px;
+    }
+    &__left {
+      width: 100%;
+      margin-bottom: 30px;
+    }
+    &__body {
+      top: 0;
+    }
+    &__slide {
+      padding-top: 100%;
+    }
+    &__button-next {
+     top: 62%;
+    }
+    &__descr {
+      margin-left: 20px;
+    }
+    .swiper-pagination-bullets.swiper-pagination-horizontal {
+      bottom: 0;
+      right: 50%;
+      transform: translateX(50%);
+    }
+  }
+}
+
+@media (max-width: 630px) {
+  .rooms {
+    &__container {
+      padding-left: 0;
+      padding-right: 0;
+    }
+    &__left {
+      padding-left: 15px;
+      padding-right: 15px;
+    }
+    &__title {
+      font-size: 32px;
+    }
+    &__button-next {
+      display: none;
+    }
+    &__slide {
+      & img {
+        height: 100%;
+      }
+    }
+    &__button-prev {
+      display: none;
+    }
+    &__descr {
+      left: 10px;
+    }
+  }
+}

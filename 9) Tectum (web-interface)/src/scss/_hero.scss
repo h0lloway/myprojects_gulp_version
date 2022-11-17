@@ -1,0 +1,238 @@
+.hero {
+
+  padding-top: 50px;
+  padding-bottom: 43px;
+
+  background: #F2F4F7;
+
+  box-shadow: -2px -4px 10px rgb(80 91 117 / 10%), 2px 4px 10px rgb(6 7 10 / 50%), -2px -4px 10px rgb(80 91 117 / 50%), 2px 4px 13px rgb(6 7 10 / 50%);
+
+  &__container {
+
+    max-width: 930px;
+    padding-left: 25px;
+    padding-right: 25px;
+  }
+
+  .top-table {
+
+    justify-content: space-between;
+    padding-bottom: 48px;
+
+    .border-right {
+      position: relative;
+    }
+
+    .border-right::before {
+      content: "";
+      position: absolute;
+      border-right: 1px solid #D5D8E3;
+      height: 96px;
+      top: -25px;
+      right: -28px;
+    }
+
+    .border-right:nth-child(2)::before {
+      right: -39px;
+    }
+
+    .border-right:nth-child(3)::before {
+      right: 10px;
+    }
+
+    &__cell-top,
+    &__cell-bottom {
+      display: flex;
+      justify-content: end;
+    }
+
+    .-center {
+      justify-content: center;
+    }
+
+    .-center .span-digit {
+      padding: 0;
+    }
+
+
+    .span-text {
+      font-size: 14px;
+      line-height: 23px;
+      text-align: right;
+      letter-spacing: 0.02em;
+      text-transform: uppercase;
+      color: #5C6987;
+    }
+
+    .span-digit {
+      padding-left: 11px;
+      font-weight: 700;
+      font-size: 16px;
+      line-height: 23px;
+
+      letter-spacing: 0.02em;
+      text-transform: uppercase;
+
+      color: #06070A;
+
+    }
+  }
+
+  .mid-search {
+
+    padding-bottom: 36px;
+
+    &__label {
+      position: relative;
+    }
+
+    .label-for-mobile {
+      display: none;
+    }
+
+    &__input {
+
+      width: 100%;
+      padding: 11.5px 14px;
+      background: linear-gradient(153.43deg, #F7F8FA 29.75%, #FFFFFF 83.33%);
+      box-shadow: -2px -4px 13px rgba(255, 255, 255, 0.7), 2px 4px 16px rgba(202, 206, 220, 0.7), -2px -4px 13px #FFFFFF, inset -2px -4px 10px #FFFFFF, inset 2px 4px 10px rgba(202, 206, 220, 0.7);
+      border-radius: 10px;
+      font-size: 16px;
+      line-height: 19px;
+      letter-spacing: 0.01em;
+      color: #A4AAC2;
+    }
+
+    .search {
+      position: absolute;
+      top: 13px;
+      right: 25px;
+    }
+  }
+
+  .bot-checkbox {
+
+    &__label {
+      position: relative;
+    }
+
+    &__label span {
+      position: relative;
+      padding-left: 25px;
+      font-size: 14px;
+      line-height: 16px;
+      letter-spacing: 0.01em;
+      color: #06070A;
+      cursor: pointer;
+      transition: .3s ease;
+    }
+
+    &__label span::before {
+      content: "";
+      position: absolute;
+      width: 12px;
+      height: 12px;
+      top: 2px;
+      left: 0;
+      border: 1px solid rgb(213, 212, 212);
+      border-radius: 100%;
+      background: linear-gradient(153.43deg, #CACEDC 16.22%, #EDEFF4 53.35%, #FFFFFF 83.33%);
+      cursor: pointer;
+    }
+
+    &__label span::after {
+      content: "";
+      position: absolute;
+      width: 8px;
+      height: 8px;
+      top: 4px;
+      left: 2px;
+      background: linear-gradient(159.44deg, #CACEDC 9.89%, #06070A 92.84%);
+
+      border-radius: 100%;
+      cursor: pointer;
+      opacity: 0;
+    }
+
+    &__input:checked+span::after {
+      opacity: 1;
+    }
+
+    &__input {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 14px;
+      height: 14px;
+      cursor: pointer;
+      margin: 0;
+      opacity: 0;
+      z-index: 3;
+      transition: .3s ease;
+    }
+
+    &__label:hover span {
+      color: #5C6987;
+    }
+
+    &__label:not(:last-child) {
+      margin-right: 22px;
+    }
+  }
+}
+
+
+
+
+@media (max-width: 950px) {
+
+  .hero {
+
+    .top-table {
+
+
+      .span-text {
+        font-size: 12px;
+      }
+
+      .span-digit {
+        padding-left: 7px;
+        font-size: 14px;
+      }
+    }
+  }
+}
+
+@media (max-width: 750px) {
+
+  .hero {
+
+    .top-table {
+      display: none;
+    }
+  }
+}
+
+@media (max-width: 600px) {
+  .hero {
+
+    padding-top: 35px;
+    padding-bottom: 40px;
+
+    .mid-search {
+      padding: 0;
+
+      &__label {
+        display: none;
+      }
+
+      .label-for-mobile {
+        display: block;
+      }
+    }
+
+    .bot-checkbox {
+      display: none;
+    }
+  }
+}

@@ -1,0 +1,518 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+@include('html/head.html', {
+"title":"Наталия Кандаусова"
+})
+
+<body>
+  @include('html/header.html', {})
+
+  <main>
+
+    <section class="card">
+      <div class="container card__container">
+
+        <ul class="card__breadcrumbs breadcrumbs list-reset">
+          <li class="breadcrumbs__item">
+            <a class="breadcrumbs__item-link" href="index.html">Главная</a>
+          </li>
+          <li class="breadcrumbs__item">
+            <a class="breadcrumbs__item-link" href="#">&mdash; Наталия Кандаусова</a>
+          </li>
+        </ul>
+
+
+        <div class="card__main main">
+
+          <div class="main__img">
+            <picture>
+              <source srcset="img/main-img-320.webp" width="320" height="357" media="(max-width: 550px)">
+              <img src="img/main-img.webp" alt="Фотография специалиста" width="358" height="357">
+            </picture>
+          </div>
+
+          <div class="main__profile profile">
+            <div class="profile__wrapper">
+              <h1 class="profile__name">Наталия Кандаусова</h1>
+
+              <div class="profile__descr descr">
+
+                <div class="descr__exp">
+                  <svg class="" width="31.05" height="31.49">
+                    <use xlink:href="img/sprite.svg#exp-card"></use>
+                  </svg>
+                  <span>Стаж:</span>
+                  <span class="bold">1 год</span>
+                </div>
+
+                <div class="descr__age">
+                  <svg class="" width="33.05" height="28.33">
+                    <use xlink:href="img/sprite.svg#age-card"></use>
+                  </svg>
+                  <span>Возраст:</span>
+                  <span class="bold">34 года</span>
+                </div>
+
+                <div class="descr__feedback">
+                  <svg class="" width="31.67" height="26.92">
+                    <use xlink:href="img/sprite.svg#feedback-card"></use>
+                  </svg>
+                  <span><a class="descr__feedback-link" href="#">Отзывы:</a></span>
+                  <span class="bold">3</span>
+                </div>
+
+              </div>
+
+              <div class="profile__prices">
+                <div class="profile__prices-wrapper">
+                  <div class="profile__price price">
+                    <div class="price__text">
+                      <span class="price__descr">Онлайн&#8209;консультация</span>
+                      <span class="price__subdescr">Чат или видео</span>
+                    </div>
+                    <div class="price__cost">10 000 р</div>
+                  </div>
+                </div>
+
+                <div class="profile__prices-wrapper">
+                  <div class="profile__price price">
+                    <div class="price__text">
+                      <span class="price__descr">Экспресс</span>
+                      <span class="price__subdescr">Ответы на вопросы</span>
+                    </div>
+                    <div class="price__cost">200 р</div>
+                  </div>
+                </div>
+
+              </div>
+
+              <div class="profile__spec spec">
+                <div class="spec__descr">Специализация:</div>
+                <div class="spec__subdescr for-desktop">когнетивно-поведенческая терапия, клиенто-ценрированная,
+                  психоанализ</div>
+                <ul class="spec__list list-reset for-mobile">
+                  <li class="spec__list-item">Когнетивно-поведенческая терапия</li>
+                  <li class="spec__list-item">Клиенто-ценрированная</li>
+                  <li class="spec__list-item">Психоанализ</li>
+                </ul>
+              </div>
+
+              <div class="profile__buttons buttons">
+                <button class="buttons__btn-one my-btn purple-btn modal-btn" data-path="modal-one">
+                  Записаться на консультацию
+                </button>
+                <button class="buttons__btn-two my-btn transp-btn modal-btn" data-path="modal-four">Спросить</button>
+              </div>
+
+            </div>
+          </div>
+
+          <div class="main__rating">
+            <svg class="star" width="26.47" height="24.64">
+              <use xlink:href="img/sprite.svg#star"></use>
+            </svg>
+            <svg class="star" width="26.47" height="24.64">
+              <use xlink:href="img/sprite.svg#star"></use>
+            </svg>
+            <svg class="star" width="26.47" height="24.64">
+              <use xlink:href="img/sprite.svg#star"></use>
+            </svg>
+            <svg class="star" width="26.47" height="24.64">
+              <use xlink:href="img/sprite.svg#star"></use>
+            </svg>
+            <svg class="star" width="26.47" height="24.64">
+              <use xlink:href="img/sprite.svg#half-star"></use>
+            </svg>
+          </div>
+
+
+          <div class="main__tabs tabs">
+
+            <!-- кнопки -->
+            <ul class="tabs__list list-reset ">
+
+              <li class="tabs__list-item">
+                <button class="tabs__btn my-btn tabs__btn--active" data-path="one">
+                  Обо мне
+                </button>
+              </li>
+
+              <li class="tabs__list-item">
+                <button class="tabs__btn my-btn" data-path="two">
+                  Образование
+                </button>
+              </li>
+
+              <li class="tabs__list-item">
+                <button class="tabs__btn my-btn" data-path="three">
+                  Опыт работы
+                </button>
+              </li>
+
+              <li class="tabs__list-item">
+                <button class="tabs__btn my-btn" data-path="fourth">
+                  Запросы
+                </button>
+              </li>
+
+              <li class="tabs__list-item">
+                <button class="tabs__btn my-btn" data-path="fifth">
+                  Отзывы
+                </button>
+              </li>
+
+              <li class="tabs__list-item">
+                <button class="tabs__btn my-btn" data-path="sixth">
+                  Дипломы
+                </button>
+              </li>
+
+              <li class="tabs__list-item">
+                <button class="tabs__btn my-btn" data-path="seventh">
+                  Мои статьи
+                </button>
+              </li>
+
+            </ul>
+
+
+
+            <div class="tabs__list-swiper swiper">
+              <ul class="tabs__list-swiper-wrapper swiper-wrapper list-reset">
+
+                <li class="tabs__list-swiper-slide swiper-slide">
+                  <button class="tabs__btn my-btn tabs__btn--active" data-path="one">
+                    Обо мне
+                  </button>
+                </li>
+                <li class="tabs__list-swiper-slide swiper-slide">
+                  <button class="tabs__btn my-btn" data-path="two">
+                    Образование
+                  </button>
+                </li>
+                <li class="tabs__list-swiper-slide swiper-slide">
+                  <button class="tabs__btn my-btn" data-path="three">
+                    Опыт работы
+                  </button>
+                </li>
+                <li class="tabs__list-swiper-slide swiper-slide">
+                  <button class="tabs__btn my-btn" data-path="fourth">
+                    Запросы
+                  </button>
+                </li>
+                <li class="tabs__list-swiper-slide swiper-slide">
+                  <button class="tabs__btn my-btn" data-path="fifth">
+                    Отзывы
+                  </button>
+                </li>
+                <li class="tabs__list-swiper-slide swiper-slide">
+                  <button class="tabs__btn my-btn" data-path="sixth">
+                    Дипломы
+                  </button>
+                </li>
+                <li class="tabs__list-swiper-slide swiper-slide">
+                  <button class="tabs__btn my-btn" data-path="seventh">
+                    Мои статьи
+                  </button>
+                </li>
+
+              </ul>
+            </div>
+
+
+            <div class="tabs__content content">
+              <!-- элементы табов -->
+
+              <div class="content__item content__item--active about" data-target="one">
+                <div class="about__text">
+                  <span>
+                    Рада вас приветствовать на&nbsp;моей страние! Я&nbsp;практически психолог, системный семейный
+                    психолог, основатель проекта &laquo;Корпорация Психологии&raquo;. Имею два базовых образования:
+                    по&nbsp;первому имиджеолог, по
+                    второму практический психолог. Постоянно повышаю квалификацию в&nbsp;различных психотерапевтических
+                    подходах. Также прохожу курс личной терапии от&nbsp;специалиста Профессиональной
+                    Психотерапевтической
+                    Лиги ( ОППЛ), а&nbsp;также супервизию. В&nbsp;своей работе
+                    я&nbsp;использую методы семейной, когнитивно-поведенческой <br> и клиент-центрированной терапии.
+                  </span>
+                </div>
+
+                <h3 class="about__title">
+                  Принципы, которыми я руководствуюсь в работе - это:
+                </h3>
+
+                <ul class="about__list list-reset">
+                  <li class="about__list-item">
+                    Уважение к личности
+                  </li>
+                  <li class="about__list-item">
+                    Честность и искренность по отношению к клиенту
+                  </li>
+                  <li class="about__list-item">
+                    Конфиденциальность
+                  </li>
+                  <li class="about__list-item">
+                    Использование научно-обосновательных методов терапии
+                  </li>
+                </ul>
+              </div>
+
+              <div class="content__item education" data-target="two">
+                <ul class="education__list list-reset">
+                  <li class="education__list-item">
+                    АНО НИИДПО, высшее образование, специальность &laquo;Практический психолог&raquo;
+                  </li>
+                  <li class="education__list-item">
+                    Институт психотерапии и&nbsp;клинической психологии, тренинг &laquo;Основы психотерапии
+                    психосоматических расстройств&raquo;
+                  </li>
+                  <li class="education__list-item">
+                    Общероссийская Профессиональная Психотерапевтическая Лига. Авторский тренинг Зульфии Арефьевой
+                    &laquo;Системная семейная терапия в&nbsp;онлайн консультировании&raquo;.
+                  </li>
+                  <li class="education__list-item">
+                    Школа диетологов, &laquo;Основы диетологии и&nbsp;нутрициологии. Консультирование в&nbsp;вопросах
+                    рационального питания
+                    и&nbsp;коррекции веса&raquo;
+                  </li>
+                </ul>
+              </div>
+
+              <div class="content__item" data-target="three">
+                Нет контента
+              </div>
+
+              <div class="content__item request" data-target="fourth">
+                <ul class="request__list list-reset">
+                  <li class="request__list-item">
+                    <a class="request__list-item-link" href="#">
+                      <svg class="check" width="26" height="26">
+                        <use xlink:href="img/sprite.svg#check"></use>
+                      </svg>
+                      <span>Добрачное консультирование</span>
+                    </a>
+                  </li>
+                  <li class="request__list-item">
+                    <a class="request__list-item-link" href="#">
+                      <svg class="check" width="26" height="26">
+                        <use xlink:href="img/sprite.svg#check"></use>
+                      </svg>
+                      <span>Тревога и страхи</span>
+                    </a>
+                  </li>
+                  <li class="request__list-item">
+                    <a class="request__list-item-link" href="#">
+                      <svg class="check" width="26" height="26">
+                        <use xlink:href="img/sprite.svg#check"></use>
+                      </svg>
+                      <span>Самооценка</span>
+                    </a>
+                  </li>
+                  <li class="request__list-item">
+                    <a class="request__list-item-link" href="#">
+                      <svg class="check" width="26" height="26">
+                        <use xlink:href="img/sprite.svg#check"></use>
+                      </svg>
+                      <span>Трудности в отношениях с окружающими</span>
+                    </a>
+                  </li>
+                  <li class="request__list-item">
+                    <a class="request__list-item-link" href="#">
+                      <svg class="check" width="26" height="26">
+                        <use xlink:href="img/sprite.svg#check"></use>
+                      </svg>
+                      <span>Проблемы в отношениях между супругами</span>
+                    </a>
+                  </li>
+                  <li class="request__list-item">
+                    <a class="request__list-item-link" href="#">
+                      <svg class="check" width="26" height="26">
+                        <use xlink:href="img/sprite.svg#check"></use>
+                      </svg>
+                      <span>Отношения в семье</span>
+                    </a>
+                  </li>
+                  <li class="request__list-item">
+                    <a class="request__list-item-link" href="#">
+                      <svg class="check" width="26" height="26">
+                        <use xlink:href="img/sprite.svg#check"></use>
+                      </svg>
+                      <span>Навязчивые мысли</span>
+                    </a>
+                  </li>
+                </ul>
+              </div>
+
+              <div class="content__item feedback" data-target="fifth">
+                <div class="feedback__wrapper wrapper">
+                  <div class="wrapper__left left">
+                    <img src="img/feedback-1.webp" alt="фото отзыв">
+
+                    <div class="left__descr descr">
+                      <div class="descr__name">Евгения Быкова</div>
+                      <div class="descr__city">г.Москва</div>
+                      <div class="descr__date">18.11.2022 </div>
+                    </div>
+                  </div>
+                  <div class="wrapper__right right">
+                    <div class="right__rating">
+                      <svg class="star" width="26.47" height="24.64">
+                        <use xlink:href="img/sprite.svg#star"></use>
+                      </svg>
+                      <svg class="star" width="26.47" height="24.64">
+                        <use xlink:href="img/sprite.svg#star"></use>
+                      </svg>
+                      <svg class="star" width="26.47" height="24.64">
+                        <use xlink:href="img/sprite.svg#star"></use>
+                      </svg>
+                      <svg class="star" width="26.47" height="24.64">
+                        <use xlink:href="img/sprite.svg#star"></use>
+                      </svg>
+                      <svg class="star" width="26.47" height="24.64">
+                        <use xlink:href="img/sprite.svg#half-star"></use>
+                      </svg>
+                    </div>
+
+                    <div class="right__descr descr">
+                      <div class="descr__name">Евгения Быкова</div>
+                      <div class="descr__city">г.Москва</div>
+                      <div class="descr__date">18.11.2022 </div>
+                    </div>
+
+                    <div class="right__text">
+                      <span>
+                        Хочу оставить положительный отзыв. Благодарю психолога Марию! Она очень помогла мне
+                        в&nbsp;тяжелой ситуации. Эта женщина тактична, доброжелательна. Мария меня выслушала внимательно
+                        и&nbsp;оказала психологическую поддержку. После того, как я&nbsp;посетила этого психолога, моя
+                        жизнь поменялась в&nbsp;лучшую сторону. Я&nbsp;стала радоваться мелочам. Если у&nbsp;вас
+                        возникла щекотливая проблема, обращайтесь на&nbsp;консультацию к&nbsp;Марии Игоревне. Огромное
+                        ей&nbsp;спасибо.
+                      </span>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="feedback__wrapper wrapper">
+                  <div class="wrapper__left left">
+                    <img src="img/feedback-2.webp" alt="фото отзыв">
+
+                    <div class="left__descr descr">
+                      <div class="descr__name">Евгения Быкова</div>
+                      <div class="descr__city">г.Москва</div>
+                      <div class="descr__date">18.11.2022 </div>
+                    </div>
+                  </div>
+
+
+
+                  <div class="wrapper__right right">
+                    <div class="right__rating">
+                      <svg class="star" width="26.47" height="24.64">
+                        <use xlink:href="img/sprite.svg#star"></use>
+                      </svg>
+                      <svg class="star" width="26.47" height="24.64">
+                        <use xlink:href="img/sprite.svg#star"></use>
+                      </svg>
+                      <svg class="star" width="26.47" height="24.64">
+                        <use xlink:href="img/sprite.svg#star"></use>
+                      </svg>
+                      <svg class="star" width="26.47" height="24.64">
+                        <use xlink:href="img/sprite.svg#star"></use>
+                      </svg>
+                      <svg class="star" width="26.47" height="24.64">
+                        <use xlink:href="img/sprite.svg#half-star"></use>
+                      </svg>
+                    </div>
+
+                    <div class="right__descr descr">
+                      <div class="descr__name">Ксения Рябина</div>
+                      <div class="descr__city">г.Москва</div>
+                      <div class="descr__date">12.12.2022 </div>
+                    </div>
+
+                    <div class="right__text">
+                      <span>
+                        Я&nbsp;очень благодарна Алексею Сергеевичу за&nbsp;то, как бережно и&nbsp;быстро он&nbsp;вытащил
+                        меня из&nbsp;состояния обостренного невроза, с&nbsp;которым я&nbsp;жила уже много лет, начиная
+                        еще со&nbsp;школы. Я&nbsp;наконец научилась расслабляться и&nbsp;отпускать ситуацию,
+                        пересмотрела свое отношение к&nbsp;окружающей действительности и&nbsp;людям, и&nbsp;начала
+                        чувствовать себя собой, а&nbsp;не&nbsp;комком тревоги и&nbsp;страхов. Даже сейчас, после
+                        окончания консультаций, я&nbsp;постепенно осознаю, откуда и&nbsp;почему взялись многие мои
+                        реакции и&nbsp;установки, чувствую, как они меняются, и&nbsp;жить становится намного легче. Мне
+                        было очень комфортно работать с&nbsp;Алексеем Сергеевичем, это прекрасный специалист, имеющий
+                        огромный опыт работы с&nbsp;подобными состояниями&nbsp;&mdash; внимательный, подмечающий всё
+                        с&nbsp;полуслова, и&nbsp;все консультации всегда проходят только по&nbsp;делу. Огромное Вам
+                        душевное спасибо! Также спасибо центру Доверие и&nbsp;администратору Юлии за&nbsp;то, что
+                        помогли мне найти своего психолога! Татьяна.
+                      </span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="content__item diplom" data-target="sixth">
+                <ul class="diplom__list list-reset">
+                  <li class="diplom__list-item">
+                    <img src="img/diplom-1.webp" alt="Диплом">
+                  </li>
+                  <li class="diplom__list-item">
+                    <img src="img/diplom-2.webp" alt="Диплом">
+                  </li>
+                  <li class="diplom__list-item">
+                    <img src="img/diplom-3.webp" alt="Диплом">
+                  </li>
+                  <li class="diplom__list-item for-mobile">
+                    <img src="img/diplom-1.webp" alt="Диплом">
+                  </li>
+                  <li class="diplom__list-item for-mobile">
+                    <img src="img/diplom-2.webp" alt="Диплом">
+                  </li>
+                  <li class="diplom__list-item for-mobile">
+                    <img src="img/diplom-3.webp" alt="Диплом">
+                  </li>
+                </ul>
+              </div>
+
+              <div class="content__item article" data-target="seventh">
+                <ul class="article__list list-reset">
+                  <li class="article__list-item">
+                    <a class="article__list-item-link" href="#">
+                      Как избавиться от раздражительности? Советы психолога.
+                    </a>
+                  </li>
+                  <li class="article__list-item">
+                    <a class="article__list-item-link" href="#">
+                      Обсессивно-компульсивное расстройство: причины, симптомы, лечение.
+                    </a>
+                  </li>
+                  <li class="article__list-item">
+                    <a class="article__list-item-link" href="#">
+                      Основные подходы и методы психотерапии. Какой лучше выбрать?
+                    </a>
+                  </li>
+                  <li class="article__list-item">
+                    <a class="article__list-item-link" href="#">
+                      Чем отличаются психолог, психотерапевт и психиатр?
+                    </a>
+                  </li>
+                </ul>
+              </div>
+
+            </div>
+
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+  </main>
+
+  @include('html/footer.html', {})
+
+  @include('html/modals.html', {})
+
+</body>
+
+</html>

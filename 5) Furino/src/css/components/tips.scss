@@ -1,0 +1,203 @@
+$maxWidth: 1920;
+$maxWidthContainer: 1275;
+
+@mixin adaptive ($property, $startSize, $minSize, $type) {
+  $addSize: $startSize - $minSize;
+  @if $type==1 {
+    // Только если меньше контейнера
+    #{$property}: $startSize + px;
+    @media (max-width: #{$maxWidthContainer + px}) {
+      #{$property}: calc(#{$minSize + px} + #{$addSize} * ((100vw - 320px) / #{$maxWidthContainer - 320}));
+    }
+  } @else if $type==2 {
+    // Только если больше контейнера 
+    #{$property}: $startSize + px;
+    @media (min-width: #{$maxWidthContainer + px}) {
+      #{$property}: calc(#{$minSize + px} + #{$addSize} * ((100vw - 320px) / #{$maxWidth - 320}));
+    }
+  } @else {
+    // Всегда
+    #{$property}: calc(#{$minSize + px} + #{$addSize} * ((100vw - 320px) / #{$maxWidth - 320}));
+  }
+}
+
+.tips {
+  background-color: #fcf8f3;
+  padding-bottom: 20px;
+  margin-bottom: 50px;
+  &__title {
+    font-size: 40px;
+    text-align: center;
+    @include adaptive ("margin-bottom", 32, 20, 0);
+  }
+  &__descr {
+    display: flex;
+    flex-direction: column;
+    padding: 20px 20px 16px 19px;
+  }
+  &__link {
+    display: inline-block;
+    width: 80%;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 24px;
+    line-height: 120%;
+    color: var(--colorBlack);
+    margin-bottom: 7px;
+    flex: 1 1 auto;
+    &::before {
+      content: "";
+      position: absolute;
+      top: 0;
+      right: 0;
+      bottom: 0;
+      left: 0;
+    }
+  }
+  &__data {
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 150%;
+    color: var(--colorGray);
+  }
+  &__swiper {
+    position: relative;
+    overflow: hidden;
+    padding-bottom: 50px;
+  }
+  &__slide {
+    position: relative;
+    display: flex;
+    width: 33%;
+    height: auto;
+    min-height: 370px;
+    background-color: transparent;
+    margin-right: 24px;
+    padding-top: 21%;
+    background-size: contain;
+    transition: all .2s ease-in-out;
+  }
+  .one-slide {
+    background-image: url(/img/tips-1.jpg);
+    background-repeat: no-repeat;
+    background-position: left top;
+  }
+  .two-slide {
+    background-image: url(/img/tips-2.jpg);
+    background-repeat: no-repeat;
+    background-position: left top;
+  }
+  .third-slide {
+    background-image: url(/img/tips-3.jpg);
+    background-repeat: no-repeat;
+    background-position: left top;
+  }
+  .four-slide {
+    background-image: url(/img/tips-1.jpg);
+    background-repeat: no-repeat;
+    background-position: left top;
+  }
+  &__pagination {
+    display: inline-block;
+    text-align: left;
+    z-index: 2;
+  }
+  &__button-prev {
+    width: 48px;
+    height: 48px;
+    flex-shrink: 0;
+    background-color: var(--colorWhite);
+    border-radius: 50%;
+    margin-right: 8px;
+    z-index: 5;
+    transition: all .2s ease-in-out;
+    &::after {
+      display: none;
+    }
+    & svg {
+      transform: rotate(180deg);
+      stroke: var(--colorOrangePrimary);
+      fill: transparent;
+      transition: all .2s ease-in-out;
+    }
+  }
+  &__button-next {
+    width: 48px;
+    height: 48px;
+    flex-shrink: 0;
+    background-color: var(--colorWhite);
+    border-radius: 50%;
+    z-index: 2;
+    transition: all .2s ease-in-out;
+    &::after {
+      display: none;
+    }
+    & svg {
+      stroke: var(--colorOrangePrimary);
+      fill: transparent;
+      transition: all .2s ease-in-out;
+    }
+  }
+  .swiper-pagination-bullet {
+      position: relative;
+      width: 11px;
+      height: 11px;
+      background-color: #d8d8d8;
+      opacity: 1;
+      &::before {
+        content: "";
+        position: absolute;
+        top: -8.5px;
+        left: -9px;
+        width: 260%;
+        height: 250%;
+        border: 1px solid transparent;
+        border-radius: 50%;
+        transition: all .3s ease-in-out;
+      }
+  }
+  .swiper-pagination-bullets.swiper-pagination-horizontal {
+    width: max-content;
+    left: 50%;
+    bottom: 10px;
+    transform: translateX(-50%);
+  }
+  .swiper-pagination-horizontal.swiper-pagination-bullets .swiper-pagination-bullet {
+    margin-right: 15px;
+  }
+  .swiper-pagination-bullet.swiper-pagination-bullet-active {
+    background-color: var(--colorOrangePrimary);
+    &::before {
+      border-color: var(--colorOrangePrimary);
+    }
+  }
+}
+
+@media (max-width: 950px) {
+  .tips {
+    &__slide {
+      width: 50%;
+      background-size: contain;
+      padding-top: 32%;
+    }
+    &__button-prev {
+      display: none;
+    }
+    &__button-next {
+      display: none;
+    }
+  }
+}
+
+@media (max-width: 630px) {
+  .tips {
+    &__title {
+      font-size: 32px;
+    }
+    &__slide {
+      width: 100%;
+      padding-top: 65%;
+    }
+  }
+}

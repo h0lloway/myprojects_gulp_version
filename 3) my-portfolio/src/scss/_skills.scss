@@ -1,0 +1,142 @@
+.skills {
+  padding-top: 60px;
+  padding-bottom: 60px;
+
+  background-color: var(--e0e0e0);
+  transition: all .3s;
+
+  .skill {
+    margin-top: 30px;
+    display: flex;
+    flex-wrap: wrap;
+
+    &__item {
+      padding: 0 15px;
+      min-width: 220px;
+      flex: 0 1 25%;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      text-align: center;
+      margin: 20px 0;
+    }
+
+    &__item>:not(:last-child) {
+      margin: 0 0 16px 0;
+    }
+
+    &__img {
+      position: relative;
+      height: 100px;
+      display: flex;
+      flex: 0 0 100px;
+      justify-content: flex-end;
+      align-items: center;
+      justify-content: center;
+      cursor: pointer;
+      transform: translate(0, 0);
+      transition: all .3s ease 0s;
+    }
+
+    .web-logo {
+      z-index: 3;
+
+      fill: var(--carbonic);
+      transition: all .3s;
+    }
+
+    &__img:before {
+      content: "";
+      position: absolute;
+      z-index: 3;
+      background: var(--almost-white);
+      top: 0;
+      left: -25px;
+      height: 100px;
+      width: 100px;
+      box-shadow: 3px 3px var(--red-main);
+      border-radius: 50%;
+      transition: all .3s ease 0s;
+    }
+
+    &__img:hover {
+      transform: translate(-5px, -5px);
+    }
+
+    // &__img:hover svg {
+    //   fill: red;
+    // }
+
+    &__img:hover:before {
+      box-shadow: 4px 4px 2px 2px var(--red-main), 6px 6px 3px 3px rgb(237, 117, 117);
+    }
+
+    &__img img {
+      position: relative;
+      z-index: 5;
+      object-fit: contain;
+      width: 50px;
+      height: 100%;
+    }
+
+    &__subtitle {
+      font-size: 20px;
+      line-height: 150%;
+      font-weight: 700;
+    }
+
+    &__descr {
+      font-size: 16px;
+      line-height: 150%;
+      font-weight: 400;
+    }
+  }
+}
+
+@media (max-width: 1000px) {
+  .skills {
+    padding-top: calc(25px + 20 * ((100vw - 320px)/ 680));
+    padding-bottom: calc(25px + 20 * ((100vw - 320px)/ 680));
+  }
+}
+
+
+@media (max-width: 991.98px) {
+  .skills {
+
+
+    .skill {
+      justify-content: space-between;
+
+      &__item {
+        flex-direction: row;
+        flex: 0 0 auto;
+        min-width: 137px;
+        height: 50px;
+      }
+
+      &__img::before {
+        display: none;
+      }
+
+      &__img {
+        position: relative;
+        height: 30px;
+        display: flex;
+        flex: 0 0 50px;
+        justify-content: flex-end;
+        align-items: center;
+        justify-content: center;
+      }
+
+      &__descr {
+        display: none;
+      }
+
+      &__subtitle {
+        font-size: 14px;
+        padding-left: 10px;
+      }
+    }
+  }
+}

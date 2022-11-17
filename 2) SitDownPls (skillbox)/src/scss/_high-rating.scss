@@ -1,0 +1,152 @@
+.high-rating {
+  padding-bottom: 71px;
+
+  &__list-item:not(:nth-child(-n + 8)) {
+    display: none;
+
+    animation: fadeIn;
+    animation-duration: .6s;
+  }
+
+  @keyframes fadeIn {
+    0% {
+      opacity: 0;
+    }
+
+    100% {
+      opacity: 1;
+    }
+  }
+
+  .price {
+    font-size: 16px;
+    line-height: 21px;
+    color: #666;
+  }
+
+  &__btn {
+    margin: 0 15px;
+  }
+
+  .close-item-btn {
+    display: none;
+  }
+
+  .rating {
+    width: 15.79px;
+    height: 15px;
+
+    fill: #FF862F;
+    transition: all .3s ease;
+  }
+
+  .more-item-btn,
+  .close-item-btn {
+    position: relative;
+    left: 50%;
+    transform: translateX(-50%);
+
+    padding: 19px 35px;
+  }
+}
+
+@media (max-width: 1350px) {
+  .high-rating {
+
+    padding-bottom: 70px;
+
+    &__list {
+      grid-template-columns: 31% 31% 31%;
+      gap: 33px 33px;
+      margin-bottom: 33px;
+    }
+
+    &__list-item:not(:nth-child(-n + 6)) {
+      display: none;
+    }
+
+    .more-item-btn {
+      padding: 20px 35px;
+    }
+
+    &__list-item:nth-child(4) .high-rating__img,
+    &__list-item:nth-child(5) .high-rating__img,
+    &__list-item:nth-child(6) .high-rating__img {
+      margin-bottom: 14px;
+    }
+  }
+}
+
+@media (max-width: 1000px) {
+  .high-rating {
+
+    &__list {
+      grid-template-columns: 47% 47%;
+    }
+  }
+}
+
+@media (max-width: 800px) {
+  .high-rating {
+
+    &__list {
+      gap: 31px 33px;
+      margin-bottom: 36px;
+    }
+  }
+}
+
+@media (max-width: 650px) {
+  .high-rating {
+
+    &__list {
+      gap: 15px 14px;
+      margin-bottom: 35px;
+      grid-template-columns: 48% 48%;
+    }
+
+    &__product {
+      padding: 18px 16px 16px;
+    }
+
+    &__rating {
+      top: 0;
+      left: 0;
+
+      font-size: 12px;
+      line-height: 16px;
+    }
+
+    .rating {
+      width: 13px;
+      height: 12px;
+    }
+
+    &__img {
+      height: 56px;
+    }
+
+    &__text {
+      padding: 0;
+      margin-bottom: 15px;
+    }
+
+    &__subtitle {
+      margin-bottom: 16px;
+    }
+
+    &__link {
+      font-size: 16px;
+      line-height: 21px;
+    }
+
+    &__btn {
+      margin: 0;
+      padding: 10px 23px;
+    }
+    
+    .more-item-btn {
+      padding: 20px 34px;
+    }
+  }
+}

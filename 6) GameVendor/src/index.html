@@ -1,0 +1,1456 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Gamevendor</title>
+  <link rel="shortcut icon" href="img/favicon.png">
+
+  <!-- fonts -->
+  <!-- fonts -->
+
+  <link rel="prefetch" href="fonts/Inter-Medium.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="prefetch" href="fonts/Inter-Regular.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="prefetch" href="fonts/Inter-SemiBold.woff2" as="font" type="font/woff2" crossorigin>
+
+  <!-- styles -->
+  <!-- styles -->
+
+  <link rel="stylesheet" href="https://unpkg.com/swiper@8/swiper-bundle.min.css" />
+  <!-- choices -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/choices.js/public/assets/styles/choices.min.css" />
+  <!-- my-styles -->
+  <link rel="stylesheet" href="css/main.min.css">
+
+  <!-- JavaScript -->
+  <!-- JavaScript -->
+
+  <!-- accordion -->
+  <script defer src="https://code.jquery.com/jquery-1.12.4.js"></script>
+  <script defer src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+
+  <!-- choices -->
+  <script defer src="js/choices.min.js"></script>
+  <!-- swiper -->
+  <script defer src="https://unpkg.com/swiper@8/swiper-bundle.min.js"></script>
+  <!-- my JS -->
+  <script defer src="js/main.js"></script>
+</head>
+
+<body>
+  <header class="header">
+    <div class="container header__container">
+      <div class="header__top">
+        <div class="header__swiper swiper">
+          <div class="header__swiper-wrapper swiper-wrapper">
+            <div class="header__swiper-slide swiper-slide">
+              <div class="swiper-slide__content">
+                <p class="swiper-slide__text">
+                  Refer a&nbsp;friend and get $10&nbsp;off! 🔥
+                  Offer ends February&nbsp;27!
+                </p>
+              </div>
+            </div>
+            <div class="header__swiper-slide swiper-slide">
+              <div class="swiper-slide__content">
+                <p class="swiper-slide__text">
+                  It's still empty here, fill me with some content, please
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <button class="header__swiper-button-prev swiper-button-prev my-btn">
+            <svg class="navigation">
+              <use xlink:href="img/sprite.svg#navigation-prev"></use>
+            </svg>
+          </button>
+          <button class="header__swiper-button-next swiper-button-next my-btn">
+            <svg class="navigation">
+              <use xlink:href="img/sprite.svg#navigation-next"></use>
+            </svg>
+          </button>
+
+        </div>
+      </div>
+      <div class="header__bottom">
+        <div class="header__place">
+          <svg class="header-place">
+            <use xlink:href="img/sprite.svg#header-place"></use>
+          </svg>
+          <span>Dublin, Republic of&nbsp;Ireland</span>
+        </div>
+        <img class="header__logo" src="img/logo-gamevendor.webp" alt="Логотип компании gamevendor">
+        <ul class="header__tools list-reset tools">
+          <li class="tools__item">
+            <button class="tools__btn my-btn" type="button">
+              <svg class="header-search">
+                <use xlink:href="img/sprite.svg#header-search"></use>
+              </svg>
+            </button>
+          </li>
+          <li class="tools__item">
+            <button class="tools__btn my-btn" type="button">
+              <svg class="header-account">
+                <use xlink:href="img/sprite.svg#header-account"></use>
+              </svg>
+            </button>
+          </li>
+          <li class="tools__item">
+            <button class="tools__btn my-btn" type="button">
+              <svg class="header-cart">
+                <use xlink:href="img/sprite.svg#header-cart"></use>
+              </svg>
+            </button>
+          </li>
+        </ul>
+      </div>
+    </div>
+    <div class="header__for-large for-large">
+      <div class="container for-large__container">
+        <ul class="for-large__list list-reset">
+          <li class="for-large__list-item">
+            <a class="for-large__item-link" href="#" aria-label="link to Discover">Discover</a>
+          </li>
+          <li class="for-large__list-item">
+            <a class="for-large__item-link" href="#" aria-label="link to Browse">Browse</a>
+          </li>
+          <li class="for-large__list-item">
+            <a class="for-large__item-link" href="#" aria-label="link to Store">Store</a>
+          </li>
+          <li class="for-large__list-item">
+            <a class="for-large__item-link" href="#" aria-label="link to Platforms">Platforms</a>
+          </li>
+          <li class="for-large__list-item">
+            <a class="for-large__item-link" href="#" aria-label="link to Releases">Releases</a>
+          </li>
+          <li class="for-large__list-item">
+            <a class="for-large__item-link" href="#" aria-label="link to Mobile">Mobile</a>
+          </li>
+          <li class="for-large__list-item">
+            <a class="for-large__item-link" href="#" aria-label="link to Articles">Articles</a>
+          </li>
+          <li class="for-large__list-item">
+            <a class="for-large__item-link" href="#" aria-label="link to Blog">Blog</a>
+          </li>
+          <li class="for-large__list-item">
+            <a class="for-large__item-link" href="#" aria-label="link to News">News</a>
+          </li>
+          <li class="for-large__list-item">
+            <a class="for-large__item-link" href="#" aria-label="link to Contacts">Contacts</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </header>
+  <main>
+
+    <section class="hero">
+      <div class="container hero__container">
+
+
+        <ul class="hero__breadcrumbs list-reset">
+          <li class="list-item">
+            <a class="item-link grey-link" href="#" aria-label="link to Home">
+              Home
+            </a>
+          </li>
+          <li class="list-item">
+            <a class="item-link grey-link" href="#" aria-label="link to Discover">
+              Discover
+            </a>
+          </li>
+          <li class="list-item">
+            <a class="item-link grey-link link-active" href="#" aria-label="link to Games">
+              Games
+            </a>
+          </li>
+        </ul>
+
+        <h1 class="hero__title">Games</h1>
+
+        <div class="hero__content">
+
+          <div class="hero__txt">
+            <h2 class="hero__subtitle">
+              Refer a&nbsp;friends and get $10&nbsp;off!
+            </h2>
+            <p class="hero__descr">
+              Connect with friends. Refer a&nbsp;friend and unlock your&nbsp;$10 coupon! Offer ends February&nbsp;27.
+            </p>
+          </div>
+          <button class="hero__btn my-btn" type="button">Invite a&nbsp;friend</button>
+          <img class="hero__img-bg" src="img/hero-bg-1440-2.webp" alt="">
+        </div>
+      </div>
+    </section>
+
+    <section class="filters">
+      <div class="container filters__container">
+        <div class="filters__content">
+
+          <form class="filters__form form" action="#">
+
+            <div class="form__row">
+              <div class="form__search">
+                <h2 class="form__subtitle">Search for games</h2>
+                <label class="form__label" for="search">
+                  <svg class="search">
+                    <use xlink:href="img/sprite.svg#search"></use>
+                  </svg>
+                  <input class="form__input" type="search" id="search" name="search-game" placeholder="Search...">
+                </label>
+              </div>
+
+              <div class="form__first-filter">
+                <h2 class="form__subtitle">Category</h2>
+
+                <div class="form__choices-1 choices-1">
+                  <select class="multi-default" name="category" id="first-select">
+                    <option value="" disabled selected hidden>1</option>
+                  </select>
+
+                  <div class="for-768">
+                    <span class="span">+6
+                      <svg class="x">
+                        <use xlink:href="img/sprite.svg#x"></use>
+                      </svg>
+                    </span>
+                  </div>
+
+                  <div class="for-1024">
+                    <span class="left-span">Strategy
+                      <svg class="x">
+                        <use xlink:href="img/sprite.svg#x"></use>
+                      </svg>
+                    </span>
+
+                    <span class="right-span">+4
+                      <svg class="x">
+                        <use xlink:href="img/sprite.svg#x"></use>
+                      </svg>
+                    </span>
+                  </div>
+
+                  <div class="for-1440">
+                    <span class="left-span">Strategy
+                      <svg class="x">
+                        <use xlink:href="img/sprite.svg#x"></use>
+                      </svg>
+                    </span>
+
+                    <span class="span">RPG
+                      <svg class="x">
+                        <use xlink:href="img/sprite.svg#x"></use>
+                      </svg>
+                    </span>
+
+                    <span class="right-span">+3
+                      <svg class="x">
+                        <use xlink:href="img/sprite.svg#x"></use>
+                      </svg>
+                    </span>
+                  </div>
+
+
+                </div>
+
+              </div>
+
+              <div class="form__second-filter">
+                <h2 class="form__subtitle">Sort by</h2>
+
+                <div class="form__choices-2 choices-2">
+                  <select class="multi-default" name="sort-by" id="second-select">
+                    <option value="">Popular</option>
+                    <option>Popular</option>
+                    <option>Popular</option>
+                  </select>
+                </div>
+
+              </div>
+            </div>
+
+
+            <div class="form__btn-wrapper">
+              <svg class="filter">
+                <use xlink:href="img/sprite.svg#filter"></use>
+              </svg>
+              <button class="form__btn my-btn" type="button">Filters</button>
+            </div>
+
+            <ul class="filters__list filters-list list-reset">
+
+              <li class="filters-list__item">Strategy
+                <button class="filters-list__btn my-btn" type="button">
+                  <svg class="x">
+                    <use xlink:href="img/sprite.svg#x"></use>
+                  </svg>
+                </button>
+              </li>
+
+              <li class=" filters-list__item">RPG
+                <button class="filters-list__btn my-btn" type="button">
+                  <svg class="x">
+                    <use xlink:href="img/sprite.svg#x"></use>
+                  </svg>
+                </button>
+              </li>
+
+              <li class="filters-list__item">Action
+                <button class="filters-list__btn my-btn" type="button">
+                  <svg class="x">
+                    <use xlink:href="img/sprite.svg#x"></use>
+                  </svg>
+                </button>
+              </li>
+
+              <li class="filters-list__item">Shooter
+                <button class="filters-list__btn my-btn" type="button">
+                  <svg class="x">
+                    <use xlink:href="img/sprite.svg#x"></use>
+                  </svg>
+                </button>
+              </li>
+
+              <li class="filters-list__item">Clear all
+                <button class="filters-list__btn my-btn" type="button">
+                  <svg class="x">
+                    <use xlink:href="img/sprite.svg#x"></use>
+                  </svg>
+                </button>
+              </li>
+
+            </ul>
+
+
+            <!-- <div class="filters__list filters__list-swiper swiper list-reset"
+              style="margin-bottom: 25px;max-width: 280px;">
+              <ul class="filters__swiper-wrapper filters-list swiper-wrapper">
+                <li class="filters-list__item swiper-slide">Strategy
+                  <button class="filters-list__btn my-btn" type="button">
+                    <svg width="10" height="10" viewbox="0 0 10 10" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <path
+                        d="M9.56569 1.56569C9.8781 1.25327 9.8781 0.746734 9.56569 0.434315C9.25327 0.121895 8.74673 0.121895 8.43431 0.434315L9.56569 1.56569ZM0.434315 8.43431C0.121895 8.74673 0.121895 9.25327 0.434315 9.56569C0.746734 9.8781 1.25327 9.8781 1.56569 9.56569L0.434315 8.43431ZM1.56569 0.434315C1.25327 0.121895 0.746734 0.121895 0.434315 0.434315C0.121895 0.746734 0.121895 1.25327 0.434315 1.56569L1.56569 0.434315ZM8.43431 9.56569C8.74673 9.8781 9.25327 9.8781 9.56569 9.56569C9.8781 9.25327 9.8781 8.74673 9.56569 8.43431L8.43431 9.56569ZM8.43431 0.434315L0.434315 8.43431L1.56569 9.56569L9.56569 1.56569L8.43431 0.434315ZM0.434315 1.56569L8.43431 9.56569L9.56569 8.43431L1.56569 0.434315L0.434315 1.56569Z"
+                        fill="#7F56D9" />
+                    </svg>
+                  </button>
+                </li>
+
+                <li class=" filters-list__item swiper-slide">RPG
+                  <button class="filters-list__btn my-btn" type="button">
+                    <svg width="10" height="10" viewbox="0 0 10 10" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <path
+                        d="M9.56569 1.56569C9.8781 1.25327 9.8781 0.746734 9.56569 0.434315C9.25327 0.121895 8.74673 0.121895 8.43431 0.434315L9.56569 1.56569ZM0.434315 8.43431C0.121895 8.74673 0.121895 9.25327 0.434315 9.56569C0.746734 9.8781 1.25327 9.8781 1.56569 9.56569L0.434315 8.43431ZM1.56569 0.434315C1.25327 0.121895 0.746734 0.121895 0.434315 0.434315C0.121895 0.746734 0.121895 1.25327 0.434315 1.56569L1.56569 0.434315ZM8.43431 9.56569C8.74673 9.8781 9.25327 9.8781 9.56569 9.56569C9.8781 9.25327 9.8781 8.74673 9.56569 8.43431L8.43431 9.56569ZM8.43431 0.434315L0.434315 8.43431L1.56569 9.56569L9.56569 1.56569L8.43431 0.434315ZM0.434315 1.56569L8.43431 9.56569L9.56569 8.43431L1.56569 0.434315L0.434315 1.56569Z"
+                        fill="#7F56D9" />
+                    </svg>
+                  </button>
+                </li>
+
+                <li class="filters-list__item swiper-slide">Action
+                  <button class="filters-list__btn my-btn" type="button">
+                    <svg width="10" height="10" viewbox="0 0 10 10" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <path
+                        d="M9.56569 1.56569C9.8781 1.25327 9.8781 0.746734 9.56569 0.434315C9.25327 0.121895 8.74673 0.121895 8.43431 0.434315L9.56569 1.56569ZM0.434315 8.43431C0.121895 8.74673 0.121895 9.25327 0.434315 9.56569C0.746734 9.8781 1.25327 9.8781 1.56569 9.56569L0.434315 8.43431ZM1.56569 0.434315C1.25327 0.121895 0.746734 0.121895 0.434315 0.434315C0.121895 0.746734 0.121895 1.25327 0.434315 1.56569L1.56569 0.434315ZM8.43431 9.56569C8.74673 9.8781 9.25327 9.8781 9.56569 9.56569C9.8781 9.25327 9.8781 8.74673 9.56569 8.43431L8.43431 9.56569ZM8.43431 0.434315L0.434315 8.43431L1.56569 9.56569L9.56569 1.56569L8.43431 0.434315ZM0.434315 1.56569L8.43431 9.56569L9.56569 8.43431L1.56569 0.434315L0.434315 1.56569Z"
+                        fill="#7F56D9" />
+                    </svg>
+                  </button>
+                </li>
+
+                <li class="filters-list__item swiper-slide">Shooter
+                  <button class="filters-list__btn my-btn" type="button">
+                    <svg width="10" height="10" viewbox="0 0 10 10" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <path
+                        d="M9.56569 1.56569C9.8781 1.25327 9.8781 0.746734 9.56569 0.434315C9.25327 0.121895 8.74673 0.121895 8.43431 0.434315L9.56569 1.56569ZM0.434315 8.43431C0.121895 8.74673 0.121895 9.25327 0.434315 9.56569C0.746734 9.8781 1.25327 9.8781 1.56569 9.56569L0.434315 8.43431ZM1.56569 0.434315C1.25327 0.121895 0.746734 0.121895 0.434315 0.434315C0.121895 0.746734 0.121895 1.25327 0.434315 1.56569L1.56569 0.434315ZM8.43431 9.56569C8.74673 9.8781 9.25327 9.8781 9.56569 9.56569C9.8781 9.25327 9.8781 8.74673 9.56569 8.43431L8.43431 9.56569ZM8.43431 0.434315L0.434315 8.43431L1.56569 9.56569L9.56569 1.56569L8.43431 0.434315ZM0.434315 1.56569L8.43431 9.56569L9.56569 8.43431L1.56569 0.434315L0.434315 1.56569Z"
+                        fill="#7F56D9" />
+                    </svg>
+                  </button>
+                </li>
+
+                <li class="filters-list__item swiper-slide">Clear all
+                  <button class="filters-list__btn my-btn" type="button">
+                    <svg width="10" height="10" viewbox="0 0 10 10" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <path
+                        d="M9.56569 1.56569C9.8781 1.25327 9.8781 0.746734 9.56569 0.434315C9.25327 0.121895 8.74673 0.121895 8.43431 0.434315L9.56569 1.56569ZM0.434315 8.43431C0.121895 8.74673 0.121895 9.25327 0.434315 9.56569C0.746734 9.8781 1.25327 9.8781 1.56569 9.56569L0.434315 8.43431ZM1.56569 0.434315C1.25327 0.121895 0.746734 0.121895 0.434315 0.434315C0.121895 0.746734 0.121895 1.25327 0.434315 1.56569L1.56569 0.434315ZM8.43431 9.56569C8.74673 9.8781 9.25327 9.8781 9.56569 9.56569C9.8781 9.25327 9.8781 8.74673 9.56569 8.43431L8.43431 9.56569ZM8.43431 0.434315L0.434315 8.43431L1.56569 9.56569L9.56569 1.56569L8.43431 0.434315ZM0.434315 1.56569L8.43431 9.56569L9.56569 8.43431L1.56569 0.434315L0.434315 1.56569Z"
+                        fill="#7F56D9" />
+                    </svg>
+                  </button>
+                </li>
+              </ul>
+            </div> -->
+
+            <div class="filters__list filters__list-swiper swiper list-reset filters-list"
+              style="margin-bottom: 36px;max-width: 290px;">
+              <ul class="filters-list__swiper-wrapper swiper-wrapper">
+                <li class="filters-list__item swiper-slide">Strategy
+                  <button class="filters-list__btn my-btn" type="button">
+                    <svg width="10" height="10" viewbox="0 0 10 10" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <path
+                        d="M9.56569 1.56569C9.8781 1.25327 9.8781 0.746734 9.56569 0.434315C9.25327 0.121895 8.74673 0.121895 8.43431 0.434315L9.56569 1.56569ZM0.434315 8.43431C0.121895 8.74673 0.121895 9.25327 0.434315 9.56569C0.746734 9.8781 1.25327 9.8781 1.56569 9.56569L0.434315 8.43431ZM1.56569 0.434315C1.25327 0.121895 0.746734 0.121895 0.434315 0.434315C0.121895 0.746734 0.121895 1.25327 0.434315 1.56569L1.56569 0.434315ZM8.43431 9.56569C8.74673 9.8781 9.25327 9.8781 9.56569 9.56569C9.8781 9.25327 9.8781 8.74673 9.56569 8.43431L8.43431 9.56569ZM8.43431 0.434315L0.434315 8.43431L1.56569 9.56569L9.56569 1.56569L8.43431 0.434315ZM0.434315 1.56569L8.43431 9.56569L9.56569 8.43431L1.56569 0.434315L0.434315 1.56569Z"
+                        fill="#7F56D9" />
+                    </svg>
+                  </button>
+                </li>
+
+                <li class=" filters-list__item swiper-slide">RPG
+                  <button class="filters-list__btn my-btn" type="button">
+                    <svg width="10" height="10" viewbox="0 0 10 10" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <path
+                        d="M9.56569 1.56569C9.8781 1.25327 9.8781 0.746734 9.56569 0.434315C9.25327 0.121895 8.74673 0.121895 8.43431 0.434315L9.56569 1.56569ZM0.434315 8.43431C0.121895 8.74673 0.121895 9.25327 0.434315 9.56569C0.746734 9.8781 1.25327 9.8781 1.56569 9.56569L0.434315 8.43431ZM1.56569 0.434315C1.25327 0.121895 0.746734 0.121895 0.434315 0.434315C0.121895 0.746734 0.121895 1.25327 0.434315 1.56569L1.56569 0.434315ZM8.43431 9.56569C8.74673 9.8781 9.25327 9.8781 9.56569 9.56569C9.8781 9.25327 9.8781 8.74673 9.56569 8.43431L8.43431 9.56569ZM8.43431 0.434315L0.434315 8.43431L1.56569 9.56569L9.56569 1.56569L8.43431 0.434315ZM0.434315 1.56569L8.43431 9.56569L9.56569 8.43431L1.56569 0.434315L0.434315 1.56569Z"
+                        fill="#7F56D9" />
+                    </svg>
+                  </button>
+                </li>
+
+                <li class="filters-list__item swiper-slide">Action
+                  <button class="filters-list__btn my-btn" type="button">
+                    <svg width="10" height="10" viewbox="0 0 10 10" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <path
+                        d="M9.56569 1.56569C9.8781 1.25327 9.8781 0.746734 9.56569 0.434315C9.25327 0.121895 8.74673 0.121895 8.43431 0.434315L9.56569 1.56569ZM0.434315 8.43431C0.121895 8.74673 0.121895 9.25327 0.434315 9.56569C0.746734 9.8781 1.25327 9.8781 1.56569 9.56569L0.434315 8.43431ZM1.56569 0.434315C1.25327 0.121895 0.746734 0.121895 0.434315 0.434315C0.121895 0.746734 0.121895 1.25327 0.434315 1.56569L1.56569 0.434315ZM8.43431 9.56569C8.74673 9.8781 9.25327 9.8781 9.56569 9.56569C9.8781 9.25327 9.8781 8.74673 9.56569 8.43431L8.43431 9.56569ZM8.43431 0.434315L0.434315 8.43431L1.56569 9.56569L9.56569 1.56569L8.43431 0.434315ZM0.434315 1.56569L8.43431 9.56569L9.56569 8.43431L1.56569 0.434315L0.434315 1.56569Z"
+                        fill="#7F56D9" />
+                    </svg>
+                  </button>
+                </li>
+
+                <li class="filters-list__item swiper-slide">Shooter
+                  <button class="filters-list__btn my-btn" type="button">
+                    <svg class="x">
+                      <use xlink:href="img/sprite.svg#x"></use>
+                    </svg>
+                  </button>
+                </li>
+
+                <li class="filters-list__item swiper-slide">Clear all
+                  <button class="filters-list__btn my-btn" type="button">
+                    <svg width="10" height="10" viewbox="0 0 10 10" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <path
+                        d="M9.56569 1.56569C9.8781 1.25327 9.8781 0.746734 9.56569 0.434315C9.25327 0.121895 8.74673 0.121895 8.43431 0.434315L9.56569 1.56569ZM0.434315 8.43431C0.121895 8.74673 0.121895 9.25327 0.434315 9.56569C0.746734 9.8781 1.25327 9.8781 1.56569 9.56569L0.434315 8.43431ZM1.56569 0.434315C1.25327 0.121895 0.746734 0.121895 0.434315 0.434315C0.121895 0.746734 0.121895 1.25327 0.434315 1.56569L1.56569 0.434315ZM8.43431 9.56569C8.74673 9.8781 9.25327 9.8781 9.56569 9.56569C9.8781 9.25327 9.8781 8.74673 9.56569 8.43431L8.43431 9.56569ZM8.43431 0.434315L0.434315 8.43431L1.56569 9.56569L9.56569 1.56569L8.43431 0.434315ZM0.434315 1.56569L8.43431 9.56569L9.56569 8.43431L1.56569 0.434315L0.434315 1.56569Z"
+                        fill="#7F56D9" />
+                    </svg>
+                  </button>
+                </li>
+              </ul>
+
+            </div>
+          </form>
+
+        </div>
+      </div>
+    </section>
+
+    <section class="grid-cards">
+
+      <div class="container grid-cards__container">
+
+        <h2 class="grid-cards__title" style="display: none;">Game cards</h2>
+
+        <ul class="grid-cards__list list-reset">
+          <li class="grid-cards__new-product new-product">
+            <span class="new-product__span">
+              You can add a&nbsp;product card by&nbsp;clicking on&nbsp;the button
+            </span>
+            <button class="new-product__btn my-btn" type="button">
+              <span class="new-product__btn-span"></span>
+              Add card
+            </button>
+          </li>
+
+          <li class="grid-cards__list-item grid-list-item">
+            <article class="grid-list-item__product product">
+              <div class="product__image">
+                <picture>
+                  <source srcset="img/product-1-1400.webp" media="(min-width: 1200px)">
+                  <source srcset="img/product-1-1024.webp" media="(min-width: 800px)">
+                  <source srcset="img/product-1-768.webp" media="(min-width: 550px)">
+                  <img src="img/product-1.webp" alt="SaintsRow game">
+                </picture>
+              </div>
+              <div class="product__info">
+                <div class="product__info-top">
+                  <span class="product__genre action-rpg">Action RPG</span>
+                  <h2 class="product__title">
+                    <a class="product__link" href="#" aria-label="Saints Row game">Saints Row</a>
+                  </h2>
+                  <div class="product__star">
+                    <svg class="transp-star">
+                      <use xlink:href="img/sprite.svg#transp-star"></use>
+                    </svg>
+                    <svg class="transp-star">
+                      <use xlink:href="img/sprite.svg#transp-star"></use>
+                    </svg>
+                    <svg class="transp-star">
+                      <use xlink:href="img/sprite.svg#transp-star"></use>
+                    </svg>
+                    <svg class="transp-star">
+                      <use xlink:href="img/sprite.svg#transp-star"></use>
+                    </svg>
+                    <svg class="transp-star">
+                      <use xlink:href="img/sprite.svg#transp-star"></use>
+                    </svg>
+                    <span>0</span>
+                  </div>
+                  <div class="product__descr">
+                    Platinum Edition
+                  </div>
+                </div>
+                <div class="product__info-bottom">
+                  <div class="product__prices">
+                    <div class="product__old-price">$1,299</div>
+                    <div class="product__new-price">$649</div>
+                  </div>
+                  <span class="product__discount">-50%</span>
+                </div>
+              </div>
+            </article>
+          </li>
+
+          <li class="grid-cards__list-item grid-list-item">
+            <article class="grid-list-item__product product">
+              <div class="product__image">
+                <picture>
+                  <source srcset="img/product-2-1400.webp" media="(min-width: 1200px)">
+                  <source srcset="img/product-2-1024.webp" media="(min-width: 800px)">
+                  <source srcset="img/product-2-768.webp" media="(min-width: 550px)">
+                  <img src="img/product-2.webp" alt="Paladins game">
+                </picture>
+              </div>
+              <div class="product__info">
+                <div class="product__info-top">
+                  <span class="product__genre multi-rpg">Multiplayer RPG</span>
+                  <h2 class="product__title">
+                    <a class="product__link" href="#" aria-label="Paladins game">Paladins</a>
+                  </h2>
+                  <div class="product__star">
+                    <svg class="star">
+                      <use xlink:href="img/sprite.svg#star"></use>
+                    </svg>
+                    <svg class="star">
+                      <use xlink:href="img/sprite.svg#star"></use>
+                    </svg>
+                    <svg class="star">
+                      <use xlink:href="img/sprite.svg#star"></use>
+                    </svg>
+                    <svg class="star">
+                      <use xlink:href="img/sprite.svg#star"></use>
+                    </svg>
+                    <svg class="transp-star">
+                      <use xlink:href="img/sprite.svg#transp-star"></use>
+                    </svg>
+                    <span>1,820</span>
+                  </div>
+                  <div class="product__descr">
+                    Get the Captain Price Operator included with purchase
+                  </div>
+                </div>
+                <div class="product__info-bottom">
+                  <div class="product__prices">
+                    <div class="product__new-price free">Free</div>
+                  </div>
+
+                </div>
+              </div>
+            </article>
+          </li>
+
+          <li class="grid-cards__list-item grid-list-item">
+            <article class="grid-list-item__product product">
+              <div class="product__image">
+                <picture>
+                  <source srcset="img/product-3-1400.webp" media="(min-width: 1200px)">
+                  <source srcset="img/product-3-1024.webp" media="(min-width: 800px)">
+                  <source srcset="img/product-3-768.webp" media="(min-width: 550px)">
+                  <img src="img/product-3.webp" alt="FarCry6 game">
+                </picture>
+              </div>
+              <div class="product__info">
+                <div class="product__info-top">
+                  <span class="product__genre action">Action</span>
+                  <h2 class="product__title">
+                    <a class="product__link" href="#" aria-label="Far Cry 6 game">Far Cry&nbsp;6</a>
+                  </h2>
+                  <div class="product__star">
+                    <svg class="star">
+                      <use xlink:href="img/sprite.svg#star"></use>
+                    </svg>
+                    <svg class="star">
+                      <use xlink:href="img/sprite.svg#star"></use>
+                    </svg>
+                    <svg class="star">
+                      <use xlink:href="img/sprite.svg#star"></use>
+                    </svg>
+                    <svg class="transp-star">
+                      <use xlink:href="img/sprite.svg#transp-star"></use>
+                    </svg>
+                    <svg class="transp-star">
+                      <use xlink:href="img/sprite.svg#transp-star"></use>
+                    </svg>
+                    <span>2,888</span>
+                  </div>
+                  <div class="product__descr">
+                    In-Game Content
+                  </div>
+                </div>
+                <div class="product__info-bottom">
+                  <div class="product__prices">
+                    <div class="product__old-price">$1,299</div>
+                    <div class="product__new-price">$649</div>
+                  </div>
+                  <span class="product__discount">-50%</span>
+                </div>
+              </div>
+            </article>
+          </li>
+
+          <li class="grid-cards__list-item grid-list-item">
+            <article class="grid-list-item__product product">
+              <div class="product__image">
+                <picture>
+                  <source srcset="img/product-4-1400.webp" media="(min-width: 1200px)">
+                  <source srcset="img/product-4-1024.webp" media="(min-width: 800px)">
+                  <source srcset="img/product-4-768.webp" media="(min-width: 550px)">
+                  <img src="img/product-4.webp" alt="CallofDuty:Warzone game">
+                </picture>
+              </div>
+              <div class="product__info">
+                <div class="product__info-top">
+                  <span class="product__genre shooter">Shooter</span>
+                  <h2 class="product__title">
+                    <a class="product__link" href="#" aria-label="Call of Duty game">Call of&nbsp;Duty: Warzone</a>
+                  </h2>
+                  <div class="product__star">
+                    <svg class="star">
+                      <use xlink:href="img/sprite.svg#star"></use>
+                    </svg>
+                    <svg class="star">
+                      <use xlink:href="img/sprite.svg#star"></use>
+                    </svg>
+                    <svg class="star">
+                      <use xlink:href="img/sprite.svg#star"></use>
+                    </svg>
+                    <svg class="star">
+                      <use xlink:href="img/sprite.svg#star"></use>
+                    </svg>
+                    <svg class="transp-star">
+                      <use xlink:href="img/sprite.svg#transp-star"></use>
+                    </svg>
+                    <span>18,982</span>
+                  </div>
+                  <div class="product__descr">
+                    Get the Captain Price Operator included with purchase
+                  </div>
+                </div>
+                <div class="product__info-bottom">
+                  <div class="product__prices">
+                    <div class="product__old-price">$1,299</div>
+                    <div class="product__new-price">$649</div>
+                  </div>
+                  <span class="product__discount">-50%</span>
+                </div>
+              </div>
+            </article>
+          </li>
+
+          <li class="grid-cards__list-item grid-list-item">
+            <article class="grid-list-item__product product">
+              <div class="product__image">
+                <picture>
+                  <source srcset="img/product-5-1400.webp" media="(min-width: 1200px)">
+                  <source srcset="img/product-5-1024.webp" media="(min-width: 800px)">
+                  <source srcset="img/product-5-768.webp" media="(min-width: 550px)">
+                  <img src="img/product-5.webp" alt="WorldofWarcraft game">
+                </picture>
+              </div>
+              <div class="product__info">
+                <div class="product__info-top">
+                  <span class="product__genre action">Action</span>
+                  <h2 class="product__title">
+                    <a class="product__link" href="#" aria-label="World of Warcraft game">World of&nbsp;Warcraft:
+                      Shadowlands</a>
+                  </h2>
+                  <div class="product__star">
+                    <svg class="star">
+                      <use xlink:href="img/sprite.svg#star"></use>
+                    </svg>
+                    <svg class="star">
+                      <use xlink:href="img/sprite.svg#star"></use>
+                    </svg>
+                    <svg class="star">
+                      <use xlink:href="img/sprite.svg#star"></use>
+                    </svg>
+                    <svg class="star">
+                      <use xlink:href="img/sprite.svg#half-star"></use>
+                    </svg>
+                    <svg class="star">
+                      <use xlink:href="img/sprite.svg#transp-star"></use>
+                    </svg>
+                    <span>299</span>
+                  </div>
+                  <div class="product__descr">
+                    Includes access to&nbsp;World of&nbsp;Warcraft, Burning Crusade Classic, and WoW Classic!
+                  </div>
+                </div>
+                <div class="product__info-bottom">
+                  <div class="product__prices">
+                    <div class="product__old-price"></div>
+                    <div class="product__new-price free">Free</div>
+                  </div>
+                  <!-- <span class="product__discount"></span> -->
+                </div>
+              </div>
+            </article>
+          </li>
+
+          <li class="grid-cards__list-item grid-list-item">
+            <article class="grid-list-item__product product">
+              <div class="product__image">
+                <picture>
+                  <source srcset="img/product-6-1400.webp" media="(min-width: 1200px)">
+                  <source srcset="img/product-6-1024.webp" media="(min-width: 800px)">
+                  <source srcset="img/product-6-768.webp" media="(min-width: 550px)">
+                  <img src="img/product-6.webp" alt="Fortnite game">
+                </picture>
+              </div>
+              <div class="product__info">
+                <div class="product__info-top">
+                  <span class="product__genre shooter">Shooter</span>
+                  <h2 class="product__title">
+                    <a class="product__link" href="#" aria-label="Fortite game">Fortnite</a>
+                  </h2>
+                  <div class="product__star">
+                    <svg class="star">
+                      <use xlink:href="img/sprite.svg#star"></use>
+                    </svg>
+                    <svg class="star">
+                      <use xlink:href="img/sprite.svg#star"></use>
+                    </svg>
+                    <svg class="star">
+                      <use xlink:href="img/sprite.svg#star"></use>
+                    </svg>
+                    <svg class="star">
+                      <use xlink:href="img/sprite.svg#star"></use>
+                    </svg>
+                    <svg class="star">
+                      <use xlink:href="img/sprite.svg#half-star"></use>
+                    </svg>
+                    <span>9,199</span>
+                  </div>
+                  <div class="product__descr">
+                    Get the Captain Price Operator included with purchase
+                  </div>
+                </div>
+                <div class="product__info-bottom">
+                  <div class="product__prices">
+                    <div class="product__old-price">$1,299</div>
+                    <div class="product__new-price">$649</div>
+                  </div>
+                  <span class="product__discount">-50%</span>
+                </div>
+              </div>
+            </article>
+          </li>
+
+          <li class="grid-cards__list-item grid-list-item">
+            <article class="grid-list-item__product product">
+              <div class="product__image">
+                <picture>
+                  <source srcset="img/product-7-1400.webp" media="(min-width: 1200px)">
+                  <source srcset="img/product-7-1024.webp" media="(min-width: 800px)">
+                  <source srcset="img/product-7-768.webp" media="(min-width: 550px)">
+                  <img src="img/product-7.webp" alt="Horizon game">
+                </picture>
+              </div>
+              <div class="product__info">
+                <div class="product__info-top">
+                  <span class="product__genre action-rpg">Action RPG</span>
+                  <h2 class="product__title">
+                    <a class="product__link" href="#" aria-label="Horizon game">Horizon: Forbidden West</a>
+                  </h2>
+                  <div class="product__star">
+                    <svg class="star">
+                      <use xlink:href="img/sprite.svg#star"></use>
+                    </svg>
+                    <svg class="star">
+                      <use xlink:href="img/sprite.svg#star"></use>
+                    </svg>
+                    <svg class="star">
+                      <use xlink:href="img/sprite.svg#star"></use>
+                    </svg>
+                    <svg class="star">
+                      <use xlink:href="img/sprite.svg#star"></use>
+                    </svg>
+                    <svg class="star">
+                      <use xlink:href="img/sprite.svg#half-star"></use>
+                    </svg>
+                    <span>9,199</span>
+                  </div>
+                  <div class="product__descr big-margin">
+                    Platinum Edition
+                  </div>
+                </div>
+                <div class="product__info-bottom">
+                  <div class="product__prices">
+                    <div class="product__old-price">$1,299</div>
+                    <div class="product__new-price">$649</div>
+                  </div>
+                  <!-- <span class="product__discount">-50%</span> -->
+                </div>
+              </div>
+            </article>
+          </li>
+
+          <li class="grid-cards__list-item grid-list-item">
+            <article class="grid-list-item__product product">
+              <div class="product__image">
+                <picture>
+                  <source srcset="img/product-8-1400.webp" media="(min-width: 1200px)">
+                  <source srcset="img/product-8-1024.webp" media="(min-width: 800px)">
+                  <source srcset="img/product-8-768.webp" media="(min-width: 550px)">
+                  <img src="img/product-8.webp" alt="NeedforSpeed game">
+                </picture>
+              </div>
+              <div class="product__info">
+                <div class="product__info-top">
+                  <span class="product__genre action">Action</span>
+                  <h2 class="product__title">
+                    <a class="product__link" href="#" aria-label="Need for Speed game">Need for Speed: Heat</a>
+                  </h2>
+                  <div class="product__star">
+                    <svg class="star">
+                      <use xlink:href="img/sprite.svg#star"></use>
+                    </svg>
+                    <svg class="star">
+                      <use xlink:href="img/sprite.svg#star"></use>
+                    </svg>
+                    <svg class="star">
+                      <use xlink:href="img/sprite.svg#star"></use>
+                    </svg>
+                    <svg class="star">
+                      <use xlink:href="img/sprite.svg#star"></use>
+                    </svg>
+                    <svg class="star">
+                      <use xlink:href="img/sprite.svg#half-star"></use>
+                    </svg>
+                    <span>2,911</span>
+                  </div>
+                  <div class="product__descr">
+                    Includes access to World of Warcraft, Burning Crusade Classic, and WoW Classic!
+                  </div>
+                </div>
+                <div class="product__info-bottom">
+                  <div class="product__prices">
+                    <!-- <div class="product__old-price">$1,299</div> -->
+                    <div class="product__new-price free">$649</div>
+                  </div>
+                  <!-- <span class="product__discount ">-50%</span> -->
+                </div>
+              </div>
+            </article>
+          </li>
+
+          <li class="grid-cards__list-item grid-list-item">
+            <article class="grid-list-item__product product">
+              <div class="product__image">
+                <picture>
+                  <source srcset="img/product-9-1400.webp" media="(min-width: 1200px)">
+                  <source srcset="img/product-9-1024.webp" media="(min-width: 800px)">
+                  <source srcset="img/product-9-768.webp" media="(min-width: 550px)">
+                  <img src="img/product-9.webp" alt="Spider-Man game">
+                </picture>
+              </div>
+              <div class="product__info">
+                <div class="product__info-top">
+                  <span class="product__genre action">Action</span>
+                  <h2 class="product__title">
+                    <a class="product__link" href="#" aria-label="Spider-Man game">Spider-Man: Miles Morales</a>
+                  </h2>
+                  <div class="product__star">
+                    <svg class="star">
+                      <use xlink:href="img/sprite.svg#star"></use>
+                    </svg>
+                    <svg class="star">
+                      <use xlink:href="img/sprite.svg#star"></use>
+                    </svg>
+                    <svg class="star">
+                      <use xlink:href="img/sprite.svg#star"></use>
+                    </svg>
+                    <svg class="star">
+                      <use xlink:href="img/sprite.svg#transp-star"></use>
+                    </svg>
+                    <svg class="star">
+                      <use xlink:href="img/sprite.svg#transp-star"></use>
+                    </svg>
+                    <span>920</span>
+                  </div>
+                  <div class="product__descr">
+                    Get the Captain Price Operator included with purchase
+                  </div>
+                </div>
+                <div class="product__info-bottom">
+                  <div class="product__prices">
+                    <div class="product__old-price">$1,299</div>
+                    <div class="product__new-price">$649</div>
+                  </div>
+                  <span class="product__discount">-50%</span>
+                </div>
+              </div>
+            </article>
+          </li>
+
+          <li class="grid-cards__list-item grid-list-item">
+            <article class="grid-list-item__product product">
+              <div class="product__image">
+                <picture>
+                  <source srcset="img/product-10-1400.webp" media="(min-width: 1200px)">
+                  <source srcset="img/product-10-1024.webp" media="(min-width: 800px)">
+                  <source srcset="img/product-10-768.webp" media="(min-width: 550px)">
+                  <img src="img/product-10.webp" alt="Witcher3 game">
+                </picture>
+              </div>
+              <div class="product__info">
+                <div class="product__info-top">
+                  <span class="product__genre card-game">Card Game</span>
+                  <h2 class="product__title">
+                    <a class="product__link" href="#" aria-label="Witcher 3 game">Witcher&nbsp;3: Wild Hunt</a>
+                  </h2>
+                  <div class="product__star">
+                    <svg class="star">
+                      <use xlink:href="img/sprite.svg#star"></use>
+                    </svg>
+                    <svg class="star">
+                      <use xlink:href="img/sprite.svg#star"></use>
+                    </svg>
+                    <svg class="star">
+                      <use xlink:href="img/sprite.svg#star"></use>
+                    </svg>
+                    <svg class="star">
+                      <use xlink:href="img/sprite.svg#star"></use>
+                    </svg>
+                    <svg class="star">
+                      <use xlink:href="img/sprite.svg#star"></use>
+                    </svg>
+                    <span>299,890</span>
+                  </div>
+                  <div class="product__descr">
+                    Will only be usable in the new Classic Format when it is released
+                  </div>
+                </div>
+                <div class="product__info-bottom">
+                  <div class="product__prices">
+                    <div class="product__old-price">$1,299</div>
+                    <div class="product__new-price">$649</div>
+                  </div>
+                  <!-- <span class="product__discount">-50%</span> -->
+                </div>
+              </div>
+            </article>
+          </li>
+
+          <li class="grid-cards__list-item grid-list-item">
+            <article class="grid-list-item__product product">
+              <div class="product__image">
+                <picture>
+                  <source srcset="img/product-11-1400.webp" media="(min-width: 1200px)">
+                  <source srcset="img/product-11-1024.webp" media="(min-width: 800px)">
+                  <source srcset="img/product-11-768.webp" media="(min-width: 550px)">
+                  <img src="img/product-11.webp" alt="GuardiansoftheGalaxy game">
+                </picture>
+              </div>
+              <div class="product__info">
+                <div class="product__info-top">
+                  <span class="product__genre shooter">Shooter</span>
+                  <h2 class="product__title">
+                    <a class="product__link" href="#" aria-label="Guardians of the Galaxy game">Guardians of&nbsp;the
+                      Galaxy</a>
+                  </h2>
+                  <div class="product__star">
+                    <svg class="star">
+                      <use xlink:href="img/sprite.svg#star"></use>
+                    </svg>
+                    <svg class="star">
+                      <use xlink:href="img/sprite.svg#star"></use>
+                    </svg>
+                    <svg class="star">
+                      <use xlink:href="img/sprite.svg#star"></use>
+                    </svg>
+                    <svg class="star">
+                      <use xlink:href="img/sprite.svg#transp-star"></use>
+                    </svg>
+                    <svg class="star">
+                      <use xlink:href="img/sprite.svg#transp-star"></use>
+                    </svg>
+                    <span>29</span>
+                  </div>
+                  <div class="product__descr">
+                    In-Game Content
+                  </div>
+                </div>
+                <div class="product__info-bottom">
+                  <div class="product__prices">
+                    <div class="product__old-price">$1,299</div>
+                    <div class="product__new-price">$649</div>
+                  </div>
+                  <span class="product__discount">-50%</span>
+                </div>
+              </div>
+            </article>
+          </li>
+
+          <li class="grid-cards__list-item grid-list-item">
+            <article class="grid-list-item__product product">
+              <div class="product__image">
+                <picture>
+                  <source srcset="img/product-12-1400.webp" media="(min-width: 1200px)">
+                  <source srcset="img/product-12-1024.webp" media="(min-width: 800px)">
+                  <source srcset="img/product-12-768.webp" media="(min-width: 550px)">
+                  <img src="img/product-12.webp" alt="CrashTeamRacing game">
+                </picture>
+              </div>
+              <div class="product__info">
+                <div class="product__info-top">
+                  <span class="product__genre shooter">Shooter</span>
+                  <h2 class="product__title">
+                    <a class="product__link" href="#" aria-label="Crash Team Racing game">Crash Team Racing</a>
+                  </h2>
+                  <div class="product__star">
+                    <svg class="star">
+                      <use xlink:href="img/sprite.svg#star"></use>
+                    </svg>
+                    <svg class="star">
+                      <use xlink:href="img/sprite.svg#star"></use>
+                    </svg>
+                    <svg class="star">
+                      <use xlink:href="img/sprite.svg#star"></use>
+                    </svg>
+                    <svg class="star">
+                      <use xlink:href="img/sprite.svg#star"></use>
+                    </svg>
+                    <svg class="star">
+                      <use xlink:href="img/sprite.svg#half-star"></use>
+                    </svg>
+                    <span>9,199</span>
+                  </div>
+                  <div class="product__descr">
+                    Get the Captain Price Operator included with purchase
+                  </div>
+                </div>
+                <div class="product__info-bottom">
+                  <div class="product__prices">
+                    <div class="product__old-price">$1,299</div>
+                    <div class="product__new-price">$649</div>
+                  </div>
+                  <span class="product__discount">-50%</span>
+                </div>
+              </div>
+            </article>
+          </li>
+
+          <li class="grid-cards__list-item grid-list-item">
+            <article class="grid-list-item__product product">
+              <div class="product__image">
+                <picture>
+                  <source srcset="img/product-13-1400.webp" media="(min-width: 1200px)">
+                  <source srcset="img/product-13-1024.webp" media="(min-width: 800px)">
+                  <source srcset="img/product-13-768.webp" media="(min-width: 550px)">
+                  <img src="img/product-13.webp" alt="Spider-Man game">
+                </picture>
+              </div>
+              <div class="product__info">
+                <div class="product__info-top">
+                  <span class="product__genre multi-rpg">Multiplayer RPG</span>
+                  <h2 class="product__title">
+                    <a class="product__link" href="#" aria-label="Spider-Man game">Spider-Man</a>
+                  </h2>
+                  <div class="product__star">
+                    <svg class="star">
+                      <use xlink:href="img/sprite.svg#star"></use>
+                    </svg>
+                    <svg class="star">
+                      <use xlink:href="img/sprite.svg#star"></use>
+                    </svg>
+                    <svg class="star">
+                      <use xlink:href="img/sprite.svg#star"></use>
+                    </svg>
+                    <svg class="star">
+                      <use xlink:href="img/sprite.svg#star"></use>
+                    </svg>
+                    <svg class="star">
+                      <use xlink:href="img/sprite.svg#half-star"></use>
+                    </svg>
+                    <span>9,199</span>
+                  </div>
+                  <div class="product__descr">
+                    Includes access to&nbsp;World of&nbsp;Warcraft, Burning Crusade Classic, and WoW Classic!
+                  </div>
+                </div>
+                <div class="product__info-bottom">
+                  <div class="product__prices">
+                    <!-- <div class="product__old-price">$1,299</div> -->
+                    <div class="product__new-price free">$649</div>
+                  </div>
+                  <!-- <span class="product__discount">-50%</span> -->
+                </div>
+              </div>
+            </article>
+          </li>
+
+          <li class="grid-cards__list-item grid-list-item">
+            <article class="grid-list-item__product product">
+              <div class="product__image">
+                <picture>
+                  <source srcset="img/product-14-1400.webp" media="(min-width: 1200px)">
+                  <source srcset="img/product-14-1024.webp" media="(min-width: 800px)">
+                  <source srcset="img/product-14-768.webp" media="(min-width: 550px)">
+                  <img src="img/product-14.webp" alt="DragonAge game">
+                </picture>
+              </div>
+              <div class="product__info">
+                <div class="product__info-top">
+                  <span class="product__genre action-rpg">Action RPG</span>
+                  <h2 class="product__title">
+                    <a class="product__link" href="#" aria-label="Dragon Age 5 game">Dragon Age&nbsp;5</a>
+                  </h2>
+                  <div class="product__star">
+                    <svg class="transp-star">
+                      <use xlink:href="img/sprite.svg#transp-star"></use>
+                    </svg>
+                    <svg class="transp-star">
+                      <use xlink:href="img/sprite.svg#transp-star"></use>
+                    </svg>
+                    <svg class="transp-star">
+                      <use xlink:href="img/sprite.svg#transp-star"></use>
+                    </svg>
+                    <svg class="transp-star">
+                      <use xlink:href="img/sprite.svg#transp-star"></use>
+                    </svg>
+                    <svg class="transp-star">
+                      <use xlink:href="img/sprite.svg#transp-star"></use>
+                    </svg>
+                    <span>0</span>
+                  </div>
+                  <div class="product__descr">
+                    Non released
+                  </div>
+                </div>
+                <div class="product__info-bottom empty-card">
+                  <div class="product__prices">
+                    <!-- <div class="product__old-price">$1,299</div>
+                    <div class="product__new-price">$649</div> -->
+                  </div>
+                  <!-- <span class="product__discount">-50%</span> -->
+                </div>
+              </div>
+            </article>
+          </li>
+
+        </ul>
+
+        <button class="grid-cards__btn my-btn" type="button">Show more</button>
+
+        <ul class="pagination list-reset">
+
+          <li class="pagination__item prev">
+            <button class="pagination__navigation my-btn disable">
+              <svg class="navigation">
+                <use xlink:href="img/sprite.svg#navigation-prev"></use>
+              </svg>
+            </button>
+          </li>
+
+          <li class="pagination__item pagination__digit">
+            <button class="pagination__btn my-btn pag-active-btn" type="button">1</button>
+          </li>
+          <li class="pagination__item pagination__digit">
+            <button class="pagination__btn my-btn" type="button">2</button>
+          </li>
+          <li class="pagination__item pagination__digit">
+            <button class="pagination__btn my-btn" type="button">3</button>
+          </li>
+          <li class="pagination__item pagination__digit">
+            <button class="pagination__btn my-btn" type="button">4</button>
+          </li>
+          <li class="pagination__item pagination__digit">
+            <button class="pagination__btn my-btn" type="button">5</button>
+          </li>
+          <li class="pagination__item pagination__digit" style="color: #98A2B3;">
+            ...
+          </li>
+          <li class="pagination__item pagination__digit">
+            <button class="pagination__btn my-btn" type="button">99</button>
+          </li>
+
+          <li class="pagination__item">
+            <button class="pagination__navigation my-btn">
+              <svg class="navigation">
+                <use xlink:href="img/sprite.svg#navigation-next"></use>
+              </svg>
+            </button>
+          </li>
+
+        </ul>
+      </div>
+    </section>
+
+    <section class=" faq">
+      <div class="container faq__container">
+        <h2 class="faq__title">
+          Frequently asked questions
+        </h2>
+        <div class="faq__descr">
+          Everything you need to&nbsp;know about the games.
+        </div>
+
+        <div class="faq__accordion-wrapper accordion">
+
+          <ul class="accordion__list list-reset one">
+            <li class="accordion__list-item">
+              <div class="accordion__wrap" tabindex="0">
+                <h3 class="accordion__title">
+                  How does work?
+                </h3>
+                <span class="accordion__span"></span>
+              </div>
+              <div class="accordion__text">
+                <div class="accordion__content">
+
+                  <span class="accordion__empty">
+                    It&nbsp;s&nbsp;still empty here
+                  </span>
+
+                </div>
+              </div>
+            </li>
+
+            <li class="accordion__list-item">
+              <div class="accordion__wrap active" tabindex="0">
+                <h3 class="accordion__title">
+                  What is&nbsp;a&nbsp;game?
+                </h3>
+                <span class="accordion__span"></span>
+              </div>
+              <div class="accordion__text" style="display: block;">
+                <div class="accordion__content">
+
+                  <p class="accordion__descr">
+                    A&nbsp;video game or&nbsp;computer game&nbsp;is an&nbsp;electronic game that involves
+                    interaction
+                    with a&nbsp;user interface&nbsp;or input device&nbsp;&ndash; such as&nbsp;a&nbsp;joystick,
+                    controller, keyboard, or&nbsp;motion
+                    sensing device&nbsp;&ndash; to&nbsp;generate
+                    visual feedback. This feedback is&nbsp;shown on&nbsp;a&nbsp;video display device,
+                    such&nbsp;as&nbsp;a TV set, monitor,
+                    touchscreen,&nbsp;or virtual reality headset. A video&nbsp;game or&nbsp;computer game
+                    is&nbsp;an&nbsp;electronic game that
+                    involves interaction with a&nbsp;user interface or&nbsp;input device&nbsp;&ndash; such
+                    as&nbsp;a&nbsp;joystick, controller,
+                    keyboard, or&nbsp;motion sensing device&nbsp;&ndash; to&nbsp;generate visual feedback. This
+                    feedback
+                    is&nbsp;shown on&nbsp;a&nbsp;video
+                    display device, such as&nbsp;a&nbsp;TV set, monitor, touchscreen, or&nbsp;virtual reality
+                    headset.
+                  </p>
+
+                  <ul class="accordion__sublist sublist">
+                    <li class="sublist__item">
+                      motion sensing device,
+                    </li>
+                    <li class="sublist__item">
+                      controller,
+                    </li>
+                    <li class="sublist__item">
+                      keyboard,
+                    </li>
+                    <li class="sublist__item">
+                      joystick.
+                    </li>
+                  </ul>
+
+                  <h4 class="accordion__subtitle">
+                    Visual feedback.
+                  </h4>
+
+                  <p class="accordion__descr margin-bottom">
+                    A&nbsp;video game or&nbsp;computer game is&nbsp;an&nbsp;electronic game that involves
+                    interaction
+                    with a&nbsp;user interface
+                    or&nbsp;input device&nbsp;&ndash; such as&nbsp;a&nbsp;joystick, controller, keyboard,
+                    or&nbsp;motion
+                    sensing device&nbsp;&ndash; to&nbsp;generate
+                    visual feedback.
+                  </p>
+
+                </div>
+              </div>
+            </li>
+
+            <li class="accordion__list-item">
+              <div class="accordion__wrap" tabindex="0">
+                <h3 class="accordion__title">
+                  Is&nbsp;there a&nbsp;free trial available?
+                </h3>
+                <span class="accordion__span middle-span"></span>
+              </div>
+              <div class="accordion__text">
+                <div class="accordion__content">
+
+                  <span class="accordion__empty">
+                    It&rsquo;s still empty here
+                  </span>
+
+                </div>
+              </div>
+            </li>
+
+            <li class="accordion__list-item">
+              <div class="accordion__wrap" tabindex="0">
+                <h3 class="accordion__title">
+                  How does billing work?
+                </h3>
+                <span class="accordion__span"></span>
+              </div>
+              <div class="accordion__text">
+                <div class="accordion__content">
+                  <span class="accordion__empty">
+                    It&nbsp;s&nbsp;still empty here
+                  </span>
+                </div>
+              </div>
+            </li>
+
+          </ul>
+
+        </div>
+      </div>
+
+    </section>
+
+  </main>
+  <footer class="footer">
+    <div class="container footer__container">
+      <div class="footer__content">
+        <div class="footer__content-top">
+          <div class="footer__text">
+            <h2 class="footer__subtitle">
+              Join our newsletter
+            </h2>
+
+            <p class="footer__descr">
+              We&rsquo;ll send you a&nbsp;nice letter one per week. No&nbsp;spam.
+            </p>
+          </div>
+
+          <form class="footer__form" action="#">
+            <label class="footer__label" for="footer-search">
+              <input class="footer__input" type="search" placeholder="Enter email" id="footer-search">
+            </label>
+            <button class="footer__btn my-btn" type="button">Subscribe</button>
+          </form>
+        </div>
+
+        <div class="footer__lists">
+          <ul class="footer__list list-one list-reset">
+            <li class="footer__list-item">
+              <h3 class="footer__category-name">Categories</h3>
+            </li>
+            <li class="footer__list-item"><a class="list-item-link" href="#" aria-label="Strategy">Strategy</a></li>
+            <li class="footer__list-item"><a class="list-item-link" href="#" aria-label="Action">Action</a></li>
+            <li class="footer__list-item"><a class="list-item-link" href="#" aria-label="Shooter">Shooter</a></li>
+            <li class="footer__list-item"><a class="list-item-link" href="#" aria-label="Card Game">Card Game</a></li>
+            <li class="footer__list-item"><a class="list-item-link" href="#" aria-label="Simulator">Simulator</a></li>
+            <li class="footer__list-item"><a class="list-item-link" href="#" aria-label="RPG">RPG</a></li>
+            <li class="footer__list-item"><a class="list-item-link" href="#" aria-label="Multiplayer">Multiplayer</a>
+            </li>
+          </ul>
+
+          <ul class="footer__list list-two list-reset">
+            <li class="footer__list-item">
+              <h3 class="footer__category-name">Company</h3>
+            </li>
+            <li class="footer__list-item"><a class="list-item-link" href="#" aria-label="About us">About&nbsp;us</a>
+            </li>
+            <li class="footer__list-item"><a class="list-item-link" href="#" aria-label="Careers">Careers</a></li>
+            <li class="footer__list-item"><a class="list-item-link" href="#" aria-label="Press">Press</a></li>
+            <li class="footer__list-item"><a class="list-item-link" href="#" aria-label="News">News</a></li>
+            <li class="footer__list-item"><a class="list-item-link" href="#" aria-label="Contact">Contact</a></li>
+          </ul>
+
+          <ul class="footer__list list-three list-reset">
+            <li class="footer__list-item">
+              <h3 class="footer__category-name">Legal</h3>
+            </li>
+            <li class="footer__list-item"><a class="list-item-link" href="#" aria-label="Terms">Terms</a></li>
+            <li class="footer__list-item"><a class="list-item-link" href="#" aria-label="Privacy">Privacy</a></li>
+            <li class="footer__list-item"><a class="list-item-link" href="#" aria-label="Cookies">Cookies</a></li>
+            <li class="footer__list-item"><a class="list-item-link" href="#" aria-label="Licenses">Licenses</a></li>
+            <li class="footer__list-item"><a class="list-item-link" href="#" aria-label="Settings">Settings</a></li>
+          </ul>
+
+          <ul class="footer__list list-four list-reset">
+            <li class="footer__list-item">
+              <h3 class="footer__category-name">Social</h3>
+            </li>
+            <li class="footer__list-item"><a class="list-item-link" href="#" aria-label="Twitter">Twitter</a></li>
+            <li class="footer__list-item"><a class="list-item-link" href="#" aria-label="Facebook">Facebook</a></li>
+            <li class="footer__list-item"><a class="list-item-link" href="#" aria-label="Dribbble">Dribbble</a></li>
+            <li class="footer__list-item"><a class="list-item-link" href="#" aria-label="GitHub">GitHub</a></li>
+          </ul>
+        </div>
+
+        <div class="footer__copy">
+          <span class="copy">Copyright &copy;&nbsp;GameVendor, 2022</span>
+        </div>
+
+      </div>
+    </div>
+  </footer>
+
+  <div class="fix">
+    <div class="container fix__container">
+      <ul class="fix__nav-bar nav-bar list-reset">
+        <li class="nav-bar__item">
+          <button class="nav-bar__btn my-btn active-btn" type="button">
+            <svg class="home">
+              <use xlink:href="img/sprite.svg#home"></use>
+            </svg>
+            Home
+          </button>
+        </li>
+        <li class="nav-bar__item">
+          <button class="nav-bar__btn my-btn" type="button">
+            <svg class="browse">
+              <use xlink:href="img/sprite.svg#browse"></use>
+            </svg>
+            Browse
+          </button>
+        </li>
+        <li class="nav-bar__item">
+          <button class="nav-bar__btn my-btn" type="button">
+            <svg class="search-bot">
+              <use xlink:href="img/sprite.svg#search-bot"></use>
+            </svg>
+            Search
+          </button>
+        </li>
+        <li class="nav-bar__item">
+          <button class="nav-bar__btn my-btn" type="button">
+            <svg class="account">
+              <use xlink:href="img/sprite.svg#account"></use>
+            </svg>
+            Account
+          </button>
+        </li>
+        <li class="nav-bar__item">
+          <button class="nav-bar__btn my-btn" type="button">
+            <svg class="cart">
+              <use xlink:href="img/sprite.svg#cart"></use>
+            </svg>
+            Cart
+          </button>
+        </li>
+      </ul>
+    </div>
+  </div>
+</body>
+
+</html>

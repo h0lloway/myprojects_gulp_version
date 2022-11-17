@@ -1,0 +1,650 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Tectum</title>
+  <!-- <link rel="icon" href="#"> -->
+
+  <!-- fonts -->
+  <!-- fonts -->
+
+  <!-- <link rel="prefetch" href="fonts/Roboto-Medium.woff2" as="font" type="font/woff2" crossorigin> -->
+  <!-- <link rel="prefetch" href="fonts/Roboto-Regular.woff2" as="font" type="font/woff2" crossorigin> -->
+  <!-- <link rel="prefetch" href="fonts/Roboto-Bold.woff2" as="font" type="font/woff2" crossorigin> -->
+
+  <!-- styles -->
+  <!-- styles -->
+
+  <!-- <link rel="stylesheet" href="https://unpkg.com/swiper@8/swiper-bundle.min.css" /> -->
+  <!-- choices -->
+  <!-- <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/choices.js/public/assets/styles/choices.min.css" /> -->
+
+  <!-- tooltips -->
+  <!-- <link rel="stylesheet" href="https://unpkg.com/tippy.js@6/animations/scale.css" /> -->
+
+  <!-- Bootstrap CSS (jsDelivr CDN) -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+
+
+  <!-- my-styles -->
+  <link rel="stylesheet" href="css/main.min.css">
+
+  <!-- JavaScript -->
+  <!-- JavaScript -->
+
+  <!-- accordion -->
+  <!-- <script defer src="https://code.jquery.com/jquery-1.12.4.js"></script> -->
+  <!-- <script defer src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script> -->
+
+  <!-- choices -->
+  <!-- <script defer src="js/choices.min.js"></script> -->
+  <!-- swiper -->
+  <!-- <script defer src="https://unpkg.com/swiper@8/swiper-bundle.min.js"></script> -->
+
+  <!-- GSAP -->
+  <!-- <script defer src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.6.0/gsap.min.js"></script> -->
+
+  <!-- tooltips -->
+  <!-- <script defer src="https://unpkg.com/@popperjs/core@2/dist/umd/popper.min.js"></script> -->
+  <!-- <script defer src="https://unpkg.com/tippy.js@6/dist/tippy-bundle.umd.js"></script> -->
+
+  <!-- jQuery -->
+  <script defer src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.0/jquery.min.js"></script>
+
+  <!-- Bootstrap Bundle JS (jsDelivr CDN) -->
+  <script defer src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
+    crossorigin="anonymous"></script>
+
+  <!-- my JS -->
+  <script defer src="js/main.js"></script>
+</head>
+
+<body>
+  <header class="header">
+    <div class="container header__container">
+      <div class="header__content">
+        <div class="header__content-left">
+          <a class="header__logo-link" href="#">
+            <img src="img/header-logo.webp" alt="Логотип" />
+          </a>
+        </div>
+        <div class="header__content-right content-right">
+
+
+          <button class="content-right__swich-btn my-btn">
+            <svg class="sun" width="18.75" height="18.75">
+              <use xlink:href="img/sprite.svg#sun"></use>
+            </svg>
+          </button>
+
+          <button class="content-right__burger my-btn">
+            <span></span>
+          </button>
+
+          <button class="content-right__notification my-btn">
+            <svg class="notifi" width="15.17" height="19.5">
+              <use xlink:href="img/sprite.svg#notifi"></use>
+            </svg>
+          </button>
+
+          <div class="content-right__cabinet">
+            <span>My-mail@mail.ru</span>
+            <button class="content-right__cabinet-btn my-btn">
+              <svg width="24" height="25" viewbox="0 0 24 25" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path fill-rule="evenodd" clip-rule="evenodd"
+                  d="M13.979 12.6624C16.476 11.8374 18.2766 9.49761 18.2766 6.74C18.2766 3.29374 15.4644 0.5 11.9953 0.5C8.52631 0.5 5.71411 3.29374 5.71411 6.74C5.71411 9.49876 7.51621 11.8394 10.0147 12.6635C4.98275 13.5012 1.00978 17.4701 0.165917 22.5C0.0568378 23.1502 4.18832e-05 23.8181 0 24.4992L24 24.5C24 23.8188 23.9432 23.1502 23.8341 22.5C22.9899 17.468 19.014 13.4979 13.979 12.6624ZM16.2766 6.74C16.2766 9.06929 14.3722 10.98 11.9953 10.98C9.61844 10.98 7.71411 9.06929 7.71411 6.74C7.71411 4.41071 9.61844 2.5 11.9953 2.5C14.3722 2.5 16.2766 4.41071 16.2766 6.74ZM2.20004 22.5C3.12658 17.9355 7.16208 14.5 12 14.5C16.8379 14.5 20.8734 17.9355 21.8 22.5H2.20004Z"
+                  fill="url(#paint0_linear_645_21909)" />
+                <defs>
+                  <lineargradient id="paint0_linear_645_21909" x1="0" y1="0.5" x2="12" y2="24.5">
+                    <stop offset="0.356999" stop-color="#FFE353" />
+                    <stop offset="1" stop-color="#E5B700" />
+                  </lineargradient>
+                </defs>
+              </svg>
+
+            </button>
+          </div>
+
+
+          <div class="content-right__currency">
+            RUB
+          </div>
+
+          <div class="content-right__lang">
+            <svg class="world" width="15" height="15">
+              <use xlink:href="img/sprite.svg#world"></use>
+            </svg>
+            <span>Русский</span>
+          </div>
+
+          <button class="content-right__enter-btn my-btn">
+            Вход
+          </button>
+
+          <button class="content-right__reg-btn my-btn">
+            Регистрация
+          </button>
+
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <main>
+
+    <section class="hero" id="hero">
+      <div class="container hero__container">
+
+        <h1 style="display: none;">Компания Tectum</h1>
+
+        <div class="row hero__top-table top-table">
+
+          <div class="top-table__cell col-md-3 col-sm-3 border-right">
+            <div class="top-table__cell-top">
+              <span class="span-text">Всего кластеров</span>
+              <span class="span-digit">28</span>
+            </div>
+            <div class="top-table__cell-bottom">
+              <span class="span-text">Активных&nbsp;кластеров</span>
+              <span class="span-digit">12</span>
+            </div>
+          </div>
+
+          <div class="top-table__cell col-md-3 col-sm-3 border-right">
+            <div class="top-table__cell-top">
+              <span class="span-text">Всего нод</span>
+              <span class="span-digit">68'000</span>
+            </div>
+            <div class="top-table__cell-bottom">
+              <span class="span-text">Активных нод</span>
+              <span class="span-digit">58'574</span>
+            </div>
+          </div>
+
+          <div class="top-table__cell col-md-3 col-sm-3 border-right">
+            <div class="top-table__cell-top -center">
+              <span class="span-text">Всего токенов</span>
+            </div>
+            <div class="top-table__cell-bottom -center">
+              <span class="span-digit">38'278'154'268</span>
+            </div>
+          </div>
+
+          <div class="top-table__cell col-md-2 col-sm-2">
+            <div class="top-table__cell-top">
+              <span class="span-text">Капитализация</span>
+            </div>
+            <div class="top-table__cell-bottom">
+              <span class="span-digit">$72,581,690,992</span>
+            </div>
+          </div>
+
+        </div>
+
+        <form class="row hero__search mid-search" action="#" method="get">
+          <label class="col-md-12 mid-search__label" for="search">
+            <input class="mid-search__input" type="text" id="search"
+              placeholder="Хэш, Нода ID, Блокчейн ID, Транзакция или Кошелек">
+            <svg class="search" width="16" height="16">
+              <use xlink:href="img/sprite.svg#search"></use>a
+            </svg>
+          </label>
+
+          <label class="col-md-12 col-12 mid-search__label label-for-mobile" for="search2">
+            <input class="mid-search__input" type="text" id="search2"
+              placeholder="Search">
+            <svg class="search" width="16" height="16">
+              <use xlink:href="img/sprite.svg#search"></use>
+            </svg>
+          </label>
+        </form>
+
+        <div class="row hero__checkbox bot-checkbox">
+          <div class="col-md-12">
+            <label class="bot-checkbox__label" for="first">
+              <input class="bot-checkbox__input" type="checkbox" id="first">
+              <span>События</span>
+            </label>
+
+            <label class="bot-checkbox__label" for="second">
+              <input class="bot-checkbox__input" type="checkbox" id="second">
+              <span>Токены</span>
+            </label>
+
+            <label class="bot-checkbox__label" for="third">
+              <input class="bot-checkbox__input" type="checkbox" id="third">
+              <span>Хранилище</span>
+            </label>
+
+            <label class="bot-checkbox__label" for="fourth">
+              <input class="bot-checkbox__input" type="checkbox" id="fourth">
+              <span>Файлы</span>
+            </label>
+
+            <label class="bot-checkbox__label" for="fifth">
+              <input class="bot-checkbox__input" type="checkbox" id="fifth">
+              <span>Контракты</span>
+            </label>
+
+
+          </div>
+        </div>
+
+
+      </div>
+    </section>
+
+
+    <section class="main-table">
+      <div class="container main-table__container">
+        <h2 class="row  main-table__title">
+          События
+          <span class="main-table__select">все</span>
+        </h2>
+
+
+        <div class="row for-tablet">
+          <table class="main-table__table table table-striped">
+            <thead class="thead">
+              <tr>
+                <th class="network">Сеть</th>
+                <th>Блок</th>
+                <th class="hesh-action">Хеш события</th>
+                <th></th>
+                <th class="-right">Сумма</th>
+                <th>Валюта</th>
+                <th>Дата/Время</th>
+              </tr>
+            </thead>
+            <tbody>
+
+              <tr>
+                <td class="color-black">
+                  <img src="img/bitcoin.png" alt="#" width="18" height="18">
+                  <span>Bitcoin</span>
+                </td>
+                <td class="color-grey">123456</td>
+                <td class="color-black">
+                  <a class="for-desktop" href="#">CYjJTSev87kAdgdb1FvueeTT6cnf2TLUdpDDxcFup8J</a>
+                  <a class="for-mobile" href="#">CYjJTS...cFup8J</a>
+                </td>
+                <td>
+                  <button class="hover-effect my-btn">
+                    <svg class="hesh" width="20" height="20">
+                      <use xlink:href="img/sprite.svg#hesh"></use>
+                    </svg>
+                  </button>
+                </td>
+
+                <td class="color-grey -right">0.0172000</td>
+                <td class="color-grey cur">
+                  <img src="img/bitcoin.png" alt="#" width="18" height="18">
+                  <span>
+                    BTC
+                  </span>
+                </td>
+                <td class="color-black">2022/01/22 15:19:08</td>
+              </tr>
+
+              <tr>
+                <td class="color-black">
+                  <img src="img/bitcoin.png" alt="#" width="18" height="18">
+                  <span>Bitcoin</span>
+                </td>
+                <td class="color-grey">123456</td>
+                <td class="color-black">
+                  <a class="for-desktop" href="#">CYjJTSev87kAdgdb1FvueeTT6cnf2TLUdpDDxcFuwp8J</a>
+                  <a class="for-mobile" href="#">CYjJTS...cFup8J</a>
+                </td>
+                <td>
+                  <button class="hover-effect my-btn">
+                    <svg class="hesh" width="20" height="20">
+                      <use xlink:href="img/sprite.svg#hesh"></use>
+                    </svg>
+                  </button>
+                </td>
+                <td class="color-grey -right">0.017200</td>
+                <td class="color-grey cur">
+                  <img src="img/bitcoin.png" alt="#" width="18" height="18">
+                  <span>
+                    BTC
+                  </span>
+                </td>
+                <td class="color-black">2022/01/22 15:19:08</td>
+              </tr>
+
+              <tr>
+                <td class="color-black">
+                  <img src="img/bitcoin.png" alt="#" width="18" height="18">
+                  <span>Bitcoin</span>
+                </td>
+                <td class="color-grey">12345</td>
+                <td class="color-black">
+                  <a class="for-desktop" href="#">CYjJTSev87kAdgdb1FveeTT6cnf2TLUdpDDxcFuwp8J</a>
+                  <a class="for-mobile" href="#">CYjJTS...cFup8J</a>
+                </td>
+                <td>
+                  <button class="hover-effect my-btn">
+                    <svg class="hesh" width="20" height="20">
+                      <use xlink:href="img/sprite.svg#hesh"></use>
+                    </svg>
+                  </button>
+                </td>
+                <td class="color-grey -right">0.0002023</td>
+                <td class="color-grey cur">
+                  <img src="img/bitcoin.png" alt="#" width="18" height="18">
+                  <span>
+                    BTC
+                  </span>
+                </td>
+                <td class="color-black">2022/01/22 15:19:08</td>
+              </tr>
+
+              <tr>
+                <td class="color-black">
+                  <svg class="ethereum" width="12" height="18">
+                    <use xlink:href="img/sprite.svg#ethereum"></use>
+                  </svg>
+                  <span>Ethereum</span>
+                </td>
+                <td class="color-grey">12345</td>
+                <td class="color-black">
+                  <a class="for-desktop" href="#">CYjJTSev87kAdgdb1FvueeTT6cnf2TLUdpDDxcFuwp8J</a>
+                  <a class="for-mobile" href="#">CYjJTS...cFup8J</a>
+                </td>
+                <td>
+                  <button class="hover-effect my-btn">
+                    <svg class="hesh" width="20" height="20">
+                      <use xlink:href="img/sprite.svg#hesh"></use>
+                    </svg>
+                  </button>
+                </td>
+                <td class="color-grey -right">1 097</td>
+                <td class="color-grey cur">
+                  <svg class="cur-t" width="18" height="16">
+                    <use xlink:href="img/sprite.svg#cur-t"></use>
+                  </svg>
+                  <span>
+                    USDT
+                  </span>
+                </td>
+                <td class="color-black">2022/01/22 15:19:08</td>
+              </tr>
+
+              <tr>
+                <td class="color-black">
+                  <svg class="ethereum" width="12" height="18">
+                    <use xlink:href="img/sprite.svg#ethereum"></use>
+                  </svg>
+                  <span>Ethereum</span>
+                </td>
+                <td class="color-grey">12345</td>
+                <td class="color-black">
+                  <a class="for-desktop" href="#">CYjJTSev87kAdgdb1FvueeTT6cnf2TLUdpDDxcFuwp8J</a>
+                  <a class="for-mobile" href="#">CYjJTS...cFup8J</a>
+                </td>
+                <td>
+                  <button class="hover-effect my-btn">
+                    <svg class="hesh" width="20" height="20">
+                      <use xlink:href="img/sprite.svg#hesh"></use>
+                    </svg>
+                  </button>
+                </td>
+                <td class="color-grey -right">490</td>
+                <td class="color-grey cur">
+                  <svg class="ethereum" width="12" height="18">
+                    <use xlink:href="img/sprite.svg#ethereum"></use>
+                  </svg>
+                  <span>
+                    USDT
+                  </span>
+                </td>
+                <td class="color-black">2022/01/22 15:19:08</td>
+              </tr>
+
+              <tr>
+                <td class="color-black">
+                  <img src="img/bitcoin.png" alt="#" width="18" height="18">
+                  <span>Bitcoin</span>
+                </td>
+                <td class="color-grey">1234</td>
+                <td class="color-black">
+                  <a class="for-desktop" href="#">CYjJTSev87kAdgdb1FvueeTT6cnf2TLUdpDDxcFuwp8J</a>
+                  <a class="for-mobile" href="#">CYjJTS...cFup8J</a>
+                </td>
+                <td>
+                  <button class="hover-effect my-btn">
+                    <svg class="hesh" width="20" height="20">
+                      <use xlink:href="img/sprite.svg#hesh"></use>
+                    </svg>
+                  </button>
+                </td>
+                <td class="color-grey -right">0.01</td>
+                <td class="color-grey cur">
+                  <img src="img/bitcoin.png" alt="#" width="18" height="18">
+                  <span>
+                    BTC
+                  </span>
+                </td>
+                <td class="color-black">2022/01/22 15:19:08</td>
+              </tr>
+
+              <tr>
+                <td class="color-black">
+                  <svg class="litecoin" width="18" height="18">
+                    <use xlink:href="img/sprite.svg#litecoin"></use>
+                  </svg>
+                  <span>Litecoin</span>
+                </td>
+                <td class="color-grey">1234</td>
+                <td class="color-black">
+                  <a class="for-desktop" href="#">CYjJTSev87kAdgdb1FvueeTT6cnf2TLUDDxcFuwp8J</a>
+                  <a class="for-mobile" href="#">CYjJTS...cFup8J</a>
+                </td>
+                <td>
+                  <button class="hover-effect my-btn">
+                    <svg class="hesh" width="20" height="20">
+                      <use xlink:href="img/sprite.svg#hesh"></use>
+                    </svg>
+                  </button>
+                </td>
+                <td class="color-grey -right">15</td>
+                <td class="color-grey cur">
+                  <svg class="litecoin" width="18" height="18">
+                    <use xlink:href="img/sprite.svg#litecoin"></use>
+                  </svg>
+                  <span>
+                    LTC
+                  </span>
+                </td>
+                <td class="color-black">2022/01/22 15:19:08</td>
+              </tr>
+
+              <tr>
+                <td class="color-black">
+                  <img src="img/bitcoin.png" alt="#" width="18" height="18">
+                  <span>Bitcoin</span>
+                </td>
+                <td class="color-grey">1234</td>
+                <td class="color-black">
+                  <a class="for-desktop" href="#">CYjJTSev87kAdgdb1FvueeTT6cnf2TLUdpDDxcFup8J</a>
+                  <a class="for-mobile" href="#">CYjJTS...cFup8J</a>
+                </td>
+                <td>
+                  <button class="hover-effect my-btn">
+                    <svg class="hesh" width="20" height="20">
+                      <use xlink:href="img/sprite.svg#hesh"></use>
+                    </svg>
+                  </button>
+                </td>
+                <td class="color-grey -right">0.0172000</td>
+                <td class="color-grey cur">
+                  <img src="img/bitcoin.png" alt="#" width="18" height="18">
+                  <span>
+                    BTC
+                  </span>
+                </td>
+                <td class="color-black">2022/01/22 15:19:08</td>
+              </tr>
+
+              <tr>
+                <td class="color-black">
+                  <svg class="ethereum" width="12" height="18">
+                    <use xlink:href="img/sprite.svg#ethereum"></use>
+                  </svg>
+                  <span>Ethereum</span>
+                </td>
+                <td class="color-grey">1234</td>
+                <td class="color-black">
+                  <a class="for-desktop" href="#">CYjJTSev87kAdgdb1FvueeTT6nf2TLUdpDDxcFuwp8J</a>
+                  <a class="for-mobile" href="#">CYjJTS...cFup8J</a>
+                </td>
+                <td>
+                  <button class="hover-effect my-btn">
+                    <svg class="hesh" width="20" height="20">
+                      <use xlink:href="img/sprite.svg#hesh"></use>
+                    </svg>
+                  </button>
+                </td>
+                <td class="color-grey -right">30</td>
+                <td class="color-grey cur">
+                  <svg class="cur-t" width="18" height="16">
+                    <use xlink:href="img/sprite.svg#cur-t"></use>
+                  </svg>
+                  <span>
+                    USDT
+                  </span>
+                </td>
+                <td class="color-black">2022/01/22 15:19:08</td>
+              </tr>
+
+              <tr>
+                <td class="color-black">
+                  <svg class="litecoin" width="18" height="18">
+                    <use xlink:href="img/sprite.svg#litecoin"></use>
+                  </svg>
+                  <span>Litecoin</span>
+                </td>
+                <td class="color-grey">1234</td>
+                <td class="color-black">
+                  <a class="for-desktop" href="#">CYjJTSev87kAdgdb1FvueeTT6cnf2TLUdpDDxcFuwp8J</a>
+                  <a class="for-mobile" href="#">CYjJTS...cFup8J</a>
+                </td>
+                <td>
+                  <button class="hover-effect my-btn">
+                    <svg class="hesh" width="20" height="20">
+                      <use xlink:href="img/sprite.svg#hesh"></use>
+                    </svg>
+                  </button>
+                </td>
+                <td class="color-grey -right">34.021</td>
+                <td class="color-grey cur">
+                  <svg class="litecoin" width="18" height="18">
+                    <use xlink:href="img/sprite.svg#litecoin"></use>
+                  </svg>
+                  <span>
+                    LTC
+                  </span>
+                </td>
+                <td class="color-black">2022/01/22 15:19:08</td>
+              </tr>
+
+            </tbody>
+          </table>
+        </div>
+
+        <div class="main-table__filter filter">
+          <div class="filter__left"></div>
+          <div class="filter__mid">
+
+            <button class="filter__btn-arrow left2 my-btn left disable"></button>
+            <button class="filter__btn-arrow my-btn left disable"></button>
+
+            <button class="filter__btn-digit my-btn">1</button>
+            <span class="digit-for-desktop">из 265801</span>
+            <span class="digit-for-mobile">из 21</span>
+            <button class="filter__btn-arrow my-btn"></button>
+            <button class="filter__btn-arrow arrow2 my-btn"></button>
+
+          </div>
+          <div class="filter__right">
+            Показывать по <span class="filter__digit">10</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+
+  </main>
+
+  <footer class="footer">
+    <div class="container footer__container">
+      <div class="footer__content row">
+        <a class="footer__logo-link col-xl-4 col-lg-4 col-md-6 col-sm-6 col-4" href="#">
+          <img src="img/header-logo.webp" alt="Логотип">
+        </a>
+
+        <ul class="footer__social-list list-reset col-xl-4 col-lg-4">
+          <li class="footer__social-list-item">
+            <a class="footer__social-list-item-link" href="#">
+              <svg class="facebook" width="26" height="26">
+                <use xlink:href="img/sprite.svg#facebook"></use>
+              </svg>
+            </a>
+          </li>
+          <li class="footer__social-list-item">
+            <a class="footer__social-list-item-link" href="#">
+              <svg class="telegram" width="26" height="26">
+                <use xlink:href="img/sprite.svg#telegram"></use>
+              </svg>
+            </a>
+          </li>
+          <li class="footer__social-list-item">
+            <a class="footer__social-list-item-link" href="#">
+              <svg class="linkedin" width="26" height="26">
+                <use xlink:href="img/sprite.svg#linkedin"></use>
+              </svg>
+            </a>
+          </li>
+          <li class="footer__social-list-item">
+            <a class="footer__social-list-item-link" href="#">
+              <svg class="messenger" width="26" height="26">
+                <use xlink:href="img/sprite.svg#messenger"></use>
+              </svg>
+            </a>
+          </li>
+          <li class="footer__social-list-item">
+            <a class="footer__social-list-item-link" href="#">
+              <svg class="instagram" width="26" height="26">
+                <use xlink:href="img/sprite.svg#instagram"></use>
+              </svg>
+            </a>
+          </li>
+          <li class="footer__social-list-item">
+            <a class="footer__social-list-item-link" href="#">
+              <svg class="twitter" width="26" height="26">
+                <use xlink:href="img/sprite.svg#twitter"></use>
+              </svg>
+            </a>
+          </li>
+        </ul>
+
+        <div class="footer__descr col-xl-4 col-lg-4 col-md-6 col-sm-6 col-8">
+          <span>Tectum.io©, 2020</span>
+          <span>
+            <a class="footer__descr-link" href="#">Terms & Conditions – Privacy Policy</a>
+          </span>
+          <span>Version 0.01</span>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+</body>
+
+</html>

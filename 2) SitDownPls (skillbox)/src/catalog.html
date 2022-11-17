@@ -1,0 +1,1727 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>SDP - Каталог</title>
+  <link rel="shortcut icon" href="img/favicon.png">
+
+  <!-- fonts -->
+  <link rel="prefetch" href="fonts/OpenSans-Regular.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="prefetch" href="fonts/OpenSans-SemiBold.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="prefetch" href="fonts/OpenSans-Bold.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="prefetch" href="fonts/PlayfairDisplay-Black.woff2" as="font" type="font/woff2" crossorigin>
+
+  <!-- styles -->
+  <!-- choices -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/choices.js/public/assets/styles/choices.min.css" />
+
+  <!-- hover-btn -->
+  <!-- <link rel="stylesheet" href="css/hover-min.css"> -->
+
+
+  <!-- <link rel="stylesheet" href="css/nouislider.min.css"> -->
+
+  <!-- my-styles -->
+  <link rel="stylesheet" href="css/main.min.css">
+
+
+
+  <!-- scripts -->
+  <!-- jQuery -->
+
+  <script defer src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.0/jquery.min.js"></script>
+
+  <!-- bar -->
+  <script defer src="js/nouislider.min.js"></script>
+
+  <!-- choices -->
+  <script defer src="js/choices.min.js"></script>
+
+  <!-- my-JS -->
+
+  <script defer src="js/mySlider.js"></script>
+  <script defer src="js/myChoices.js"></script>
+  <script defer src="js/burger.js"></script>
+  <script defer src="js/catalog.js"></script>
+  <!-- <script defer src="js/main.js"></script> -->
+</head>
+
+<body>
+  @include('html/header.html', {})
+
+  <main>
+
+    <section class="catalog">
+      <div class="container catalog__container">
+        <h1 style="display: none;">
+          Каталог диванов
+        </h1>
+
+        <div class="catalog__links">
+          <ul class="catalog__list list-reset">
+            <li class="list-item">
+              <a class="item-link grey-link" href="index.html" aria-label="На главную">
+                Главная
+              </a>
+            </li>
+            <li class="list-item">
+              <a class="item-link grey-link" href="catalog.html" aria-label="Каталог">
+                Каталог
+              </a>
+            </li>
+            <li class="list-item">
+              <a class="item-link grey-link" href="#" aria-label="Диваны">
+                Диваны
+              </a>
+            </li>
+            <li class="list-item">
+              <a class="item-link grey-link link-active" href="#" aria-label="Прямые диваны">
+                Прямые диваны
+              </a>
+            </li>
+          </ul>
+        </div>
+
+        <div class="catalog__content">
+
+          <div class="catalog__content-left">
+            <h2 class="catalog__subtitle subtitle">
+              Фильтровать&nbsp;по:
+            </h2>
+
+            <form class="catalog__main-form" action="#" method="POST">
+              <div class="catalog__furnitures furnitures">
+
+                <fieldset class="catalog__form form-category">
+                  <h3 class="catalog__subtitle form-title">
+                    Категория
+                  </h3>
+
+
+                  <label class="catalog__label common-label furniture" for="sofas">
+                    <input class="catalog__input common-input" type="checkbox" id="sofas" name="Диваны"
+                      aria-label="Диваны" checked="checked">
+                    <span>Диваны</span>
+                  </label>
+
+                  <label class="catalog__label common-label furniture" for="armchairs">
+                    <input class="catalog__input common-input" type="checkbox" id="armchairs" name="Кресла"
+                      aria-label="Кресла">
+                    <span>Кресла</span>
+                  </label>
+
+                  <label class="catalog__label common-label furniture" for="pouf">
+                    <input class="catalog__input common-input" type="checkbox" id="pouf" name="Пуфы" aria-label="Пуфы">
+                    <span>Пуфы</span>
+                  </label>
+
+                  <label class="catalog__label common-label furniture" for="bed">
+                    <input class="catalog__input common-input" type="checkbox" id="bed" name="Кровати"
+                      aria-label="Кровати">
+                    <span>Кровати</span>
+                  </label>
+
+                  <label class="catalog__label common-label furniture" for="pedestal">
+                    <input class="catalog__input common-input" type="checkbox" id="pedestal" name="Тумбы"
+                      aria-label="Тумбы">
+                    <span>Тумбы</span>
+                  </label>
+
+                  <label class="catalog__label common-label furniture" for="commode">
+                    <input class="catalog__input common-input" type="checkbox" id="commode" name="Комоды"
+                      aria-label="Комоды">
+                    <span>Комоды</span>
+                  </label>
+
+                  <label class="catalog__label common-label furniture" for="chair">
+                    <input class="catalog__input common-input" type="checkbox" id="chair" name="Стулья"
+                      aria-label="Стулья">
+                    <span>Стулья</span>
+                  </label>
+
+                  <label class="catalog__label common-label furniture" for="table">
+                    <input class="catalog__input common-input" type="checkbox" id="table" name="Столы"
+                      aria-label="Столы">
+                    <span>Столы</span>
+                  </label>
+
+                  <label class="catalog__label common-label furniture" for="accsessories">
+                    <input class="catalog__input common-input" type="checkbox" id="accsessories" name="Аксессуары"
+                      aria-label="Аксессуары">
+                    <span>Аксессуары</span>
+                  </label>
+
+
+                </fieldset>
+              </div>
+
+              <div class="catalog__left-price left-price">
+                <h3 class="catalog__subtitle form-title price-title">
+                  Цена
+                </h3>
+                <fieldset class="catalog__form form-price">
+                  <div class="form-price__labelprice">
+
+                    <label>
+                      <span>от</span>
+                      <input class="form-price__input first-price" type="number" id="first-price" placeholder="2000"
+                        min="0" max="150000" value="2000" aria-label="Укажите цену">
+                    </label>
+
+                    <label>
+                      <span>до</span>
+                      <input class="form-price__input second-price" type="number" id="second-price" placeholder="150000"
+                        min="0" max="150000" value="150000" aria-label="Укажите цену">
+                    </label>
+
+                  </div>
+
+                  <div class="form-price__slide" id="range-slider"></div>
+                </fieldset>
+              </div>
+
+              <div class="catalog__discount discount">
+                <h3 class="catalog__subtitle form-title">
+                  Скидка
+                </h3>
+                <fieldset class="catalog__form">
+
+                  <label class="catalog__label common-label more" for="more">
+                    <input class="catalog__input common-input" type="checkbox" id="more" name="Более 5 000"
+                      aria-label="Более 5 000" checked="checked">
+                    <span>Более 5 000</span>
+                  </label>
+
+                  <label class="catalog__label common-label less" for="less">
+                    <input class="catalog__input common-input" type="checkbox" id="less" name="Менее 5 000"
+                      aria-label="Менее 5 000">
+
+                    <span>Менее 5 000</span>
+                  </label>
+
+                  <label class="catalog__label common-label notmatter" for="notnatter">
+                    <input class="catalog__input common-input" type="checkbox" id="notnatter" name="Не важно"
+                      aria-label="Не важно">
+                    <span>Не важно</span>
+                  </label>
+
+                </fieldset>
+              </div>
+
+              <div class="catalog__color color">
+                <h3 class="catalog__subtitle form-title">
+                  Цвет
+                </h3>
+
+                <fieldset class="catalog__form">
+
+                  <label class="catalog__label common-label" for="brown">
+                    <input class="catalog__input common-input" type="checkbox" id="brown" name="Коричневый"
+                      aria-label="Коричневый">
+                    <span>Коричневый</span>
+                  </label>
+
+                  <label class="catalog__label common-label" for="black">
+                    <input class="catalog__input common-input" type="checkbox" id="black" name="Черный"
+                      aria-label="Черный">
+                    <span>Черный</span>
+                  </label>
+
+                  <label class="catalog__label common-label" for="beige">
+                    <input class="catalog__input common-input" type="checkbox" id="beige" name="Бежевый"
+                      aria-label="Бежевый">
+                    <span>Бежевый</span>
+                  </label>
+
+                  <label class="catalog__label common-label" for="grey">
+                    <input class="catalog__input common-input" type="checkbox" id="grey" name="Серый"
+                      aria-label="Серый">
+                    <span>Серый</span>
+                  </label>
+
+                  <label class="catalog__label common-label" for="white">
+                    <input class="catalog__input common-input" type="checkbox" id="white" name="Белый"
+                      aria-label="Белый">
+                    <span>Белый</span>
+                  </label>
+
+                  <label class="catalog__label common-label" for="blue">
+                    <input class="catalog__input common-input" type="checkbox" id="blue" name="Синий"
+                      aria-label="Синий">
+                    <span>Синий</span>
+                  </label>
+
+                  <label class="catalog__label common-label" for="orange">
+                    <input class="catalog__input common-input" type="checkbox" id="orange" name="Оранжевый"
+                      aria-label="Оранжевый" checked="checked">
+                    <span>Оранжевый</span>
+                  </label>
+
+                  <label class="catalog__label common-label" for="yellow">
+                    <input class="catalog__input common-input" type="checkbox" id="yellow" name="Желтый"
+                      aria-label="Желтый">
+                    <span>Желтый</span>
+                  </label>
+
+                  <label class="catalog__label common-label" for="green">
+                    <input class="catalog__input common-input" type="checkbox" id="green" name="Зеленый"
+                      aria-label="Зеленый">
+                    <span>Зеленый</span>
+                  </label>
+
+
+                </fieldset>
+              </div>
+            </form>
+
+            <div class="catalog__oxford catalog-oxford">
+              <img src="img/catalog-oxford.webp" alt="Картинка">
+              <div class="catalog-oxford__body">
+                <h2 class="catalog-oxford__title">
+                  Оксфорд 1950
+                </h2>
+                <p class="catalog-oxford__text">
+                  Новая коллекция изысканных кресел
+                </p>
+                <div class="catalog-oxford__links">
+                  <a class="catalog-oxford__link purple-link" href="#" aria-label="Переход в каталог">
+                    В каталог
+                  </a>
+                  <button class="catalog-oxford__btn my-btn">
+                    <svg width="22" height="22" viewbox="0 0 22 22" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <path d="M9.625 7.5625L13.0625 11L9.625 14.4375" stroke="#A65CF0" stroke-width="2"
+                        stroke-linecap="round" stroke-linejoin="round" />
+                      <circle cx="11" cy="11" r="10" stroke="#A65CF0" stroke-width="2" />
+                    </svg>
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+
+
+
+          <div class="catalog__content-right">
+
+            <h1 class="catalog__title title">
+              Каталог
+            </h1>
+
+            <!-- фильтры только на маленьком разрешении -->
+            <ul class="catalog__dropfilter dropfilter list-reset">
+              <li class="dropfilter__item">
+                <h3 class="dropfilter__title">
+                  Фильтры:
+                </h3>
+              </li>
+
+
+              <li class="dropfilter__item">
+                <button class="dropfilter__btn my-btn" data-path="first">
+                  <span class="dropfilter__subtitle">Категория</span>
+                </button>
+                <div class="dropfilter__content content" data-target="first">
+
+
+
+                  <label class="content__label common-label furniture" for="dropfilter-sofas">
+                    <input class="content__input common-input" type="checkbox" id="dropfilter-sofas" name="Диваны"
+                      aria-label="Диваны" checked="checked">
+                    <span>Диваны</span>
+                  </label>
+
+                  <label class="content__label common-label furniture" for="dropfilter-armchairs">
+                    <input class="content__input common-input" type="checkbox" id="dropfilter-armchairs" name="Кресла"
+                      aria-label="Кресла">
+                    <span>Кресла</span>
+                  </label>
+
+                  <label class="content__label common-label furniture" for="dropfilter-pouf">
+                    <input class="content__input common-input" type="checkbox" id="dropfilter-pouf" name="Пуфы"
+                      aria-label="Пуфы">
+                    <span>Пуфы</span>
+                  </label>
+
+                  <label class="content__label common-label furniture" for="dropfilter-bed">
+                    <input class="content__input common-input" type="checkbox" id="dropfilter-bed" name="Кровати"
+                      aria-label="Кровати">
+                    <span>Кровати</span>
+                  </label>
+
+                  <label class="content__label common-label furniture" for="dropfilter-pedestal">
+                    <input class="content__input common-input" type="checkbox" id="dropfilter-pedestal" name="Тумбы"
+                      aria-label="Тумбы">
+                    <span>Тумбы</span>
+                  </label>
+
+                  <label class="content__label common-label furniture" for="dropfilter-commode">
+                    <input class="content__input common-input" type="checkbox" id="dropfilter-commode" name="Комоды"
+                      aria-label="Комоды">
+                    <span>Комоды</span>
+                  </label>
+
+                  <label class="content__label common-label furniture" for="dropfilter-chair">
+                    <input class="content__input common-input" type="checkbox" id="dropfilter-chair" name="Стулья"
+                      aria-label="Стулья">
+                    <span>Стулья</span>
+                  </label>
+
+                  <label class="content__label common-label furniture" for="dropfilter-table">
+                    <input class="content__input common-input" type="checkbox" id="dropfilter-table" name="Столы"
+                      aria-label="Столы">
+                    <span>Столы</span>
+                  </label>
+
+                  <label class="content__label common-label furniture" for="dropfilter-accsessories">
+                    <input class="content__input common-input" type="checkbox" id="dropfilter-accsessories"
+                      name="Аксессуары" aria-label="Аксессуары">
+                    <span>Аксессуары</span>
+                  </label>
+
+                </div>
+              </li>
+
+              <li class="dropfilter__item">
+                <button class="dropfilter__btn my-btn" data-path="second">
+                  <span class="dropfilter__subtitle">Цена</span>
+                </button>
+                <div class="dropfilter__content content" data-target="second">
+                  <div class="content__wrap">
+                    <label for="from" class="content__wrap-label">
+                      <span>от</span>
+                      <input class="content__wrap-input" type="number" id="from" placeholder="2000" min="0" max="150000"
+                        value="2000" aria-label="Укажите цену">
+                    </label>
+
+                    <label for="to" class="content__wrap-label">
+                      <span>до</span>
+                      <input class="content__wrap-input" type="number" id="to" placeholder="150000" min="0" max="150000"
+                        value="150000" aria-label="Укажите цену">
+                    </label>
+                  </div>
+                </div>
+              </li>
+
+              <li class="dropfilter__item">
+                <button class="dropfilter__btn my-btn" data-path="third">
+                  <span class="dropfilter__subtitle">Скидка</span>
+                </button>
+                <div class="dropfilter__content content" data-target="third">
+
+                  <label class="content__label common-label more" for="more1">
+                    <input class="content__input common-input" type="checkbox" id="more1" name="Более 5 000"
+                      aria-label="Более 5 000" checked="checked">
+                    <span>Более 5 000</span>
+                  </label>
+
+                  <label class="content__label common-label less" for="less1">
+                    <input class="content__input common-input" type="checkbox" id="less1" name="Менее 5 000"
+                      aria-label="Менее 5 000">
+
+                    <span>Менее 5 000</span>
+                  </label>
+
+                  <label class="content__label common-label notmatter" for="notmatter1">
+                    <input class="content__input common-input" type="checkbox" id="notmatter1" name="Не важно"
+                      aria-label="Не важно">
+                    <span>Не важно</span>
+                  </label>
+
+                </div>
+              </li>
+
+              <li class="dropfilter__item">
+                <button class="dropfilter__btn my-btn" data-path="fourth">
+                  <span class="dropfilter__subtitle">Цвет</span>
+                </button>
+                <div class="dropfilter__content content" data-target="fourth">
+
+
+                  <label class="content__label common-label" for="brown1">
+                    <input class="content__input common-input" type="checkbox" id="brown1" name="Коричневый"
+                      aria-label="Коричневый">
+                    <span>Коричневый</span>
+                  </label>
+
+                  <label class="content__label common-label" for="black1">
+                    <input class="content__input common-input" type="checkbox" id="black1" name="Черный"
+                      aria-label="Черный">
+                    <span>Черный</span>
+                  </label>
+
+                  <label class="content__label common-label" for="beige1">
+                    <input class="content__input common-input" type="checkbox" id="beige1" name="Бежевый"
+                      aria-label="Бежевый">
+                    <span>Бежевый</span>
+                  </label>
+
+                  <label class="content__label common-label" for="grey1">
+                    <input class="content__input common-input" type="checkbox" id="grey1" name="Серый"
+                      aria-label="Серый">
+                    <span>Серый</span>
+                  </label>
+
+                  <label class="content__label common-label" for="white1">
+                    <input class="content__input common-input" type="checkbox" id="white1" name="Белый"
+                      aria-label="Белый">
+                    <span>Белый</span>
+                  </label>
+
+                  <label class="content__label common-label" for="blue1">
+                    <input class="content__input common-input" type="checkbox" id="blue1" name="Синий"
+                      aria-label="Синий">
+                    <span>Синий</span>
+                  </label>
+
+                  <label class="content__label common-label" for="orange1">
+                    <input class="content__input common-input" type="checkbox" id="orange1" name="Оранжевый"
+                      aria-label="Оранжевый" checked="checked">
+                    <span>Оранжевый</span>
+                  </label>
+
+                  <label class="content__label common-label" for="yellow1">
+                    <input class="content__input common-input" type="checkbox" id="yellow1" name="Желтый"
+                      aria-label="Желтый">
+                    <span>Желтый</span>
+                  </label>
+
+                  <label class="content__label common-label" for="green1">
+                    <input class="content__input common-input" type="checkbox" id="green1" name="Зеленый"
+                      aria-label="Зеленый">
+                    <span>Зеленый</span>
+                  </label>
+
+
+                </div>
+              </li>
+
+
+            </ul>
+
+            <!-- tabs -->
+            <!-- tabs -->
+            <!-- tabs -->
+
+            <!-- табы для десктопа -->
+            <div class="catalog__tabs-content">
+
+              <!-- первая страница -->
+              <ul class="catalog__tabs-item tab-active list-reset" data-target="three">
+
+                <!-- R-94 -->
+                <li class="catalog__list-item common-list-item">
+                  <article class="catalog__product common-product">
+                    <span class="catalog__rating common-rating">
+                      <svg class="rating">
+                        <use xlink:href="img/sprite.svg#rating-star"></use>
+                      </svg>
+                      5,0
+                    </span>
+                    <div class="catalog__img common-img">
+                      <img src="img/R-94.webp" alt="Картинка дивана">
+                    </div>
+                    <div class="catalog__text common-text">
+                      <h3 class="catalog__subtitle common-subtitle">
+                        <a class="catalog__link black-link common-link" href="#" aria-label="Переход на товар">
+                          Диван кожаный
+                          <span>&#8220;R-94&#8221;</span>
+                        </a>
+                      </h3>
+                      <div class="catalog__price common-price">
+                        <span class="price">
+                          94&nbsp;990 руб
+                        </span>
+                      </div>
+                    </div>
+                    <button class="catalog__btn my-btn transp-btn"
+                      aria-label="Нажмите, чтобы добавить в корзину">Купить</button>
+                  </article>
+                </li>
+
+                <!-- T-75 -->
+                <li class="catalog__list-item common-list-item">
+                  <article class="catalog__product common-product">
+                    <span class="catalog__rating common-rating">
+                      <svg class="rating">
+                        <use xlink:href="img/sprite.svg#rating-star"></use>
+                      </svg>
+                      4,9
+                    </span>
+                    <div class="catalog__img common-img">
+                      <img src="img/T-75.webp" alt="Картинка дивана">
+                    </div>
+                    <div class="catalog__text common-text">
+                      <h3 class="catalog__subtitle common-subtitle">
+                        <a class="catalog__link black-link common-link" href="#" aria-label="Переход на товар">
+                          Диван апартековый
+                          <span>&#8220;T-75&#8221;</span>
+                        </a>
+                      </h3>
+                      <div class="catalog__price common-price">
+                        <span class="price">
+                          69&nbsp;990 руб
+                        </span>
+                      </div>
+                    </div>
+                    <button class="catalog__btn my-btn transp-btn"
+                      aria-label="Нажмите, чтобы добавить в корзину">Купить</button>
+                  </article>
+                </li>
+
+                <!-- D-31 -->
+                <li class="catalog__list-item common-list-item">
+                  <article class="catalog__product common-product">
+                    <span class="catalog__rating common-rating">
+                      <svg class="rating">
+                        <use xlink:href="img/sprite.svg#rating-star"></use>
+                      </svg>
+                      4,8
+                    </span>
+                    <div class="catalog__img common-img">
+                      <img src="img/D-31.webp" alt="Картинка дивана">
+                    </div>
+                    <div class="catalog__text common-text">
+                      <h3 class="catalog__subtitle common-subtitle">
+                        <a class="catalog__link black-link common-link" href="sofa-d31.html"
+                          aria-label="Переход на товар">
+                          Диван тканевый
+                          <span>&#8220;D-31&#8221;</span>
+                        </a>
+                      </h3>
+                      <div class="catalog__price common-price">
+                        <span class="price">
+                          28&nbsp;490 руб
+                        </span>
+                      </div>
+                    </div>
+                    <button class="catalog__btn my-btn transp-btn"
+                      aria-label="Нажмите, чтобы добавить в корзину">Купить</button>
+                  </article>
+                </li>
+
+                <!-- Y-68 -->
+                <li class="catalog__list-item common-list-item">
+                  <article class="catalog__product common-product">
+                    <span class="catalog__rating common-rating">
+                      <svg class="rating">
+                        <use xlink:href="img/sprite.svg#rating-star"></use>
+                      </svg>
+                      4,8
+                    </span>
+                    <div class="catalog__img common-img">
+                      <img src="img/Y-68.webp" alt="Картинка дивана">
+                    </div>
+                    <div class="catalog__text common-text">
+                      <h3 class="catalog__subtitle common-subtitle">
+                        <a class="catalog__link black-link common-link" href="#" aria-label="Переход на товар">
+                          Диван велюровый
+                          <span>&#8220;Y-68&#8221;</span>
+                        </a>
+                      </h3>
+                      <div class="catalog__price common-price">
+                        <span class="price">
+                          22&nbsp;990 руб
+                        </span>
+                      </div>
+                    </div>
+                    <button class="catalog__btn my-btn transp-btn"
+                      aria-label="Нажмите, чтобы добавить в корзину">Купить</button>
+                  </article>
+                </li>
+
+                <!-- W-95 -->
+                <li class="catalog__list-item common-list-item">
+                  <article class="catalog__product common-product">
+                    <span class="catalog__rating common-rating">
+                      <svg class="rating">
+                        <use xlink:href="img/sprite.svg#rating-star"></use>
+                      </svg>
+                      4,8
+                    </span>
+                    <div class="catalog__img common-img">
+                      <img src="img/W-95.webp" alt="Картинка дивана">
+                    </div>
+                    <div class="catalog__text common-text">
+                      <h3 class="catalog__subtitle common-subtitle">
+                        <a class="catalog__link black-link common-link" href="#" aria-label="Переход на товар">
+                          Диван из&nbsp;шинила
+                          <span>&#8220;W-95&#8221;</span>
+                        </a>
+                      </h3>
+                      <div class="catalog__price common-price">
+                        <span class="price">
+                          22&nbsp;990 руб
+                        </span>
+                      </div>
+                    </div>
+                    <button class="catalog__btn my-btn transp-btn"
+                      aria-label="Нажмите, чтобы добавить в корзину">Купить</button>
+                  </article>
+                </li>
+
+                <!-- G-41 -->
+                <li class="catalog__list-item common-list-item">
+                  <article class="catalog__product common-product">
+                    <span class="catalog__rating common-rating">
+                      <svg class="rating">
+                        <use xlink:href="img/sprite.svg#rating-star"></use>
+                      </svg>
+                      4,8
+                    </span>
+                    <div class="catalog__img common-img">
+                      <img src="img/G-41.webp" alt="Картинка дивана">
+                    </div>
+                    <div class="catalog__text common-text">
+                      <h3 class="catalog__subtitle common-subtitle">
+                        <a class="catalog__link black-link common-link" href="#" aria-label="Переход на товар">
+                          Диван флоковый
+                          <span>&#8220;G-41&#8221;</span>
+                        </a>
+                      </h3>
+                      <div class="catalog__price common-price">
+                        <span class="price">
+                          17&nbsp;990 руб
+                        </span>
+                      </div>
+                    </div>
+                    <button class="catalog__btn my-btn transp-btn"
+                      aria-label="Нажмите, чтобы добавить в корзину">Купить</button>
+                  </article>
+                </li>
+
+                <!-- V-43 -->
+                <li class="catalog__list-item common-list-item">
+                  <article class="catalog__product common-product">
+                    <span class="catalog__rating common-rating">
+                      <svg class="rating">
+                        <use xlink:href="img/sprite.svg#rating-star"></use>
+                      </svg>
+                      4,8
+                    </span>
+                    <div class="catalog__img common-img">
+                      <img src="img/V-43.webp" alt="Картинка дивана">
+                    </div>
+                    <div class="catalog__text common-text">
+                      <h3 class="catalog__subtitle common-subtitle">
+                        <a class="catalog__link black-link common-link" href="#" aria-label="Переход на товар">
+                          Диван шиниловый
+                          <span>&#8220;V-43&#8221;</span>
+                        </a>
+                      </h3>
+                      <div class="catalog__price common-price">
+                        <span class="price">
+                          19&nbsp;990 руб
+                        </span>
+                      </div>
+                    </div>
+                    <button class="catalog__btn my-btn transp-btn"
+                      aria-label="Нажмите, чтобы добавить в корзину">Купить</button>
+                  </article>
+                </li>
+
+                <!-- S-99 -->
+                <li class="catalog__list-item common-list-item">
+                  <article class="catalog__product common-product">
+                    <span class="catalog__rating common-rating">
+                      <svg class="rating">
+                        <use xlink:href="img/sprite.svg#rating-star"></use>
+                      </svg>
+                      4,7
+                    </span>
+                    <div class="catalog__img common-img">
+                      <img src="img/S-99.webp" alt="Картинка дивана">
+                    </div>
+                    <div class="catalog__text common-text">
+                      <h3 class="catalog__subtitle common-subtitle">
+                        <a class="catalog__link black-link common-link" href="#" aria-label="Переход на товар">
+                          Диван велюровый
+                          <span>&#8220;S-99&#8221;</span>
+                        </a>
+                      </h3>
+                      <div class="catalog__price common-price">
+                        <span class="price">
+                          19&nbsp;990 руб
+                        </span>
+                      </div>
+                    </div>
+                    <button class="catalog__btn my-btn transp-btn"
+                      aria-label="Нажмите, чтобы добавить в корзину">Купить</button>
+                  </article>
+                </li>
+
+                <!-- F-85 -->
+                <li class="catalog__list-item common-list-item">
+                  <article class="catalog__product common-product">
+                    <span class="catalog__rating common-rating">
+                      <svg class="rating">
+                        <use xlink:href="img/sprite.svg#rating-star"></use>
+                      </svg>
+                      4,7
+                    </span>
+                    <div class="catalog__img common-img">
+                      <img src="img/F-85.webp" alt="Картинка дивана">
+                    </div>
+                    <div class="catalog__text common-text">
+                      <h3 class="catalog__subtitle common-subtitle">
+                        <a class="catalog__link black-link common-link" href="#" aria-label="Переход на товар">
+                          Диван из&nbsp;кожзама
+                          <span>&#8220;F-85&#8221;</span>
+                        </a>
+                      </h3>
+                      <div class="catalog__price common-price">
+                        <span class="price">
+                          26&nbsp;990 руб
+                        </span>
+                      </div>
+                    </div>
+                    <button class="catalog__btn my-btn transp-btn"
+                      aria-label="Нажмите, чтобы добавить в корзину">Купить</button>
+                  </article>
+                </li>
+
+
+              </ul>
+
+              <!-- вторая страница -->
+              <ul class="catalog__tabs-item list-reset" data-target="four">
+
+                <!-- H-64 -->
+                <li class="catalog__list-item common-list-item">
+                  <article class="catalog__product common-product">
+                    <span class="catalog__rating common-rating">
+                      <svg class="rating">
+                        <use xlink:href="img/sprite.svg#rating-star"></use>
+                      </svg>
+                      4,6
+                    </span>
+                    <div class="catalog__img common-img">
+                      <img src="img/H-64.webp" alt="Картинка дивана">
+                    </div>
+                    <div class="catalog__text common-text">
+                      <h3 class="catalog__subtitle common-subtitle">
+                        <a class="catalog__link black-link common-link" href="#" aria-label="Переход на товар">
+                          Диван флоковый
+                          <span>&#8220;H-64&#8221;</span>
+                        </a>
+                      </h3>
+                      <div class="catalog__price common-price">
+                        <span class="price">
+                          25&nbsp;990 руб
+                        </span>
+                      </div>
+                    </div>
+                    <button class="catalog__btn my-btn transp-btn"
+                      aria-label="Нажмите, чтобы добавить в корзину">Купить</button>
+                  </article>
+                </li>
+
+                <!-- H-58 -->
+                <li class="catalog__list-item common-list-item">
+                  <article class="catalog__product common-product">
+                    <span class="catalog__rating common-rating">
+                      <svg class="rating">
+                        <use xlink:href="img/sprite.svg#rating-star"></use>
+                      </svg>
+                      4,6
+                    </span>
+                    <div class="catalog__img common-img">
+                      <img src="img/H-58.webp" alt="Картинка дивана">
+                    </div>
+                    <div class="catalog__text common-text">
+                      <h3 class="catalog__subtitle common-subtitle">
+                        <a class="catalog__link black-link common-link" href="#" aria-label="Переход на товар">
+                          Диван флоковый
+                          <span>&#8220;H-58&#8221;</span>
+                        </a>
+                      </h3>
+                      <div class="catalog__price common-price">
+                        <span class="price">
+                          23&nbsp;990 руб
+                        </span>
+                      </div>
+                    </div>
+                    <button class="catalog__btn my-btn transp-btn"
+                      aria-label="Нажмите, чтобы добавить в корзину">Купить</button>
+                  </article>
+                </li>
+
+                <!-- R-43 -->
+                <li class="catalog__list-item common-list-item">
+                  <article class="catalog__product common-product">
+                    <span class="catalog__rating common-rating">
+                      <svg class="rating">
+                        <use xlink:href="img/sprite.svg#rating-star"></use>
+                      </svg>
+                      4,6
+                    </span>
+                    <div class="catalog__img common-img">
+                      <img src="img/R-43.webp" alt="Картинка дивана">
+                    </div>
+                    <div class="catalog__text common-text">
+                      <h3 class="catalog__subtitle common-subtitle">
+                        <a class="catalog__link black-link common-link" href="#" aria-label="Переход на товар">
+                          Диван из&nbsp;кожзама
+                          <span>&#8220;R-43&#8221;</span>
+                        </a>
+                      </h3>
+                      <div class="catalog__price common-price">
+                        <span class="price">
+                          33&nbsp;990 руб
+                        </span>
+                      </div>
+                    </div>
+                    <button class="catalog__btn my-btn transp-btn"
+                      aria-label="Нажмите, чтобы добавить в корзину">Купить</button>
+                  </article>
+                </li>
+
+                <!-- C-42 -->
+                <li class="catalog__list-item common-list-item">
+                  <article class="catalog__product common-product">
+                    <span class="catalog__rating common-rating">
+                      <svg class="rating">
+                        <use xlink:href="img/sprite.svg#rating-star"></use>
+                      </svg>
+                      4,6
+                    </span>
+                    <div class="catalog__img common-img">
+                      <img src="img/C-42.webp" alt="Картинка дивана">
+                    </div>
+                    <div class="catalog__text common-text">
+                      <h3 class="catalog__subtitle common-subtitle">
+                        <a class="catalog__link black-link common-link" href="#" aria-label="Переход на товар">
+                          Диван из&nbsp;шинила
+                          <span>&#8220;C-42&#8221;</span>
+                        </a>
+                      </h3>
+                      <div class="catalog__price common-price">
+                        <span class="price">
+                          18&nbsp;990 руб
+                        </span>
+                      </div>
+                    </div>
+                    <button class="catalog__btn my-btn transp-btn"
+                      aria-label="Нажмите, чтобы добавить в корзину">Купить</button>
+                  </article>
+                </li>
+
+                <!-- U-58 -->
+                <li class="catalog__list-item common-list-item">
+                  <article class="catalog__product common-product">
+                    <span class="catalog__rating common-rating">
+                      <svg class="rating">
+                        <use xlink:href="img/sprite.svg#rating-star"></use>
+                      </svg>
+                      4,6
+                    </span>
+                    <div class="catalog__img common-img">
+                      <img src="img/U-58.webp" alt="Картинка дивана">
+                    </div>
+                    <div class="catalog__text common-text">
+                      <h3 class="catalog__subtitle common-subtitle">
+                        <a class="catalog__link black-link common-link" href="#" aria-label="Переход на товар">
+                          Диван велюровый
+                          <span>&#8220;U-58&#8221;</span>
+                        </a>
+                      </h3>
+                      <div class="catalog__price common-price">
+                        <span class="price">
+                          21&nbsp;990 руб
+                        </span>
+                      </div>
+                    </div>
+                    <button class="catalog__btn my-btn transp-btn"
+                      aria-label="Нажмите, чтобы добавить в корзину">Купить</button>
+                  </article>
+                </li>
+
+                <!-- F-41 -->
+                <li class="catalog__list-item common-list-item">
+                  <article class="catalog__product common-product">
+                    <span class="catalog__rating common-rating">
+                      <svg class="rating">
+                        <use xlink:href="img/sprite.svg#rating-star"></use>
+                      </svg>
+                      4,5
+                    </span>
+                    <div class="catalog__img common-img">
+                      <img src="img/F-41.webp" alt="Картинка дивана">
+                    </div>
+                    <div class="catalog__text common-text">
+                      <h3 class="catalog__subtitle common-subtitle">
+                        <a class="catalog__link black-link common-link" href="#" aria-label="Переход на товар">
+                          Диван флоковый
+                          <span>&#8220;F-41&#8221;</span>
+                        </a>
+                      </h3>
+                      <div class="catalog__price common-price">
+                        <span class="price">
+                          17&nbsp;990 руб
+                        </span>
+                      </div>
+                    </div>
+                    <button class="catalog__btn my-btn transp-btn"
+                      aria-label="Нажмите, чтобы добавить в корзину">Купить</button>
+                  </article>
+                </li>
+
+                <!-- R-85 -->
+                <li class="catalog__list-item common-list-item">
+                  <article class="catalog__product common-product">
+                    <span class="catalog__rating common-rating">
+                      <svg class="rating">
+                        <use xlink:href="img/sprite.svg#rating-star"></use>
+                      </svg>
+                      4,5
+                    </span>
+                    <div class="catalog__img common-img">
+                      <img src="img/R-85.webp" alt="Картинка дивана">
+                    </div>
+                    <div class="catalog__text common-text">
+                      <h3 class="catalog__subtitle common-subtitle">
+                        <a class="catalog__link black-link common-link" href="#" aria-label="Переход на товар">
+                          Диван велюровый
+                          <span>&#8220;R-85&#8221;</span>
+                        </a>
+                      </h3>
+                      <div class="catalog__price common-price">
+                        <span class="price">
+                          34&nbsp;990 руб
+                        </span>
+                      </div>
+                    </div>
+                    <button class="catalog__btn my-btn transp-btn"
+                      aria-label="Нажмите, чтобы добавить в корзину">Купить</button>
+                  </article>
+                </li>
+
+                <!-- S-44 -->
+                <li class="catalog__list-item common-list-item">
+                  <article class="catalog__product common-product">
+                    <span class="catalog__rating common-rating">
+                      <svg class="rating">
+                        <use xlink:href="img/sprite.svg#rating-star"></use>
+                      </svg>
+                      4,5
+                    </span>
+                    <div class="catalog__img common-img">
+                      <img src="img/S-44.webp" alt="Картинка дивана">
+                    </div>
+                    <div class="catalog__text common-text">
+                      <h3 class="catalog__subtitle common-subtitle">
+                        <a class="catalog__link black-link common-link" href="#" aria-label="Переход на товар">
+                          Диван велюровый
+                          <span>&#8220;S-44&#8221;</span>
+                        </a>
+                      </h3>
+                      <div class="catalog__price common-price">
+                        <span class="price">
+                          19&nbsp;990 руб
+                        </span>
+                      </div>
+                    </div>
+                    <button class="catalog__btn my-btn transp-btn"
+                      aria-label="Нажмите, чтобы добавить в корзину">Купить</button>
+                  </article>
+                </li>
+
+                <!-- C-80 -->
+                <li class="catalog__list-item common-list-item">
+                  <article class="catalog__product common-product">
+                    <span class="catalog__rating common-rating">
+                      <svg class="rating">
+                        <use xlink:href="img/sprite.svg#rating-star"></use>
+                      </svg>
+                      4,4
+                    </span>
+                    <div class="catalog__img common-img">
+                      <img src="img/C-80.webp" alt="Картинка дивана">
+                    </div>
+                    <div class="catalog__text common-text">
+                      <h3 class="catalog__subtitle common-subtitle">
+                        <a class="catalog__link black-link common-link" href="#" aria-label="Переход на товар">
+                          Диван из&nbsp;шинила
+                          <span>&#8220;C-80&#8221;</span>
+                        </a>
+                      </h3>
+                      <div class="catalog__price common-price">
+                        <span class="price">
+                          20&nbsp;990 руб
+                        </span>
+                      </div>
+                    </div>
+                    <button class="catalog__btn my-btn transp-btn"
+                      aria-label="Нажмите, чтобы добавить в корзину">Купить</button>
+                  </article>
+                </li>
+
+
+              </ul>
+
+              <!-- кнопки -->
+              <ul class="catalog__btn-list list-reset">
+                <li class="catalog__btn-list-item">
+                  <button class="catalog__btn-switch my-btn tab-btn-active" aria-label="Первый шаг" data-path="three">
+                    1
+                  </button>
+                </li>
+                <li class="catalog__btn-list-item">
+                  <button class="catalog__btn-switch my-btn" aria-label="Второй шаг" data-path="four">
+                    2
+                  </button>
+                </li>
+              </ul>
+
+            </div>
+
+            <!-- табы для мобилок -->
+            <div class="catalog__tabs-content-low">
+
+              <!-- первая страница -->
+              <ul class="catalog__tabs-item tab-active list-reset" data-target="fifth">
+
+                <!-- R94 -->
+                <li class="catalog__list-item common-list-item">
+                  <article class="catalog__product common-product">
+                    <span class="catalog__rating common-rating">
+                      <svg class="rating">
+                        <use xlink:href="img/sprite.svg#rating-star"></use>
+                      </svg>
+                      5,0
+                    </span>
+                    <div class="catalog__img common-img">
+                      <picture>
+                        <source srcset="img/R-94-320.webp" media="(max-width: 500px)">
+                        <img src="img/R-94.webp" alt="Картинка дивана">
+                      </picture>
+                    </div>
+                    <div class="catalog__text common-text">
+                      <h3 class="catalog__subtitle common-subtitle">
+                        <a class="catalog__link black-link common-link" href="#" aria-label="Переход на товар">
+                          Диван кожаный
+                          <span>&#8220;R-94&#8221;</span>
+                        </a>
+                      </h3>
+                      <div class="catalog__price common-price">
+                        <span class="price">
+                          94&nbsp;990 руб
+                        </span>
+                      </div>
+                    </div>
+                    <button class="catalog__btn my-btn transp-btn"
+                      aria-label="Нажмите, чтобы добавить в корзину">Купить</button>
+                  </article>
+                </li>
+
+                <!-- T75 -->
+                <li class="catalog__list-item common-list-item">
+                  <article class="catalog__product common-product">
+                    <span class="catalog__rating common-rating">
+                      <svg class="rating">
+                        <use xlink:href="img/sprite.svg#rating-star"></use>
+                      </svg>
+                      4,9
+                    </span>
+                    <div class="catalog__img common-img">
+                      <picture>
+                        <source srcset="img/T-75-320.webp" media="(max-width: 500px)">
+                        <img src="img/T-75.webp" alt="Картинка дивана">
+                      </picture>
+                    </div>
+                    <div class="catalog__text common-text">
+                      <h3 class="catalog__subtitle common-subtitle">
+                        <a class="catalog__link black-link common-link" href="#" aria-label="Переход на товар">
+                          Диван апартековый
+                          <span>&#8220;T-75&#8221;</span>
+                        </a>
+                      </h3>
+                      <div class="catalog__price common-price">
+                        <span class="price">
+                          69&nbsp;990 руб
+                        </span>
+                      </div>
+                    </div>
+                    <button class="catalog__btn my-btn transp-btn"
+                      aria-label="Нажмите, чтобы добавить в корзину">Купить</button>
+                  </article>
+                </li>
+
+                <!-- D31 -->
+                <li class="catalog__list-item common-list-item">
+                  <article class="catalog__product common-product">
+                    <span class="catalog__rating common-rating">
+                      <svg class="rating">
+                        <use xlink:href="img/sprite.svg#rating-star"></use>
+                      </svg>
+                      4,8
+                    </span>
+                    <div class="catalog__img common-img">
+                      <picture>
+                        <source srcset="img/D-31-320.webp" media="(max-width: 500px)">
+                        <img src="img/D-31.webp" alt="Картинка дивана">
+                      </picture>
+                    </div>
+                    <div class="catalog__text common-text">
+                      <h3 class="catalog__subtitle common-subtitle">
+                        <a class="catalog__link black-link common-link" href="sofa-d31.html"
+                          aria-label="Переход на товар">
+                          Диван тканевый
+                          <span>&#8220;D-31&#8221;</span>
+                        </a>
+                      </h3>
+                      <div class="catalog__price common-price">
+                        <span class="price">
+                          28&nbsp;490 руб
+                        </span>
+                      </div>
+                    </div>
+                    <button class="catalog__btn my-btn transp-btn"
+                      aria-label="Нажмите, чтобы добавить в корзину">Купить</button>
+                  </article>
+                </li>
+
+                <!-- Y68 -->
+                <li class="catalog__list-item common-list-item">
+                  <article class="catalog__product common-product">
+                    <span class="catalog__rating common-rating">
+                      <svg class="rating">
+                        <use xlink:href="img/sprite.svg#rating-star"></use>
+                      </svg>
+                      4,8
+                    </span>
+                    <div class="catalog__img common-img">
+                      <picture>
+                        <source srcset="img/Y-68-320.webp" media="(max-width: 500px)">
+                        <img src="img/Y-68.webp" alt="Картинка дивана">
+                      </picture>
+                    </div>
+                    <div class="catalog__text common-text">
+                      <h3 class="catalog__subtitle common-subtitle">
+                        <a class="catalog__link black-link common-link" href="#" aria-label="Переход на товар">
+                          Диван велюровый
+                          <span>&#8220;Y-68&#8221;</span>
+                        </a>
+                      </h3>
+                      <div class="catalog__price common-price">
+                        <span class="price">
+                          22&nbsp;990 руб
+                        </span>
+                      </div>
+                    </div>
+                    <button class="catalog__btn my-btn transp-btn"
+                      aria-label="Нажмите, чтобы добавить в корзину">Купить</button>
+                  </article>
+                </li>
+
+                <!-- W95 -->
+                <li class="catalog__list-item common-list-item">
+                  <article class="catalog__product common-product">
+                    <span class="catalog__rating common-rating">
+                      <svg class="rating">
+                        <use xlink:href="img/sprite.svg#rating-star"></use>
+                      </svg>
+                      4,8
+                    </span>
+                    <div class="catalog__img common-img">
+                      <picture>
+                        <source srcset="img/W-95-320.webp" media="(max-width: 500px)">
+                        <img src="img/W-95.webp" alt="Картинка дивана">
+                      </picture>
+                    </div>
+                    <div class="catalog__text common-text">
+                      <h3 class="catalog__subtitle common-subtitle">
+                        <a class="catalog__link black-link common-link" href="#" aria-label="Переход на товар">
+                          Диван из&nbsp;шинила
+                          <span>&#8220;W-95&#8221;</span>
+                        </a>
+                      </h3>
+                      <div class="catalog__price common-price">
+                        <span class="price">
+                          22&nbsp;990 руб
+                        </span>
+                      </div>
+                    </div>
+                    <button class="catalog__btn my-btn transp-btn"
+                      aria-label="Нажмите, чтобы добавить в корзину">Купить</button>
+                  </article>
+                </li>
+
+                <!-- G41 -->
+                <li class="catalog__list-item common-list-item">
+                  <article class="catalog__product common-product">
+                    <span class="catalog__rating common-rating">
+                      <svg class="rating">
+                        <use xlink:href="img/sprite.svg#rating-star"></use>
+                      </svg>
+                      4,8
+                    </span>
+                    <div class="catalog__img common-img">
+                      <picture>
+                        <source srcset="img/G-41-320.webp" media="(max-width: 500px)">
+                        <img src="img/G-41.webp" alt="Картинка дивана">
+                      </picture>
+                    </div>
+                    <div class="catalog__text common-text">
+                      <h3 class="catalog__subtitle common-subtitle">
+                        <a class="catalog__link black-link common-link" href="#" aria-label="Переход на товар">
+                          Диван флоковый
+                          <span>&#8220;G-41&#8221;</span>
+                        </a>
+                      </h3>
+                      <div class="catalog__price common-price">
+                        <span class="price">
+                          17&nbsp;990 руб
+                        </span>
+                      </div>
+                    </div>
+                    <button class="catalog__btn my-btn transp-btn"
+                      aria-label="Нажмите, чтобы добавить в корзину">Купить</button>
+                  </article>
+                </li>
+
+              </ul>
+              <!-- вторая страница -->
+              <ul class="catalog__tabs-item list-reset" data-target="sixth">
+
+                <!-- V43 -->
+                <li class="catalog__list-item common-list-item">
+                  <article class="catalog__product common-product">
+                    <span class="catalog__rating common-rating">
+                      <svg class="rating">
+                        <use xlink:href="img/sprite.svg#rating-star"></use>
+                      </svg>
+                      4,8
+                    </span>
+                    <div class="catalog__img common-img">
+                      <picture>
+                        <source srcset="img/V-43-320.webp" media="(max-width: 500px)">
+                        <img src="img/V-43.webp" alt="Картинка дивана">
+                      </picture>
+                    </div>
+                    <div class="catalog__text common-text">
+                      <h3 class="catalog__subtitle common-subtitle">
+                        <a class="catalog__link black-link common-link" href="#" aria-label="Переход на товар">
+                          Диван шиниловый
+                          <span>&#8220;V-43&#8221;</span>
+                        </a>
+                      </h3>
+                      <div class="catalog__price common-price">
+                        <span class="price">
+                          19&nbsp;990 руб
+                        </span>
+                      </div>
+                    </div>
+                    <button class="catalog__btn my-btn transp-btn"
+                      aria-label="Нажмите, чтобы добавить в корзину">Купить</button>
+                  </article>
+                </li>
+
+                <!-- S99 -->
+                <li class="catalog__list-item common-list-item">
+                  <article class="catalog__product common-product">
+                    <span class="catalog__rating common-rating">
+                      <svg class="rating">
+                        <use xlink:href="img/sprite.svg#rating-star"></use>
+                      </svg>
+                      4,7
+                    </span>
+                    <div class="catalog__img common-img">
+                      <picture>
+                        <source srcset="img/S-99-320.webp" media="(max-width: 500px)">
+                        <img src="img/S-99.webp" alt="Картинка дивана">
+                      </picture>
+                    </div>
+                    <div class="catalog__text common-text">
+                      <h3 class="catalog__subtitle common-subtitle">
+                        <a class="catalog__link black-link common-link" href="#" aria-label="Переход на товар">
+                          Диван велюровый
+                          <span>&#8220;S-99&#8221;</span>
+                        </a>
+                      </h3>
+                      <div class="catalog__price common-price">
+                        <span class="price">
+                          19&nbsp;990 руб
+                        </span>
+                      </div>
+                    </div>
+                    <button class="catalog__btn my-btn transp-btn"
+                      aria-label="Нажмите, чтобы добавить в корзину">Купить</button>
+                  </article>
+                </li>
+
+                <!-- F85 -->
+                <li class="catalog__list-item common-list-item">
+                  <article class="catalog__product common-product">
+                    <span class="catalog__rating common-rating">
+                      <svg class="rating">
+                        <use xlink:href="img/sprite.svg#rating-star"></use>
+                      </svg>
+                      4,7
+                    </span>
+                    <div class="catalog__img common-img">
+                      <picture>
+                        <source srcset="img/F-85-320.webp" media="(max-width: 500px)">
+                        <img src="img/F-85.webp" alt="Картинка дивана">
+                      </picture>
+                    </div>
+                    <div class="catalog__text common-text">
+                      <h3 class="catalog__subtitle common-subtitle">
+                        <a class="catalog__link black-link common-link" href="#" aria-label="Переход на товар">
+                          Диван из&nbsp;кожзама
+                          <span>&#8220;F-85&#8221;</span>
+                        </a>
+                      </h3>
+                      <div class="catalog__price common-price">
+                        <span class="price">
+                          26&nbsp;990 руб
+                        </span>
+                      </div>
+                    </div>
+                    <button class="catalog__btn my-btn transp-btn"
+                      aria-label="Нажмите, чтобы добавить в корзину">Купить</button>
+                  </article>
+                </li>
+
+                <!-- H64 -->
+                <li class="catalog__list-item common-list-item">
+                  <article class="catalog__product common-product">
+                    <span class="catalog__rating common-rating">
+                      <svg class="rating">
+                        <use xlink:href="img/sprite.svg#rating-star"></use>
+                      </svg>
+                      4,6
+                    </span>
+                    <div class="catalog__img common-img">
+                      <picture>
+                        <source srcset="img/H-64-320.webp" media="(max-width: 500px)">
+                        <img src="img/H-64.webp" alt="Картинка дивана">
+                      </picture>
+                    </div>
+                    <div class="catalog__text common-text">
+                      <h3 class="catalog__subtitle common-subtitle">
+                        <a class="catalog__link black-link common-link" href="#" aria-label="Переход на товар">
+                          Диван флоковый
+                          <span>&#8220;H-64&#8221;</span>
+                        </a>
+                      </h3>
+                      <div class="catalog__price common-price">
+                        <span class="price">
+                          25&nbsp;990 руб
+                        </span>
+                      </div>
+                    </div>
+                    <button class="catalog__btn my-btn transp-btn"
+                      aria-label="Нажмите, чтобы добавить в корзину">Купить</button>
+                  </article>
+                </li>
+
+                <!-- H58 -->
+                <li class="catalog__list-item common-list-item">
+                  <article class="catalog__product common-product">
+                    <span class="catalog__rating common-rating">
+                      <svg class="rating">
+                        <use xlink:href="img/sprite.svg#rating-star"></use>
+                      </svg>
+                      4,6
+                    </span>
+                    <div class="catalog__img common-img">
+                      <picture>
+                        <source srcset="img/H-58-320.webp" media="(max-width: 500px)">
+                        <img src="img/H-58.webp" alt="Картинка дивана">
+                      </picture>
+                    </div>
+                    <div class="catalog__text common-text">
+                      <h3 class="catalog__subtitle common-subtitle">
+                        <a class="catalog__link black-link common-link" href="#" aria-label="Переход на товар">
+                          Диван флоковый
+                          <span>&#8220;H-58&#8221;</span>
+                        </a>
+                      </h3>
+                      <div class="catalog__price common-price">
+                        <span class="price">
+                          23&nbsp;990 руб
+                        </span>
+                      </div>
+                    </div>
+                    <button class="catalog__btn my-btn transp-btn"
+                      aria-label="Нажмите, чтобы добавить в корзину">Купить</button>
+                  </article>
+                </li>
+
+                <!-- R43 -->
+                <li class="catalog__list-item common-list-item">
+                  <article class="catalog__product common-product">
+                    <span class="catalog__rating common-rating">
+                      <svg class="rating">
+                        <use xlink:href="img/sprite.svg#rating-star"></use>
+                      </svg>
+                      4,6
+                    </span>
+                    <div class="catalog__img common-img">
+                      <picture>
+                        <source srcset="img/R-43-320.webp" media="(max-width: 500px)">
+                        <img src="img/R-43.webp" alt="Картинка дивана">
+                      </picture>
+                    </div>
+                    <div class="catalog__text common-text">
+                      <h3 class="catalog__subtitle common-subtitle">
+                        <a class="catalog__link black-link common-link" href="#" aria-label="Переход на товар">
+                          Диван из&nbsp;кожзама
+                          <span>&#8220;R-43&#8221;</span>
+                        </a>
+                      </h3>
+                      <div class="catalog__price common-price">
+                        <span class="price">
+                          33&nbsp;990 руб
+                        </span>
+                      </div>
+                    </div>
+                    <button class="catalog__btn my-btn transp-btn"
+                      aria-label="Нажмите, чтобы добавить в корзину">Купить</button>
+                  </article>
+                </li>
+
+              </ul>
+              <!-- третья страница -->
+              <ul class="catalog__tabs-item list-reset" data-target="seventh">
+
+                <!-- C42 -->
+                <li class="catalog__list-item common-list-item">
+                  <article class="catalog__product common-product">
+                    <span class="catalog__rating common-rating">
+                      <svg class="rating">
+                        <use xlink:href="img/sprite.svg#rating-star"></use>
+                      </svg>
+                      4,6
+                    </span>
+                    <div class="catalog__img common-img">
+                      <picture>
+                        <source srcset="img/C-42-320.webp" media="(max-width: 500px)">
+                        <img src="img/C-42.webp" alt="Картинка дивана">
+                      </picture>
+                    </div>
+                    <div class="catalog__text common-text">
+                      <h3 class="catalog__subtitle common-subtitle">
+                        <a class="catalog__link black-link common-link" href="#" aria-label="Переход на товар">
+                          Диван из&nbsp;шинила
+                          <span>&#8220;C-42&#8221;</span>
+                        </a>
+                      </h3>
+                      <div class="catalog__price common-price">
+                        <span class="price">
+                          18&nbsp;990 руб
+                        </span>
+                      </div>
+                    </div>
+                    <button class="catalog__btn my-btn transp-btn"
+                      aria-label="Нажмите, чтобы добавить в корзину">Купить</button>
+                  </article>
+                </li>
+
+                <!-- U58 -->
+                <li class="catalog__list-item common-list-item">
+                  <article class="catalog__product common-product">
+                    <span class="catalog__rating common-rating">
+                      <svg class="rating">
+                        <use xlink:href="img/sprite.svg#rating-star"></use>
+                      </svg>
+                      4,6
+                    </span>
+                    <div class="catalog__img common-img">
+                      <picture>
+                        <source srcset="img/U-58-320.webp" media="(max-width: 500px)">
+                        <img src="img/U-58.webp" alt="Картинка дивана">
+                      </picture>
+                    </div>
+                    <div class="catalog__text common-text">
+                      <h3 class="catalog__subtitle common-subtitle">
+                        <a class="catalog__link black-link common-link" href="#" aria-label="Переход на товар">
+                          Диван велюровый
+                          <span>&#8220;U-58&#8221;</span>
+                        </a>
+                      </h3>
+                      <div class="catalog__price common-price">
+                        <span class="price">
+                          21&nbsp;990 руб
+                        </span>
+                      </div>
+                    </div>
+                    <button class="catalog__btn my-btn transp-btn"
+                      aria-label="Нажмите, чтобы добавить в корзину">Купить</button>
+                  </article>
+                </li>
+
+                <!-- F41 -->
+                <li class="catalog__list-item common-list-item">
+                  <article class="catalog__product common-product">
+                    <span class="catalog__rating common-rating">
+                      <svg class="rating">
+                        <use xlink:href="img/sprite.svg#rating-star"></use>
+                      </svg>
+                      4,5
+                    </span>
+                    <div class="catalog__img common-img">
+                      <picture>
+                        <source srcset="img/F-41-320.webp" media="(max-width: 500px)">
+                        <img src="img/F-41.webp" alt="Картинка дивана">
+                      </picture>
+                    </div>
+                    <div class="catalog__text common-text">
+                      <h3 class="catalog__subtitle common-subtitle">
+                        <a class="catalog__link black-link common-link" href="#" aria-label="Переход на товар">
+                          Диван флоковый
+                          <span>&#8220;F-41&#8221;</span>
+                        </a>
+                      </h3>
+                      <div class="catalog__price common-price">
+                        <span class="price">
+                          17&nbsp;990 руб
+                        </span>
+                      </div>
+                    </div>
+                    <button class="catalog__btn my-btn transp-btn"
+                      aria-label="Нажмите, чтобы добавить в корзину">Купить</button>
+                  </article>
+                </li>
+
+                <!-- R85 -->
+                <li class="catalog__list-item common-list-item">
+                  <article class="catalog__product common-product">
+                    <span class="catalog__rating common-rating">
+                      <svg class="rating">
+                        <use xlink:href="img/sprite.svg#rating-star"></use>
+                      </svg>
+                      4,5
+                    </span>
+                    <div class="catalog__img common-img">
+                      <picture>
+                        <source srcset="img/R-85-320.webp" media="(max-width: 500px)">
+                        <img src="img/R-85.webp" alt="Картинка дивана">
+                      </picture>
+                    </div>
+                    <div class="catalog__text common-text">
+                      <h3 class="catalog__subtitle common-subtitle">
+                        <a class="catalog__link black-link common-link" href="#" aria-label="Переход на товар">
+                          Диван велюровый
+                          <span>&#8220;R-85&#8221;</span>
+                        </a>
+                      </h3>
+                      <div class="catalog__price common-price">
+                        <span class="price">
+                          34&nbsp;990 руб
+                        </span>
+                      </div>
+                    </div>
+                    <button class="catalog__btn my-btn transp-btn"
+                      aria-label="Нажмите, чтобы добавить в корзину">Купить</button>
+                  </article>
+                </li>
+
+                <!-- S44 -->
+                <li class="catalog__list-item common-list-item">
+                  <article class="catalog__product common-product">
+                    <span class="catalog__rating common-rating">
+                      <svg class="rating">
+                        <use xlink:href="img/sprite.svg#rating-star"></use>
+                      </svg>
+                      4,5
+                    </span>
+                    <div class="catalog__img common-img">
+                      <picture>
+                        <source srcset="img/S-44-320.webp" media="(max-width: 500px)">
+                        <img src="img/S-44.webp" alt="Картинка дивана">
+                      </picture>
+                    </div>
+                    <div class="catalog__text common-text">
+                      <h3 class="catalog__subtitle common-subtitle">
+                        <a class="catalog__link black-link common-link" href="#" aria-label="Переход на товар">
+                          Диван велюровый
+                          <span>&#8220;S-44&#8221;</span>
+                        </a>
+                      </h3>
+                      <div class="catalog__price common-price">
+                        <span class="price">
+                          19&nbsp;990 руб
+                        </span>
+                      </div>
+                    </div>
+                    <button class="catalog__btn my-btn transp-btn"
+                      aria-label="Нажмите, чтобы добавить в корзину">Купить</button>
+                  </article>
+                </li>
+
+                <!-- C80 -->
+                <li class="catalog__list-item common-list-item">
+                  <article class="catalog__product common-product">
+                    <span class="catalog__rating common-rating">
+                      <svg class="rating">
+                        <use xlink:href="img/sprite.svg#rating-star"></use>
+                      </svg>
+                      4,4
+                    </span>
+                    <div class="catalog__img common-img">
+                      <picture>
+                        <source srcset="img/C-80-320.webp" media="(max-width: 500px)">
+                        <img src="img/C-80.webp" alt="Картинка дивана">
+                      </picture>
+                    </div>
+                    <div class="catalog__text common-text">
+                      <h3 class="catalog__subtitle common-subtitle">
+                        <a class="catalog__link black-link common-link" href="#" aria-label="Переход на товар">
+                          Диван из&nbsp;шинила
+                          <span>&#8220;C-80&#8221;</span>
+                        </a>
+                      </h3>
+                      <div class="catalog__price common-price">
+                        <span class="price">
+                          20&nbsp;990 руб
+                        </span>
+                      </div>
+                    </div>
+                    <button class="catalog__btn my-btn transp-btn"
+                      aria-label="Нажмите, чтобы добавить в корзину">Купить</button>
+                  </article>
+                </li>
+
+              </ul>
+              <!-- кнопки -->
+              <ul class="catalog__btn-list list-reset">
+                <li class="catalog__btn-list-item">
+                  <button class="catalog__btn-switch my-btn tab-btn-active" aria-label="Первая страница"
+                    data-path="fifth">
+                    1
+                  </button>
+                </li>
+                <li class="catalog__btn-list-item">
+                  <button class="catalog__btn-switch my-btn" aria-label="Вторая страница" data-path="sixth">
+                    2
+                  </button>
+                </li>
+                <li class="catalog__btn-list-item">
+                  <button class="catalog__btn-switch my-btn" aria-label="Третья страница" data-path="seventh">
+                    3
+                  </button>
+                </li>
+              </ul>
+
+            </div>
+
+            <!-- tabs -->
+            <!-- tabs -->
+            <!-- tabs -->
+          </div>
+
+
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  @include('html/footer.html', {})
+</body>
+
+</html>

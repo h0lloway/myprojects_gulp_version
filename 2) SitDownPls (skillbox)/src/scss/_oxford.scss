@@ -1,0 +1,98 @@
+.oxford {
+	background-image: url(../img/oxford.webp);
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: center;
+	background-color: #333;
+	padding: 153px 0 171px;
+	margin-bottom: 72px;
+
+	&__title {
+		font-family: 'Playfair Display', 'sans-serif';
+		font-style: normal;
+		font-weight: 900;
+		font-size: 60px;
+		line-height: 72px;
+
+		color: #D5B986;
+	}
+
+	&__text {
+		display: flex;
+		flex-direction: column;
+		margin-bottom: 49px;
+
+		font-size: 48px;
+		line-height: 57.6px;
+		color: var(--white-color);
+		margin-bottom: 70px;
+	}
+
+	&__btn {
+		padding: 17px 30px;
+	}
+
+	&__mobile-btn {
+		display: none;
+	}
+}
+
+@media (max-width: 1350px) {
+	.oxford {
+		background-image: url(../img/oxford-1024.webp);
+	}
+}
+
+@media (max-width: 1000px) {
+	.oxford {
+		&__container {
+			padding: 0 36px;
+		}
+
+		&__text {
+			margin-bottom: 72px;
+		}
+	}
+}
+
+@media (max-width: 650px) {
+	.oxford {
+		position: relative;
+		margin-bottom: 162px;
+		padding-top: 30px;
+		padding-bottom: 111px;
+
+		background-image: url(../img/oxford-320.webp);
+
+		&__container {
+			padding: 0 12px;
+		}
+
+		&__title {
+			font-size: 24px;
+			line-height: 29px;
+		}
+
+		&__text {
+			margin-bottom: 0;
+			font-size: 16px;
+			line-height: 20px;
+		}
+
+		&__btn {
+			display: none;
+		}
+
+		&__mobile-btn {
+			position: absolute;
+			bottom: -92px;
+			width: 92.5%;
+			left: 0;
+			display: block;
+			text-align: center;
+			margin-left: 12px;
+			margin-right: 12px;
+			padding: 20px 50px;
+		}
+	}
+}

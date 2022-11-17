@@ -1,0 +1,191 @@
+.partnership {
+
+  padding-top: 20px;
+
+  &__title {
+    margin-bottom: 31px;
+  }
+
+  .subtitle {
+    margin-bottom: 12px;
+
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 33px;
+    color: var(--black-color);
+  }
+
+  &__text {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 29px;
+
+    color: var(--dark-grey);
+  }
+
+  &__content {
+    max-width: 842px;
+  }
+
+  &__links {
+    margin-top: 0;
+    margin-bottom: 31px;
+    margin-left: -4px;
+  }
+
+  &__suppliers {
+    margin-bottom: 33px;
+  }
+
+  &__get {
+    margin-bottom: 33px;
+
+    .get-list {
+      max-width: 624px;
+
+      .get-list-item {
+        padding-left: 37px;
+      }
+
+      .get-list-item:nth-child(1),
+      .get-list-item:nth-child(2),
+      .get-list-item:nth-child(3) {
+        background-repeat: no-repeat;
+        background-position: 0% 0%;
+        background-size: 25px 25px;
+      }
+
+      .get-list-item:nth-child(1) {
+        background-image: url(../img/network.png);
+      }
+
+      .get-list-item:nth-child(2) {
+        background-image: url(../img/briefcase.png );
+      }
+
+      .get-list-item:nth-child(3) {
+        background-image: url(../img/git-pull-request.png);
+      }
+
+
+      .get-list-item:not(:last-child) {
+        margin-bottom: 11px;
+      }
+
+      .get-text {
+        line-height: 24px;
+      }
+    }
+  }
+
+  &__benefits {
+    margin-bottom: 32px;
+
+    .partnership__text {
+      margin-bottom: 12px;
+    }
+  }
+
+  &__span {
+    display: inline-block;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 22px;
+    color: var(--orange-color);
+    margin-bottom: 12px;
+  }
+
+  &__guarantees {
+    margin-bottom: 72px;
+
+    .guarantees-list {
+      margin-left: 18px;
+      margin-bottom: 31px;
+
+      .guarantees-list-item {
+        padding-left: 8px;
+
+        font-weight: 600;
+        font-size: 16px;
+        line-height: 180%;
+        color: var(--orange-color);
+      }
+
+      .guarantees-list-item:not(:last-child) {
+        margin-bottom: 13px;
+      }
+    }
+
+    .partnership__term {
+      display: flex;
+      align-items: center;
+
+      .partnership__text {
+        font-weight: 400;
+        font-size: 24px;
+        line-height: 150%;
+        color: var(--black-color);
+        width: 60%;
+        margin-bottom: 0;
+        margin-left: 32px;
+      }
+    }
+  }
+
+  .git-pull-request,
+  .briefcase,
+  .network {
+    width: 25px;
+    height: 25px;
+
+  }
+}
+
+@media (max-width: 800px) {
+  .partnership {
+
+    &__guarantees {
+
+      .partnership__term {
+
+        .partnership__text {
+
+          width: 85%;
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 750px) {
+  .partnership {
+
+    .subtitle {
+      font-size: calc(16px + 8 * (100vw - 320px)/ 680);
+      line-height: 22px;
+    }
+
+    .benefits .subtitle {
+      font-size: calc(14px + 10 * (100vw - 320px)/ 680);
+      line-height: 19px;
+    }
+
+    &__text {
+      font-size: calc(14px + 2 * (100vw - 320px)/ 680);
+      line-height: 25px;
+    }
+
+    &__guarantees {
+
+      .partnership__term {
+
+        .partnership__text {
+          margin-left: 16px;
+
+          font-size: calc(16px + 8 * (100vw - 320px)/ 680);
+          line-height: 24px;
+        }
+      }
+    }
+  }
+}

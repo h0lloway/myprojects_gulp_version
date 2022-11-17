@@ -1,0 +1,820 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Dubrovin Maksim</title>
+  <link rel="icon" href="img/favicon.png">
+
+  <!-- fonts -->
+  <!-- fonts -->
+
+  <link rel="prefetch" href="fonts/Roboto-Medium.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="prefetch" href="fonts/Roboto-Regular.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="prefetch" href="fonts/Roboto-Bold.woff2" as="font" type="font/woff2" crossorigin>
+
+  <!-- styles -->
+  <!-- styles -->
+
+  <!-- <link rel="stylesheet" href="https://unpkg.com/swiper@8/swiper-bundle.min.css" /> -->
+  <!-- choices -->
+  <!-- <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/choices.js/public/assets/styles/choices.min.css" /> -->
+
+  <!-- tooltips -->
+  <link rel="stylesheet" href="https://unpkg.com/tippy.js@6/animations/scale.css" />
+
+  <!-- my-styles -->
+  <link rel="stylesheet" href="css/main.min.css">
+
+  <!-- JavaScript -->
+  <!-- JavaScript -->
+
+  <!-- accordion -->
+  <!-- <script defer src="https://code.jquery.com/jquery-1.12.4.js"></script> -->
+  <!-- <script defer src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script> -->
+
+  <!-- choices -->
+  <!-- <script defer src="js/choices.min.js"></script> -->
+  <!-- swiper -->
+  <!-- <script defer src="https://unpkg.com/swiper@8/swiper-bundle.min.js"></script> -->
+
+  <!-- GSAP -->
+  <script defer src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.6.0/gsap.min.js"></script>
+
+  <!-- tooltips -->
+  <!-- <script defer src="https://unpkg.com/@popperjs/core@2/dist/umd/popper.min.js"></script> -->
+  <!-- <script defer src="https://unpkg.com/tippy.js@6/dist/tippy-bundle.umd.js"></script> -->
+
+  <!-- jQuery -->
+  <script defer src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.0/jquery.min.js"></script>
+  <script defer src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+  <!-- my JS -->
+  <script defer src="js/main.js"></script>
+</head>
+
+<body>
+  <header class="header">
+    <div class="container header__container">
+      <div class="header__content">
+        <a class="header__logo" href="#">
+          <span>Dubrovin</span>
+          <span>Maksim</span>
+        </a>
+        <div class="header__right-content">
+          <div class="header__nav nav">
+            <button class="nav__burger my-btn" aria-label="Открытие меню">
+              <span></span>
+            </button>
+            <ul class="nav__list list-reset">
+              <li class="nav__list-item">
+                <a class="nav__list-item-link" href="#skills">Мои навыки</a>
+              </li>
+              <li class="nav__list-item">
+                <a class="nav__list-item-link" href="#about">Обо мне</a>
+              </li>
+              <li class="nav__list-item">
+                <a class="nav__list-item-link" href="#portfolio">Мои работы</a>
+              </li>
+              <li class="nav__list-item">
+                <a class="nav__list-item-link" href="#contacts">Контакты</a>
+              </li>
+            </ul>
+          </div>
+
+          <div class="header__theme">
+            <button class="header__btn my-btn swich-theme-btn swich-theme-btn-dark" id="theme-btn" aria-label="Пометка">
+              <img src="img/moon.png" alt="" width="30" height="30" id="theme-img">
+            </button>
+            <!-- data-tippy-content="Не финальный вариант темной темы, она в процессе :)" js-tooltip -->
+          </div>
+
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <main>
+
+    <section class="hero" id="hero">
+      <div class="container hero__container">
+        <div class="hero__content">
+
+          <h1 class="hero__title">
+            Привет!
+            <br> Меня зовут Максим,
+            <br> я верстальщик и
+            <br> front-end developer
+          </h1>
+
+          <p class="hero__descr">
+            Верстаю кроссбраузерно,
+            <br> валидно и адаптивно
+          </p>
+
+          <!-- <a class="hero__btn red-btn" href="#portfolio">Смотреть портфолио</a> -->
+
+          <a class="button learn-more" href="#portfolio">Смотреть портфолио</a>
+        </div>
+
+        <div class="hero__img">
+          <img src="img/me.jpg" width="300" height="300" alt="Фотография">
+        </div>
+      </div>
+    </section>
+
+    <section class="skills" id="skills">
+      <div class="container skills__container">
+        <h2 class="skills__title title">
+          Мои навыки
+        </h2>
+        <ul class="skills__list list-reset skill">
+
+          <!-- html -->
+          <li class="skill__item">
+            <div class="skill__img">
+              <svg class="web-logo" width="50" height="50">
+                <use xlink:href="img/sprite.svg#html"></use>
+              </svg>
+            </div>
+            <div class="skill__subtitle">HTML5</div>
+            <div class="skill__descr">Семантическая
+              <br> разметка кода
+              <br> Использование БЭМ
+            </div>
+          </li>
+
+          <!-- css -->
+          <li class="skill__item">
+            <div class="skill__img">
+              <svg class="web-logo" width="50" height="50">
+                <use xlink:href="img/sprite.svg#css"></use>
+              </svg>
+            </div>
+            <div class="skill__subtitle">CSS3</div>
+            <div class="skill__descr">Стилизация элементов на
+              <br> странице
+            </div>
+          </li>
+
+          <!-- JS -->
+          <li class="skill__item">
+            <div class="skill__img">
+              <svg class="web-logo" width="50" height="50">
+                <use xlink:href="img/sprite.svg#javascript"></use>
+              </svg>
+            </div>
+            <div class="skill__subtitle">JavaScript</div>
+            <div class="skill__descr">Подключение скриптов для динамичности страницы</div>
+          </li>
+
+          <!-- jquery -->
+          <li class="skill__item">
+            <div class="skill__img">
+              <svg class="web-logo" width="50" height="50">
+                <use xlink:href="img/sprite.svg#jquery"></use>
+              </svg>
+            </div>
+            <div class="skill__subtitle">jQuery</div>
+            <div class="skill__descr">Подключение анимации на странице</div>
+          </li>
+
+          <!-- sass -->
+          <li class="skill__item">
+            <div class="skill__img">
+              <svg class="web-logo" width="50" height="50">
+                <use xlink:href="img/sprite.svg#sass"></use>
+              </svg>
+            </div>
+            <div class="skill__subtitle">Sass</div>
+            <div class="skill__descr">Быстрое написание стилей </div>
+          </li>
+
+          <!-- gulp -->
+          <li class="skill__item">
+            <div class="skill__img">
+              <svg class="web-logo" width="50" height="50">
+                <use xlink:href="img/sprite.svg#gulp"></use>
+              </svg>
+            </div>
+            <div class="skill__subtitle">Gulp</div>
+            <div class="skill__descr">Быстрая компиляция файлов </div>
+          </li>
+
+          <!-- bootstrap -->
+          <li class="skill__item">
+            <div class="skill__img">
+              <svg class="web-logo" width="50" height="50">
+                <use xlink:href="img/sprite.svg#bootstrap"></use>
+              </svg>
+            </div>
+            <div class="skill__subtitle">Bootstrap</div>
+            <div class="skill__descr">Использование сетки и быстрая адаптация сайта</div>
+          </li>
+
+          <!-- figma -->
+          <li class="skill__item">
+            <div class="skill__img">
+              <svg class="web-logo" width="50" height="50">
+                <use xlink:href="img/sprite.svg#figma"></use>
+              </svg>
+            </div>
+            <div class="skill__subtitle">Figma</div>
+            <div class="skill__descr">Верстка по макету</div>
+          </li>
+
+        </ul>
+      </div>
+    </section>
+
+    <section class="about" id="about">
+      <div class="container about__container animation">
+        <div class="about__content">
+          <h2 class="about__title title">Обо мне</h2>
+
+          <ul class="about__qualities list-reset qualities">
+
+            <li class="qualities__item">
+              <div class="qualities__wrap">
+                <div class="qualities__img">
+                  <svg class="qualities__logo" width="72" height="72">
+                    <use xlink:href="img/sprite.svg#clock"></use>
+                  </svg>
+                </div>
+                <div class="qualities__subtitle">Ответственный</div>
+                <div class="qualities__descr">Всегда ответственно подхожу к выполнению любой работы</div>
+              </div>
+            </li>
+
+            <li class="qualities__item">
+              <div class="qualities__wrap">
+                <div class="qualities__img">
+                  <svg class="qualities__logo" width="72" height="72">
+                    <use xlink:href="img/sprite.svg#iphone"></use>
+                  </svg>
+                </div>
+                <div class="qualities__subtitle">Всегда на связи</div>
+                <div class="qualities__descr">
+                  Мне можно писать в любое время, в телеграм или на почту
+                </div>
+              </div>
+            </li>
+
+            <li class="qualities__item">
+              <div class="qualities__wrap">
+                <div class="qualities__img">
+                  <svg class="qualities__logo" width="72" height="72">
+                    <use xlink:href="img/sprite.svg#notebook"></use>
+                  </svg>
+                </div>
+                <div class="qualities__subtitle">Быстро обучаюсь</div>
+                <div class="qualities__descr">
+                  Быстро вхожу в курс дела, постоянно практикуюсь и обучаюсь новому
+                </div>
+              </div>
+            </li>
+
+          </ul>
+
+          <div class="about__i-find i-find">
+            <h3 class="i-find__title">
+              Ищу клиентов и удалённую работу
+            </h3>
+            <div class="i-find__content">
+              <div class="i-find__img ibg">
+                <picture>
+                  <img src="img/me.jpg" alt="Моя фотография">
+                </picture>
+              </div>
+              <div class="i-find__block">
+                <p class="i-find__text">
+                  Я занимаюсь созданием веб-сайтов чуть больше года. Делаю верстку сайта адаптивно и валидно, в том
+                  числе верстаю HTML-письма.
+                  <br>
+                  <br>
+                  Работаю как по макету, так и без него. Набираю заказы для своего портфолио, а также ищу работу в
+                  команде.
+                  <br>
+                  <br>
+                  Если Вам нужен верстальщик в проект пишите, буду рад!
+                </p>
+                <a class="i-find__btn red-btn" href="#contacts">
+                  Напиши мне
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="portfolio" id="portfolio">
+      <div class="container portfolio__container animation">
+        <h2 class="portfolio__title title">
+          Мои работы
+        </h2>
+
+        <ul class="portfolio__list list-reset">
+
+          <li class="portfolio__list-item item-portf">
+            <div class="item-portf__body">
+              <div class="item-portf__img">
+                <img src="img/ЭПА.webp" alt="Скриншот работы">
+              </div>
+              <div class="item-portf__content">
+                <h3 class="item-portf__title">
+                  Landing page
+                  <br><span>Экспертно-Правовое Агенство</span>
+                </h3>
+                <ul class="item-portf__list list-reset">
+                  <li class="item-portf__list-item">Работа: Адаптивная верстка</li>
+                  <li class="item-portf__list-item">HTML + CSS(flex)</li>
+                  <li class="item-portf__list-item">Функционал: Табы, аккордеон, слайдеры, модальные окна</li>
+                </ul>
+                <a class="item-portf__btn red-btn" href="https://h0lloway.github.io/EPA/" target="_blank">На сайт</a>
+              </div>
+            </div>
+          </li>
+
+          <!-- 2 -->
+          <li class="portfolio__list-item item-portf">
+            <div class="item-portf__body">
+              <div class="item-portf__img">
+                <img src="img/psycho.webp" alt="Скриншот работы">
+              </div>
+              <div class="item-portf__content">
+                <h3 class="item-portf__title">
+                  Landing page
+                  <br><span>Корпорация психологии</span>
+                </h3>
+                <ul class="item-portf__list list-reset">
+                  <li class="item-portf__list-item">Работа: Адаптивная верстка</li>
+                  <li class="item-portf__list-item">HTML + CSS(flex + grid)</li>
+                  <li class="item-portf__list-item">Функционал: Слайдер цены, бургер меню, модальные окна, табы</li>
+                </ul>
+                <a class="item-portf__btn red-btn" href="https://h0lloway.github.io/psychologists_v2/"
+                  target="_blank">На
+                  сайт</a>
+              </div>
+            </div>
+          </li>
+
+          <!-- 6 -->
+          <li class="portfolio__list-item item-portf">
+            <div class="item-portf__body">
+              <div class="item-portf__img">
+                <img src="img/SDP.webp" alt="Скриншот работы">
+              </div>
+              <div class="item-portf__content">
+                <h3 class="item-portf__title">
+                  Сайт магазина мебели
+                  <br><span>SitDownPls</span>
+                </h3>
+                <ul class="item-portf__list list-reset">
+                  <li class="item-portf__list-item">Работа: Верстка</li>
+                  <li class="item-portf__list-item">HTML + CSS(flex + grid)</li>
+                  <li class="item-portf__list-item">Функционал: Слайдер, табы, модальные окна, селекты</li>
+                </ul>
+                <a class="item-portf__btn red-btn" href="https://h0lloway.github.io/SitDownPls__makdu/" target="_blank">
+                  На сайт
+                </a>
+              </div>
+            </div>
+          </li>
+
+          <li class="portfolio__list-item item-portf">
+            <div class="item-portf__body">
+              <div class="item-portf__img">
+                <img src="img/hilding-letter.webp" alt="Скриншот работы">
+              </div>
+              <div class="item-portf__content">
+                <h3 class="item-portf__title">
+                  HTML письмо
+                  <br><span>Hilding Anders</span>
+                </h3>
+                <ul class="item-portf__list list-reset">
+                  <li class="item-portf__list-item">Работа: Верстка</li>
+                  <li class="item-portf__list-item">Резиново</li>
+                  <li class="item-portf__list-item">Функционал: email-рассылка</li>
+                </ul>
+                <a class="item-portf__btn red-btn" href="https://h0lloway.github.io/hilding-letter/"
+                  target="_blank">Смотреть</a>
+              </div>
+            </div>
+          </li>
+
+          <!-- 5 -->
+          <li class="portfolio__list-item item-portf">
+            <div class="item-portf__body">
+              <div class="item-portf__img">
+                <img src="img/gamevendor.webp" alt="Скриншот работы">
+              </div>
+              <div class="item-portf__content">
+                <h3 class="item-portf__title">
+                  Интернет-магазин
+                  <br><span>GameVendor</span>
+                </h3>
+                <ul class="item-portf__list list-reset">
+                  <li class="item-portf__list-item">Работа: Адаптивная верстка</li>
+                  <li class="item-portf__list-item">HTML + CSS(flex + grid)</li>
+                  <li class="item-portf__list-item">Функционал: Слайдер, селекты, добавление карточки, аккордион</li>
+                </ul>
+                <a class="item-portf__btn red-btn" href="https://h0lloway.github.io/gameVendor_page/" target="_blank">На
+                  сайт</a>
+              </div>
+            </div>
+          </li>
+
+          <!-- 3 -->
+          <li class="portfolio__list-item item-portf">
+            <div class="item-portf__body">
+              <div class="item-portf__img">
+                <img src="img/tectum.webp" alt="Скриншот работы">
+              </div>
+              <div class="item-portf__content">
+                <h3 class="item-portf__title">
+                  Веб-интерфейс
+                  <br><span>Tectum</span>
+                </h3>
+                <ul class="item-portf__list list-reset">
+                  <li class="item-portf__list-item">Работа: Адаптивная верстка</li>
+                  <li class="item-portf__list-item">HTML + CSS(bootstrap)</li>
+                  <li class="item-portf__list-item">Функционал: Адаптивная таблица, бургер меню, кастомные селекты</li>
+                </ul>
+                <a class="item-portf__btn red-btn" href="https://h0lloway.github.io/tectum/" target="_blank">
+                  На сайт
+                </a>
+              </div>
+            </div>
+          </li>
+
+          <li class="portfolio__list-item item-portf">
+            <div class="item-portf__body">
+              <div class="item-portf__img">
+                <img src="img/rosseti-letter.webp" alt="Скриншот работы">
+              </div>
+              <div class="item-portf__content">
+                <h3 class="item-portf__title">
+                  HTML письмо
+                  <br><span>Rosseti</span>
+                </h3>
+                <ul class="item-portf__list list-reset">
+                  <li class="item-portf__list-item">Работа: Верстка</li>
+                  <li class="item-portf__list-item">Резиново</li>
+                  <li class="item-portf__list-item">Функционал: email-рассылка</li>
+                </ul>
+                <a class="item-portf__btn red-btn" href="https://h0lloway.github.io/rosseti-letter/"
+                  target="_blank">Смотреть</a>
+              </div>
+            </div>
+          </li>
+
+          <!-- 4 -->
+          <li class="portfolio__list-item item-portf">
+            <div class="item-portf__body">
+              <div class="item-portf__img">
+                <img src="img/for-teachers.webp" alt="Скриншот работы">
+              </div>
+              <div class="item-portf__content">
+                <h3 class="item-portf__title">
+                  Landing page
+                  <br><span>Мы - учителям</span>
+                </h3>
+                <ul class="item-portf__list list-reset">
+                  <li class="item-portf__list-item">Работа: Адаптивная верстка</li>
+                  <li class="item-portf__list-item">HTML + CSS(flex + grid)</li>
+                  <li class="item-portf__list-item">Функционал: Слайдеры, бургер меню</li>
+                </ul>
+                <a class="item-portf__btn red-btn" href="https://h0lloway.github.io/for-teachers/" target="_blank">На
+                  сайт</a>
+              </div>
+            </div>
+          </li>
+
+          <!-- 7 -->
+          <li class="portfolio__list-item item-portf">
+            <div class="item-portf__body">
+              <div class="item-portf__img">
+                <img src="img/my-portfolio(dark).webp" alt="Скриншот работы">
+              </div>
+              <div class="item-portf__content">
+                <h3 class="item-portf__title">
+                  Сайт-визитка
+                  <br><span>Моё портфолио</span>
+                </h3>
+                <ul class="item-portf__list list-reset">
+                  <li class="item-portf__list-item">Работа: Адаптивная верстка</li>
+                  <li class="item-portf__list-item">HTML + CSS(flex)</li>
+                  <li class="item-portf__list-item">Функционал: Выбор темы</li>
+                </ul>
+                <a class="item-portf__btn red-btn" href="https://h0lloway.github.io/my-portfolio/" target="_blank">На
+                  сайт</a>
+              </div>
+            </div>
+          </li>
+
+          <!-- 8 -->
+          <li class="portfolio__list-item item-portf">
+            <div class="item-portf__body">
+              <div class="item-portf__img">
+                <img src="img/blanchard.webp" alt="Скриншот работы">
+              </div>
+              <div class="item-portf__content">
+                <h3 class="item-portf__title">
+                  Страница галереи
+                  <br><span>Blanchard - галерея</span>
+                </h3>
+                <ul class="item-portf__list list-reset">
+                  <li class="item-portf__list-item">Работа: Адаптивная верстка</li>
+                  <li class="item-portf__list-item">HTML + CSS(flex)</li>
+                  <li class="item-portf__list-item">Функционал: Слайдер, табы, модальные окна, аккордион</li>
+                </ul>
+                <a class="item-portf__btn red-btn" href="https://h0lloway.github.io/diplom_blanchard/" target="_blank">
+                  На сайт
+                </a>
+              </div>
+            </div>
+          </li>
+
+          <!-- 9 -->
+          <li class="portfolio__list-item item-portf">
+            <div class="item-portf__body">
+              <div class="item-portf__img">
+                <img src="img/highpass.webp" alt="Скриншот работы">
+              </div>
+              <div class="item-portf__content">
+                <h3 class="item-portf__title">
+                  Сайт фотостудии
+                  <br><span>HighPass</span>
+                </h3>
+                <ul class="item-portf__list list-reset">
+                  <li class="item-portf__list-item">Работа: Адаптивная верстка</li>
+                  <li class="item-portf__list-item">HTML + CSS(flex + grid)</li>
+                  <li class="item-portf__list-item">Функционал: Сайт фотостудии</li>
+                </ul>
+                <a class="item-portf__btn red-btn" href="https://h0lloway.github.io/high-pass-work/" target="_blank">
+                  На сайт
+                </a>
+              </div>
+            </div>
+          </li>
+
+          <!-- 10 -->
+          <!-- class ="hidden" - старый вариант  -->
+          <li class="portfolio__list-item item-portf">
+            <div class="item-portf__body">
+              <div class="item-portf__img">
+                <img src="img/skillbox.webp" alt="Скриншот работы">
+              </div>
+              <div class="item-portf__content">
+                <h3 class="item-portf__title">
+                  Страница курса
+                  <br><span>Skillbox</span>
+                </h3>
+                <ul class="item-portf__list list-reset">
+                  <li class="item-portf__list-item">Работа: Адаптивная верстка</li>
+                  <li class="item-portf__list-item">HTML + CSS (Bootstrap)</li>
+                  <li class="item-portf__list-item">Функционал: Шаблон</li>
+                </ul>
+                <a class="item-portf__btn red-btn" href="https://h0lloway.github.io/skillbox/" target="_blank">На
+                  сайт</a>
+              </div>
+            </div>
+          </li>
+
+          <!-- 11 -->
+          <!-- class ="hidden" - старый вариант  -->
+          <li class="portfolio__list-item item-portf">
+            <div class="item-portf__body">
+              <div class="item-portf__img">
+                <img src="img/furino.webp" alt="Скриншот работы">
+              </div>
+              <div class="item-portf__content">
+                <h3 class="item-portf__title">
+                  Интернет-магазин
+                  <br><span>Furino</span>
+                </h3>
+                <ul class="item-portf__list list-reset">
+                  <li class="item-portf__list-item">Работа: Адаптивная верстка</li>
+                  <li class="item-portf__list-item">HTML + CSS(flex + grid)</li>
+                  <li class="item-portf__list-item">Функционал: Слайдер, кнопки, галерея</li>
+                </ul>
+                <a class="item-portf__btn red-btn" href="https://h0lloway.github.io/Furino/" target="_blank">
+                  На сайт
+                </a>
+              </div>
+            </div>
+          </li>
+
+          <!-- 12 -->
+          <!-- class ="hidden" - старый вариант  -->
+          <li class="portfolio__list-item item-portf">
+            <div class="item-portf__body">
+              <div class="item-portf__img">
+                <img src="img/evklid.webp" alt="Скриншот работы">
+              </div>
+              <div class="item-portf__content">
+                <h3 class="item-portf__title">
+                  Landing page
+                  <br><span>Евклид проектные системы</span>
+                </h3>
+                <ul class="item-portf__list list-reset">
+                  <li class="item-portf__list-item">Работа: Адаптивная верстка</li>
+                  <li class="item-portf__list-item">HTML + CSS (flex)</li>
+                  <li class="item-portf__list-item">Функционал: Слайдер, табы, аккордион</li>
+                </ul>
+                <a class="item-portf__btn red-btn" href="https://h0lloway.github.io/evklid/" target="_blank">На сайт</a>
+              </div>
+            </div>
+          </li>
+
+          <!-- 13 -->
+          <!-- class ="hidden" - старый вариант  -->
+          <li class="portfolio__list-item item-portf">
+            <div class="item-portf__body">
+              <div class="item-portf__img">
+                <img src="img/eldorado.webp" alt="Скриншот работы">
+              </div>
+              <div class="item-portf__content">
+                <h3 class="item-portf__title">
+                  HTML письмо
+                  <br><span>Эльдорадо</span>
+                </h3>
+                <ul class="item-portf__list list-reset">
+                  <li class="item-portf__list-item">Работа: Верстка</li>
+                  <li class="item-portf__list-item">Адаптивно</li>
+                  <li class="item-portf__list-item">Функционал: Рассылка</li>
+                </ul>
+                <a class="item-portf__btn red-btn" href="https://h0lloway.github.io/testmaileldorado/"
+                  target="_blank">Смотреть</a>
+              </div>
+            </div>
+          </li>
+
+          <!-- 14 -->
+          <!-- class ="hidden" - старый вариант  -->
+          <li class="portfolio__list-item item-portf">
+            <div class="item-portf__body">
+              <div class="item-portf__img">
+                <img src="img/htmlletter.webp" alt="Скриншот работы">
+              </div>
+              <div class="item-portf__content">
+                <h3 class="item-portf__title">
+                  HTML письмо
+                  <br><span>Software depot</span>
+                </h3>
+                <ul class="item-portf__list list-reset">
+                  <li class="item-portf__list-item">Работа: Верстка</li>
+                  <li class="item-portf__list-item">Резиново</li>
+                  <li class="item-portf__list-item">Функционал: Рассылка</li>
+                </ul>
+                <a class="item-portf__btn red-btn" href="https://h0lloway.github.io/software-depot-letter/"
+                  target="_blank">Смотреть</a>
+              </div>
+            </div>
+          </li>
+
+          <!-- 15 -->
+          <!-- class ="hidden" - старый вариант  -->
+          <li class="portfolio__list-item item-portf">
+            <div class="item-portf__body">
+              <div class="item-portf__img">
+                <img src="img/blanchard-letter.webp" alt="Скриншот работы">
+              </div>
+              <div class="item-portf__content">
+                <h3 class="item-portf__title">
+                  HTML письмо
+                  <br><span>Blanchard</span>
+                </h3>
+                <ul class="item-portf__list list-reset">
+                  <li class="item-portf__list-item">Работа: Верстка</li>
+                  <li class="item-portf__list-item">Адаптивно</li>
+                  <li class="item-portf__list-item">Функционал: Рассылка</li>
+                </ul>
+                <a class="item-portf__btn red-btn" href="https://h0lloway.github.io/blanchard-letter/"
+                  target="_blank">Смотреть</a>
+              </div>
+            </div>
+          </li>
+
+          <!-- 16 -->
+          <!-- class ="hidden" - старый вариант  -->
+          <li class="portfolio__list-item item-portf">
+            <div class="item-portf__body">
+              <div class="item-portf__img">
+                <img src="img/Игра пары числе.webp" alt="Скриншот работы">
+              </div>
+              <div class="item-portf__content">
+                <h3 class="item-portf__title">
+                  Игра
+                  <br><span>Пары чисел</span>
+                </h3>
+                <ul class="item-portf__list list-reset">
+                  <li class="item-portf__list-item">Работа: JavaScript</li>
+                  <li class="item-portf__list-item"></li>
+                  <li class="item-portf__list-item">Функционал: Игра</li>
+                </ul>
+                <a class="item-portf__btn red-btn" href="https://h0lloway.github.io/js-game-couples/"
+                  target="_blank">Смотреть</a>
+              </div>
+            </div>
+          </li>
+
+          <!-- 1 -->
+          <!-- <li class="portfolio__list-item item-portf">
+						<div class="item-portf__body">
+							<div class="item-portf__img">
+								<img src="img/speaky_school.webp" alt="Скриншот работы">
+							</div>
+							<div class="item-portf__content">
+								<h3 class="item-portf__title">
+									Landing page
+									<br><span>Школа ин. языков</span>
+								</h3>
+								<ul class="item-portf__list list-reset">
+									<li class="item-portf__list-item">Работа: <b>Готов только десктоп</b></li>
+									<li class="item-portf__list-item">HTML + CSS(flex + grid)</li>
+									<li class="item-portf__list-item">Функционал: Табы, бургер меню, модальные окна</li>
+								</ul>
+								<a class="item-portf__btn red-btn" href="https://h0lloway.github.io/speaky_school/" target="_blank">На
+									сайт</a>
+							</div>
+						</div>
+					</li> -->
+
+        </ul>
+
+        <button class="portfolio__btn my-btn red-btn more-item-btn">Показать ещё</button>
+        <!-- <button class="portfolio__btn my-btn red-btn close-item-btn hidden">Скрыть</button> -->
+      </div>
+    </section>
+
+    <section class="contacts" id="contacts">
+      <div class="container contacts__container animation">
+        <h2 class="contacts__title title">Связь со мной</h2>
+        <div class="contacts__content">
+          <div class="contacts__content-left content-left contacts-content">
+
+            <h3 class="contacts-content__title">
+              Напишите мне в телеграм
+            </h3>
+            <a class="contacts-content__link" href="https://t.me/makdu1" target="_blank">
+              <svg class="telegram" width="100" height="100">
+                <use xlink:href="img/sprite.svg#telegram"></use>
+              </svg>
+            </a>
+          </div>
+          <div class="contacts__content-right content-right contacts-content">
+            <h3 class="contacts-content__title">
+              Напишите мне на почту
+            </h3>
+            <a class="contacts-content__link" href="mailto:gvozdb27@gmail.com" target="_blank">
+              <svg class="gmail" width="100" height="100">
+                <use xlink:href="img/sprite.svg#gmail"></use>
+              </svg>
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <footer class="footer">
+    <div class="container footer__container">
+      <div class="footer__content">
+        <a class="footer__link-github" href="https://github.com/h0lloway" target="_blank">
+          <div class="footer__img">
+            <img src="img/anyrgb.com.webp" alt="Лого гитхаб" width="70" height="70">
+          </div>
+          <div class="footer__logo">
+            Dubrovin
+            <br>
+            Maksim
+          </div>
+          <div class="footer__arrow">
+            GO!
+          </div>
+        </a>
+
+        <p class="footer__text">
+          Copyright ©2022 All rights reserved
+        </p>
+      </div>
+
+    </div>
+  </footer>
+
+  <!-- Кнопка скролла вверх страницы -->
+  <a class="up-arrow" id="up-arrow">
+
+    <svg class="" width="60" height="60">
+      <use xlink:href="img/sprite.svg#uparrow"></use>
+    </svg>
+
+  </a>
+
+</body>
+
+</html>

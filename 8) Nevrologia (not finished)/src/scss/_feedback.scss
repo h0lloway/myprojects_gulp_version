@@ -1,0 +1,63 @@
+.feedback {
+  padding-top: 80px;
+  padding-bottom: 60px;
+
+  background: var(--blue-color);
+
+
+  .content {
+
+    display: flex;
+    justify-content: space-between;
+
+    .left {
+
+      padding-top: 30px;
+
+      &__title {
+        margin-bottom: 35px;
+
+        font-size: 46px;
+        line-height: 45px;
+
+        color: var(--white-color);
+      }
+
+      &__descr {
+        margin-bottom: 108px;
+
+        font-size: 20px;
+        line-height: 23px;
+
+        color: var(--white-color);
+      }
+
+      &__btn {
+        padding: 17px 48px;
+
+        font-size: 17px;
+        line-height: 20px;
+
+        color: var(--white-color);
+
+        background: #B6E300;
+        border-radius: 27.5px;
+        transition: .3s ease;
+      }
+
+      &__btn:hover {
+        transform: scale(1.1);
+      }
+    }
+
+    .right {
+      position: relative;
+
+      .quotes {
+        position: absolute;
+        top: -35px;
+        right: -9px;
+      }
+    }
+  }
+}

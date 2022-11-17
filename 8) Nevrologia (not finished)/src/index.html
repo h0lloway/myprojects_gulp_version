@@ -1,0 +1,452 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+@include('html/head.html', {
+"title":"Нейродиагнстика+"
+})
+
+<body>
+  @include('html/header.html', {})
+  <main>
+
+
+    <section class="hero" id="hero">
+      <div class="container hero__container">
+
+        <div class="hero__content content">
+          <h1 class="content__title">
+            Диагностика и&nbsp;лечение <br> заболеваний нервной системы
+          </h1>
+
+          <div class="content__descr">
+            в&nbsp;профильной клинике на&nbsp;самом современном оборудовании
+          </div>
+
+          <div class="content__subdescr">
+            <svg class="" width="40" height="41">
+              <use xlink:href="img/sprite.svg#doc"></use>
+            </svg>
+
+            <span>
+              Врачи&nbsp;&mdash; кандидаты и&nbsp;доктора наук,
+              <br> практикующие хирурги высшей категории
+            </span>
+          </div>
+
+          <a class="content__video-link video-link" href="#">
+            <div class="video-link__descr descr">
+              <span>
+                Посмотреть видео о&nbsp;клинике
+              </span>
+              <span class="time">2&nbsp;минуты</span>
+            </div>
+
+            <img src="img/triangle.webp" width="60" height="60" alt="Проиграть">
+
+          </a>
+
+        </div>
+
+      </div>
+    </section>
+
+    <section class="subhero">
+
+      <div class="container subhero__container">
+
+        <h2 style="display: none;">Медицинский неврологический центр</h2>
+
+        <ul class="subhero__list list-reset">
+
+          <li class="subhero__list-item list-item">
+            <svg class="list-item__img" width="120" height="120">
+              <use xlink:href="img/sprite.svg#center"></use>
+            </svg>
+            <div class="list-item__wrap">
+              Медицинский неврологический центр&nbsp;&mdash; член общества нейрохирургов&nbsp;Екатеринбурга.
+              <br> Наши врачи проводят уникальные операции, <br> обучают коллег.
+            </div>
+          </li>
+
+          <li class="subhero__list-item list-item">
+            <svg class="list-item__img" width="120" height="120">
+              <use xlink:href="img/sprite.svg#care"></use>
+            </svg>
+            <div class="list-item__wrap">
+              Работаем каждый день, с&nbsp;понедельника по&nbsp;воскресенье.
+              <br> Имеем возможность принять вас в&nbsp;день обращения.
+            </div>
+          </li>
+
+          <li class="subhero__list-item list-item">
+            <svg class="list-item__img" width="120" height="120">
+              <use xlink:href="img/sprite.svg#card"></use>
+            </svg>
+            <div class="list-item__wrap">
+              Помогаем в&nbsp;размещении в&nbsp;Екатеринбурге на&nbsp;период диагностики и&nbsp;лечения.
+              <br> Выдаем больничные листы.
+            </div>
+          </li>
+
+        </ul>
+
+      </div>
+
+    </section>
+
+    <section class="help" id="help">
+      <div class="container help__container">
+
+        <h2 class="help__title h2-title">
+          Как перестать ходить по&nbsp;врачам и <br> аптекам и&nbsp;получить реальную помощь
+        </h2>
+        <div class="help__content content">
+          <div class="content__left left">
+            <h3 class="left__title">
+              Вам нужен невролог, если изо <br class="del"> дня в&nbsp;день вы&nbsp;испытываете:
+            </h3>
+            <div class="left__descr descr">
+              <ul class="descr__list list-reset">
+                <li class="descr__list-item">
+                  <svg class="" width="15" height="15">
+                    <use xlink:href="img/sprite.svg#dot"></use>
+                  </svg>
+                  <span>Хронические и&nbsp;острые болевые синдромы</span>
+                </li>
+                <li class="descr__list-item">
+                  <svg class="" width="15" height="15">
+                    <use xlink:href="img/sprite.svg#dot"></use>
+                  </svg>
+                  <span>Снижение подвижности суставов</span>
+                </li>
+                <li class="descr__list-item">
+                  <svg class="" width="15" height="15">
+                    <use xlink:href="img/sprite.svg#dot"></use>
+                  </svg>
+                  <span>Онемение частей тела</span>
+                </li>
+                <li class="descr__list-item">
+                  <svg class="" width="15" height="15">
+                    <use xlink:href="img/sprite.svg#dot"></use>
+                  </svg>
+                  <span>Ощущение тяжести в&nbsp;ногах</span>
+                </li>
+                <li class="descr__list-item">
+                  <svg class="" width="15" height="15">
+                    <use xlink:href="img/sprite.svg#dot"></use>
+                  </svg>
+                  <span>Головокружение и&nbsp;бессонница</span>
+                </li>
+              </ul>
+              <span class="descr__span">
+                У&nbsp;каждого симптома&nbsp;&mdash; своя причина
+              </span>
+            </div>
+          </div>
+
+          <div class="content__right right">
+            <ul class="right__list list-reset">
+
+              <li class="right__list-item">
+                <img src="img/1.webp" width="24" height="50" alt="1">
+                <span>Исследуем происхождение боли</span>
+              </li>
+
+              <li class="right__list-item">
+                <img src="img/2.webp" width="36" height="51" alt="2">
+                <span>Проводим полную диагностику</span>
+              </li>
+
+              <li class="right__list-item">
+                <img src="img/3.webp" width="37" height="52" alt="3">
+                <span>Составляем план лечения</span>
+              </li>
+
+              <li class="right__list-item">
+                <img src="img/4.webp" width="37" height="50" alt="4">
+                <span>Направим в&nbsp;стационар для оперативного лечения</span>
+              </li>
+
+              <li class="right__list-item">
+                <img src="img/5.webp" width="36" height="51" alt="5">
+                <span>Поддерживаем во&nbsp;время восстановления</span>
+              </li>
+
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="reason" id="reason">
+      <div class="container reason__container">
+
+        <h2 class="reason__title h2-title">
+          Устраняем боль и&nbsp;причину её&nbsp;появления
+        </h2>
+
+      </div>
+    </section>
+
+    <section class="treat" id="treat">
+      <div class="container treat__container">
+
+        <h2 class="treat__title h2-title">
+          Заболевания, которые мы&nbsp;лечим
+        </h2>
+
+      </div>
+    </section>
+
+    <section class="roll-up" id="roll-up">
+      <div class="container roll-up__container">
+
+        <h2 class="roll-up__title h2-title">
+          Сделайте первый шаг к <br> здоровью и&nbsp;жизни без боли
+        </h2>
+
+        <div class="roll-up__content content">
+
+          <form class="content__form form" action="#" method="POST">
+
+            <div class="form__field field">
+
+              <label class="field__label label div1" for="name">
+                <span class="label__span">Ваше имя</span>
+                <input class="label__input" type="name" id="name" placeholder="Иван Иванович Иванов">
+              </label>
+
+              <label class="field__label label div2" for="phone">
+                <span class="label__span">Ваш телефон</span>
+                <input class="label__input" type="tel" id="phone" placeholder="+7 (999) 999 99-99">
+              </label>
+
+              <label class="field__label label div3" for="spec">
+                <span class="label__span">Специалист или исследование</span>
+                <input class="label__input" type="text" id="spec" placeholder="">
+              </label>
+
+              <label class="field__label label div4" for="comment">
+                <span class="label__span">Специалист или исследование</span>
+                <textarea class="label__input" name="comment" id="comment"
+                  placeholder="Напишите свои пожелания..."></textarea>
+              </label>
+
+              <div class="div5">5</div>
+
+
+            </div>
+
+          </form>
+
+          <div class="content__img">
+            <img src="img/woman.webp" width="482" height="458" alt="Картинка">
+          </div>
+
+        </div>
+
+      </div>
+    </section>
+
+    <section class="specialists" id="specialists">
+      <div class="container specialists__container">
+
+        <h2 class="specialists__title h2-title">
+          Вам помогут наши специалисты
+        </h2>
+
+      </div>
+    </section>
+
+    <section class="feedback" id="feedback">
+      <div class="container feedback__container">
+
+        <div class="feedback__content content">
+
+          <div class="content__left left">
+            <h2 class="left__title h2-title">
+              Не&nbsp;знаете к&nbsp;кому <br> записаться?
+            </h2>
+
+            <div class="left__descr">
+              Оставьте контакты и&nbsp;администратор клиники <br> перезвонит в&nbsp;ближайшее время и&nbsp;запишет
+              на <br> прием к&nbsp;нужному специалисту
+            </div>
+
+            <button class="left__btn my-btn">Перезвоните мне</button>
+
+          </div>
+
+          <div class="content__right right">
+            <svg class="quotes" width="64" height="52">
+              <use xlink:href="img/sprite.svg#quotes-white"></use>
+            </svg>
+            <img src="img/green-block.webp" width="507" height="482" alt="Картинка">
+          </div>
+
+        </div>
+
+      </div>
+    </section>
+
+    <section class="reviews" id="reviews">
+      <div class="container reviews__container">
+
+        <h2 class="reviews__title h2-title">
+          Истории пациентов о&nbsp;лечении в&nbsp;Медицинском <br> неврологическом центре
+        </h2>
+
+      </div>
+    </section>
+
+    <section class="equipment" id="equipment">
+      <div class="container equipment__container">
+
+        <h2 class="equipment__title h2-title">
+          Клиника оснащена современным <br> медоборудованием
+        </h2>
+
+        <ul class="equipment__list list-reset">
+          <li class="equipment__list-item item-1">
+            <img src="img/card-1.webp" alt="Картинка">
+          </li>
+          <li class="equipment__list-item item-2">
+            <img src="img/card-4.webp" alt="Картинка">
+          </li>
+          <li class="equipment__list-item item-3">
+            <img src="img/card-2.webp" alt="Картинка">
+          </li>
+          <li class="equipment__list-item item-4">
+            <img src="img/card-3.webp" alt="Картинка">
+          </li>
+        </ul>
+
+      </div>
+    </section>
+
+    <section class="license" id="license">
+      <div class="container license__container">
+
+        <h2 class="license__title h2-title">
+          Лицензия
+        </h2>
+
+        <div class="license__wrap wrap">
+          <div class="wrap__descr descr">
+            <h3 class="descr__title">
+              Лицензия на&nbsp;медицинскую <br> деятельность
+            </h3>
+            <div class="descr__text">
+              обязательный документ для любой <br> организации, оказывающей услуги в <br> сфере здравоохранения.
+            </div>
+          </div>
+          <ul class="wrap__img list-reset">
+            <li class="wrap__img-item item">
+              <img src="img/license-1.webp" alt="Лицензия-1">
+              <span class="item__span">
+                <b>Лицензия на&nbsp;медицинскую</b> <br> деятельность
+              </span>
+            </li>
+            <li class="wrap__img-item item">
+              <img src="img/license-2.webp" alt="Лицензия-2">
+              <span class="item__span">
+                <b>Приложение к&nbsp;лицензии</b>
+              </span>
+            </li>
+          </ul>
+        </div>
+
+      </div>
+    </section>
+
+    <section class="appointment" id="appointment">
+      <div class="container appointment__container">
+
+        <h2 class="appointment__title h2-title">
+          Запишитесь на&nbsp;приём, чтобы мы&nbsp;помогли вам
+        </h2>
+
+        <div class="appointment__descr">
+          Все исследования и&nbsp;консультации&nbsp;&mdash; строго по&nbsp;предварительной записи. <br>
+          Администратор перезвонит , поможет выбрать врача и&nbsp;запишет на&nbsp;удобный день и&nbsp;время.
+        </div>
+
+        <form class="appointment__form form" action="#" method="POST">
+
+          <label class="form__label" for="name">
+            <span class="form__span">Ваше имя</span>
+            <input class="form__input" type="text" id="name" placeholder="Иван Иванович Иванов">
+          </label>
+
+          <label class="form__label" for="phone">
+            <span class="form__span">Ваш телефон</span>
+            <input class="form__input" type="tel" id="phone" placeholder="+7 (999) 999 99-99">
+          </label>
+
+          <div class="form__btn-wrap wrap">
+
+            <button class="wrap__btn my-btn" type="button">Записаться</button>
+            <label class="wrap__label" for="check">
+              <input class="wrap__input" type="checkbox" id="check">
+              <span class="wrap__descr">
+                Даю согласие на&nbsp;обработку персональных данных <br> в&nbsp;соответствии
+                с&nbsp;политикой конфиденциальности
+              </span>
+            </label>
+
+          </div>
+
+        </form>
+
+      </div>
+    </section>
+
+    <section class="different" id="different">
+      <div class="container different__container">
+
+        <h2 class="different__title h2-title">
+          Вас может заинтересовать
+        </h2>
+
+        <ul class="different__list list-reset">
+
+          <li class="different__list-item list-item item-1">
+            <div class="list-item__wrap">
+              <!-- <svg class="" width="35" height="30">
+                <use xlink:href="img/sprite.svg#service"></use>
+              </svg> -->
+              <img src="img/service.webp" width="35" height="30" alt="иконка">
+              <a href="#">Узнать об&nbsp;услугах</a>
+            </div>
+          </li>
+
+          <li class="different__list-item list-item item-2">
+            <div class="list-item__wrap">
+              <svg class="" width="35" height="35">
+                <use xlink:href="img/sprite.svg#price"></use>
+              </svg>
+              <a href="#">Узнать цены</a>
+            </div>
+          </li>
+
+          <li class="different__list-item list-item item-3">
+            <div class="list-item__wrap">
+              <!-- <svg class="" width="31" height="30">
+                <use xlink:href="img/sprite.svg#shopping"></use>
+              </svg> -->
+              <img src="img/shopping.webp" width="31" height="30" alt="иконка">
+              <a href="#">Магазин <br class="del"> медицинских товаров</a>
+            </div>
+          </li>
+
+        </ul>
+
+      </div>
+    </section>
+
+
+  </main>
+  @include('html/footer.html', {})
+</body>
+
+</html>

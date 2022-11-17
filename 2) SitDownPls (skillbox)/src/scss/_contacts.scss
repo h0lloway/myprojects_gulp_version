@@ -1,0 +1,165 @@
+.contacts {
+
+  padding-bottom: 70px;
+
+  &__container {
+    background-image: url(../img/contacts-bg.webp);
+    background-position: 97% 25px;
+    background-repeat: no-repeat;
+  }
+
+  &__title {
+    margin-bottom: 9px;
+  }
+
+  &__text {
+    margin-bottom: 15px;
+
+    font-size: 14px;
+    line-height: 19px;
+    color: var(--grey-color);
+    width: 50%;
+  }
+
+  &__tooltip {
+    display: inline-block;
+    transform: translateY(-1px);
+    width: 16px;
+    height: 16px;
+    border: 2px solid var(--orange-color);
+    border-radius: 8px;
+    background-color: transparent;
+    transition: all .3s ease;
+  }
+
+  &__tooltip:hover {
+    background-color: var(--orange-color);
+  }
+
+  &__tooltip:hover span {
+    color: var(--white-color);
+  }
+
+  &__tooltip:focus-visible {
+    background-color: var(--orange-color);
+  }
+
+  &__tooltip:focus-visible span {
+    color: var(--white-color);
+  }
+
+  &__tooltip:active {
+    background-color: var(--orange-color);
+  }
+
+  &__tooltip:active span {
+    color: var(--white-color);
+  }
+
+  &__tooltip span {
+    display: block;
+    font-weight: 700;
+    font-size: 10px;
+    color: var(--orange-color);
+    margin-top: 1px;
+    transition: all .3s ease;
+  }
+
+  .tippy-box[data-theme~='projects-tooltip'] {
+    font-weight: 400;
+    font-size: 9px;
+    line-height: 14px;
+    text-align: center;
+
+    background: var(--black-color);
+    color: var(--white-color);
+  }
+
+  &__form {
+    display: flex;
+    flex-direction: column;
+    width: 624px;
+  }
+
+  &__label {
+    position: relative;
+  }
+
+  &__btn {
+    padding: 17px 31px;
+    margin-bottom: 15px;
+    overflow: hidden;
+  }
+
+  .js-validate-error-label {
+    position: absolute;
+    top: -16px;
+    left: 17px;
+
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 16px;
+  }
+
+  .hvr-rectangle-out:before {
+    background: #C998FB;
+    border-radius: 10px;
+
+    transition: all .4s ease;
+  }
+
+  .hvr-rectangle-out:active::before {
+    background: #7033AC;
+    border-radius: 10px;
+  }
+}
+
+@media (max-width: 1325px) {
+  .contacts {
+
+    &__container {
+      background-image: url(../img/contacts-bg-1024.webp);
+      background-position: 93% 77px;
+    }
+
+    &__form {
+      width: 405px;
+    }
+
+    &__text {
+      width: 39%;
+    }
+  }
+}
+
+@media (max-width: 990px) {
+  .contacts {
+    &__container {
+      background-image: url(../img/contacts-bg-768.webp);
+      background-size: 187px 444px;
+      background-position: 87.7% 13px;
+    }
+
+    &__text {
+      width: 60%;
+    }
+  }
+}
+
+@media (max-width: 700px) {
+  .contacts {
+    padding-bottom: 68px;
+
+    &__container {
+      background-image: none;
+    }
+
+    &__form {
+      width: 100%;
+    }
+
+    &__text {
+      width: 100%;
+    }
+  }
+}

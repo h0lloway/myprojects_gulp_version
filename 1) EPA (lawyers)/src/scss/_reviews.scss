@@ -1,0 +1,155 @@
+.reviews {
+
+	padding-bottom: 120px;
+
+	&__swiper-wrap {
+		position: relative;
+
+		.swiper-button-next,
+		.swiper-rtl .swiper-button-prev {
+			right: -50px;
+			left: auto;
+		}
+
+		.swiper-button-prev,
+		.swiper-rtl .swiper-button-next {
+			left: -50px;
+			right: auto;
+		}
+
+		.swiper-button-next:after,
+		.swiper-rtl .swiper-button-prev:after {
+			content: '';
+			position: absolute;
+			width: 40px;
+			height: 40px;
+			border: 1px solid transparent;
+			border-radius: 100%;
+			background: var(--white-color);
+			box-shadow: 0px 2px 8px rgba(9, 47, 123, 0.199);
+		}
+
+		.swiper-button-prev:after,
+		.swiper-rtl .swiper-button-next:after {
+			content: '';
+			position: absolute;
+			width: 40px;
+			height: 40px;
+			border: 1px solid transparent;
+			border-radius: 100%;
+			background: var(--white-color);
+			box-shadow: 0px 2px 8px rgba(9, 47, 123, 0.199);
+		}
+
+		.swiper-button-disabled {
+			transition: all .3s ease;
+			visibility: hidden;
+		}
+	}
+
+	&__swiper-button-prev svg,
+	&__swiper-button-next svg {
+		z-index: 10;
+	}
+
+
+	&__swiper-button-prev svg {
+		transform: rotate(180deg);
+	}
+
+	&__swiper {
+		padding: 2px 2px;
+	}
+
+	&__swiper-slide {
+		min-height: 100%;
+	}
+
+	.content {
+		position: relative;
+		min-height: 260px;
+		padding: 30px;
+
+		background: var(--white-color);
+
+		box-shadow: 0px 1px 4px rgba(8, 48, 127, 0.211);
+		border-radius: 20px;
+
+		&__img {
+			position: absolute;
+			top: 30px;
+			left: 30px;
+		}
+
+		&__title {
+			padding-left: 70px;
+			font-family: 'Rubik', sans-serif;
+			font-weight: 500;
+			font-size: 16px;
+			line-height: 150%;
+		}
+
+		&__city {
+			padding-left: 70px;
+			font-size: 14px;
+			line-height: 143%;
+
+			color: #042668;
+		}
+
+
+		&__txt {
+			margin-top: 15px;
+			font-size: 16px;
+			line-height: 150%;
+
+			color: #042668;
+		}
+	}
+}
+
+@media (max-width: 1199.98px) {
+	.reviews {
+
+
+		&__swiper-button-next,
+		&__swiper-button-prev {
+			display: none;
+		}
+
+
+		.content {
+			position: relative;
+			min-height: 260px;
+		}
+	}
+}
+
+@media (max-width: 999.98px) {
+	.reviews {
+		padding-bottom: 80px;
+	}
+}
+
+@media (max-width: 749.98px) {
+	.reviews {
+		padding-bottom: 76px;
+
+		.content {
+			min-height: 214px;
+			padding: 18px;
+
+			&__img {
+				top: 18px;
+				left: 18px;
+			}
+
+			&__txt {
+				margin-top: 10px;
+
+				font-size: 14px;
+				line-height: 20px;
+			}
+		}
+	}
+}

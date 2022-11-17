@@ -1,0 +1,209 @@
+@import "common";
+
+@import "header";
+@import "hero";
+@import "skills";
+@import "about";
+@import "portfolio";
+@import "contacts";
+
+
+@import "footer";
+
+
+
+// .disable-scroll {
+//   position: relative;
+//   overflow: hidden;
+//   height: 100vh;
+//   position: fixed;
+//   left: 0;
+//   top: 0;
+//   width: 100%;
+// }
+
+
+// .modal-overlay {
+//   position: fixed;
+//   left: 0;
+//   top: 0;
+//   right: 0;
+//   bottom: 0;
+//   background-color: rgba(0,0,0,0.7);
+//   backdrop-filter: blur(8px);
+//   display: flex;
+//   align-items: center;
+//   justify-content: center;
+//   height: 100vh;
+//   width: 100%;
+//   z-index: 15;
+//   opacity: 0;
+//   visibility: hidden;
+//   transition: all .3s ease-in-out;
+// }
+
+// .modal {
+//   position: relative;
+
+//   display: flex;
+//   align-items: center;
+//   justify-content: center;
+//   display: none;
+
+//   background-color: var(--white-color);
+//   z-index: 20;
+// }
+
+// .main-img {
+//   display: block;
+//   margin: 0 auto 50px;
+//   max-width: 100%;
+// }
+
+// .modal-overlay--visible {
+//   opacity: 1;
+//   visibility: visible;
+//   transition: all .3s ease-in-out;
+// }
+
+// .modal--visible {
+//   display: block;
+// }
+
+// .close-modal-btn {
+//   position: absolute;
+//   right: 30px;
+//   top: 30px;
+// }
+
+// .close-modal-btn,
+// .close-modal-btn span {
+//   width: 20px;
+//   height: 20px;
+// }
+
+// .close-modal-btn span::after,
+// .close-modal-btn span::before {
+//   content: "";
+//   background-color: #999;
+//   position: absolute;
+//   width: 25px;
+//   height: 3px;
+//   right: 0px;
+//   top: 0px;
+//   transition: all 0.3s ease 0s;
+// }
+
+// .close-modal-btn span::after {
+//   transform: rotate(-45deg);
+//   border-radius: 20px;
+
+// }
+
+// .close-modal-btn span::before {
+//   transform: rotate(-135deg);
+//   border-radius: 20px;
+// }
+
+// .close-modal-btn span:hover::after,
+// .close-modal-btn span:hover::before {
+//   background-color: var(--purple-color);
+// }
+
+// .close-modal-btn span:active::after,
+// .close-modal-btn span:active::before {
+//   background-color: #7033AC;
+// }
+
+// .modal--2,
+// .modal--3 {
+//   max-width: 1280px;
+//   overflow: hidden;
+//   border-radius: 10px;
+// }
+
+// .modal--3 {
+//   max-width: 624px;
+//   min-height: 421px;
+// }
+
+// .modal--2 .modal-content,
+// .modal--3 .modal-content {
+//   position: relative;
+//   background-color: var(--color-white);
+//   padding: 50px 0 0;
+// }
+
+// .modal--3 .modal-content {
+//   display: flex;
+//   flex-direction: column;
+//   align-items: center;
+
+//   padding: 118px 74px 122px;
+// }
+
+// .modal--3 .modal-content img {
+//   margin-bottom: 20px;
+// }
+
+// .modal--2 .modal-content::before {
+//   position: relative;
+//   max-width: 1280px;
+//   background-color: var(--white-color);
+//   margin: 0 30px;
+//   padding: 50px 0 0;
+//   overflow: hidden;
+// }
+
+// .modal-thank-text {
+//   font-weight: 400;
+//   font-size: 32px;
+//   line-height: 32px;
+
+//   color: var(--black-color);
+// }
+
+// .modal--1 {
+//   max-width: 624px;
+//   padding: 30px;
+
+
+//   border-radius: 10px;
+// }
+
+// .modal-title {
+//   margin-bottom: 8px;
+//   font-weight: 400;
+//   font-size: 32px;
+//   line-height: 32px;
+
+//   color: var(--black-color);
+// }
+
+// .modal-text {
+//   margin-bottom: 30px;
+
+//   font-size: 14px;
+//   line-height: 19px;
+
+//   color: var(--black-color);
+// }
+
+// .modal-label {
+//   position: relative;
+// }
+
+// .modal-form-btn {
+//   margin-bottom: 12px;
+// }
+
+// .js-validate-error-label {
+//   position: absolute;
+//   top: -35px;
+//   left: 17px;
+
+//   font-size: 12px;
+//   line-height: 16px;
+// }
+
+

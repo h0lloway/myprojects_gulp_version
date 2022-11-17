@@ -1,0 +1,170 @@
+.rating {
+
+  padding-bottom: 120px;
+
+  &__list {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    margin-left: -15px;
+    margin-right: -15px;
+  }
+
+  &__list::before {
+    content: "";
+    position: absolute;
+    left: 69px;
+    top: 41px;
+
+    background-image: url('../img/waves.webp');
+    background-size: 920px 20px;
+
+    width: 920px;
+    height: 20px;
+
+    z-index: -1;
+  }
+
+  .item {
+
+    padding: 0 15px;
+    flex: 0 1 25%;
+
+    display: flex;
+    flex-direction: column;
+
+    &__title {
+      margin-top: 20px;
+      margin-bottom: 10px;
+
+      font-family: 'Rubik', serif;
+      font-weight: 500;
+      font-size: 20px;
+      line-height: 130%;
+
+      color: var(--main-blue);
+    }
+
+    &__descr {
+      font-size: 16px;
+      line-height: 150%;
+      color: #79859E;
+    }
+  }
+}
+
+@media (max-width: 1199.98px) {
+  .rating {
+
+    &__list {
+      flex-wrap: wrap;
+    }
+
+    &__list::before {
+      display: none;
+    }
+
+    .item {
+      flex: 0 1 50%;
+    }
+  }
+}
+
+@media (max-width: 999.98px) {
+  .rating {
+    padding-bottom: 82px;
+
+
+    .item {
+      flex-direction: row;
+      padding: 0 8px;
+
+      &__img {
+        margin-right: 23px;
+
+        svg {
+          width: 90px;
+          height: 90px;
+
+          max-width: none;
+        }
+      }
+
+      &__title {
+        margin-top: 0;
+
+        font-size: 18px;
+        line-height: 24px;
+      }
+
+      .del {
+        display: none;
+      }
+    }
+
+    .item:nth-child(1),
+    .item:nth-child(2) {
+      margin-bottom: 30px;
+    }
+  }
+}
+
+@media (max-width: 629.98px) {
+  .rating {
+
+    .item {
+      flex: 0 1 100%;
+
+      &__img {
+
+        margin-right: 16px;
+
+        svg {
+          width: 80px;
+          height: 80px;
+        }
+      }
+    }
+
+    .item:not(:last-child) {
+      margin-bottom: 30px;
+    }
+
+  }
+}
+
+@media (max-width: 549.98px) {
+  .rating {
+
+    padding-bottom: 97px;
+
+    .list-item {
+
+      svg {
+        width: 70px;
+        height: 70px;
+      }
+    }
+
+    .item {
+
+      &__img {
+        margin-right: 22px;
+      }
+
+      &__title {
+        font-size: 16px;
+        line-height: 24px;
+      }
+
+      &__descr {
+        font-size: 14px;
+        line-height: 20px;
+      }
+    }
+
+    .item:not(:last-child) {
+      margin-bottom: 35px;
+    }
+  }
+}

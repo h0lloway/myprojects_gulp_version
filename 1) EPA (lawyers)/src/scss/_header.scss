@@ -1,0 +1,281 @@
+.header {
+	background: var(--white-color);
+	box-shadow: 0px 1px 4px rgba(7, 59, 161, 0.1);
+
+	z-index: 50;
+	position: fixed;
+	left: 0;
+	top: 0;
+	width: 100%;
+	transition: transform .3s linear;
+
+	.content {
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+
+		min-height: 70px;
+
+		&__left {
+			display: flex;
+			align-items: center;
+		}
+
+		&__left-text {
+			position: relative;
+			padding-left: 40px;
+
+			color: var(--main-blue);
+			font-size: 14px;
+			line-height: 20px;
+		}
+
+		&__left-text::before {
+			content: "";
+			position: absolute;
+			top: -6px;
+			left: 26px;
+			width: 2px;
+			height: 50px;
+			border: 1px solid var(--main-blue);
+		}
+
+		.right {
+
+			display: flex;
+			align-items: center;
+
+			.btns {
+
+				&__btn {
+					padding: 10px 30px;
+					background: var(--main-blue);
+					border-radius: 8px;
+					color: var(--white-color);
+					font-family: "Rubik", sans-serif;
+					font-weight: 500;
+					font-size: 14px;
+					line-height: 20px;
+				}
+
+				&__registr {
+					margin-left: 10px;
+					background: #EC3D5A;
+				}
+
+				&__burger {
+					display: none;
+				}
+			}
+
+			.descr {
+				display: flex;
+				align-items: center;
+				margin-left: 45px;
+				color: var(--main-blue);
+				font-family: 'Rubik', sans-serif;
+				font-weight: 500;
+
+				font-size: 16px;
+				line-height: 24px;
+
+				&__txt {
+					padding-left: 15px;
+				}
+
+				a {
+					display: block;
+				}
+			}
+
+			&__descr-span {
+				font-weight: 400;
+
+				font-size: 14px;
+				line-height: 20px;
+			}
+
+
+		}
+	}
+}
+
+
+.header.hide {
+	transform: translateY(-70px);
+}
+
+@media (max-width: 1199.98px) {
+	.header {
+
+		.content {
+
+			&__left-text {
+				display: none;
+			}
+
+			.right {
+
+				.btns {
+					order: 2;
+				}
+
+				.descr {
+					order: 1;
+					margin-left: 0;
+					margin-right: 54px;
+				}
+
+				&__descr-span {
+					font-size: 12px;
+					line-height: 16px;
+				}
+			}
+		}
+	}
+}
+
+@media (max-width: 799.98px) {
+	body.lock {
+		overflow: hidden;
+	}
+
+	.header {
+
+		&__container {
+			padding-top: 7px;
+			padding-bottom: 3px;
+		}
+
+		&__right-content {
+			align-items: center;
+		}
+
+		&__theme {
+			padding-right: 30px;
+			transform: translateY(2px);
+		}
+
+		.nav {
+
+			order: 2;
+
+			&__list {
+				display: block;
+				position: fixed;
+				text-align: center;
+				width: 100%;
+				height: 100%;
+				overflow: auto;
+				top: 0;
+				left: -100%;
+				background-color: var(--almost-white);
+				transition: left .3s ease 0s;
+				padding: 100px 15px 30px 15px;
+			}
+
+			&__list-item:not(:last-child) {
+				margin: 0 0 40px 0;
+			}
+
+			&__list.active {
+				left: 0;
+			}
+
+			&__list-item-link {
+				font-size: 36px;
+				text-align: center;
+				display: block;
+			}
+		}
+	}
+}
+
+@media (max-width: 749.98px) {
+	.header {
+
+		&__container {
+			padding-top: 5px;
+			padding-bottom: 5px;
+		}
+
+		.content {
+			min-height: 50px;
+
+			.right {
+				.descr {
+					display: none;
+				}
+
+				.btns {
+
+					display: flex;
+					align-items: center;
+
+					&__registr {
+						display: none;
+					}
+
+					&__burger {
+						display: block;
+						position: relative;
+						margin-left: 27px;
+						width: 30px;
+						height: 18px;
+						cursor: pointer;
+						z-index: 20;
+					}
+
+					&__burger span {
+						position: absolute;
+						background-color: var(--main-blue);
+						position: absolute;
+						left: 0;
+						width: 100%;
+						height: 3px;
+						top: calc(40% - 1px);
+						border-radius: 50px;
+						transition: all .3s ease 0s;
+					}
+
+					&__burger::before,
+					&__burger::after {
+						content: "";
+						background-color: var(--main-blue);
+						position: absolute;
+						width: 100%;
+						height: 3px;
+						left: 0;
+						border-radius: 50px;
+						transition: all .3s ease 0s;
+					}
+
+					&__burger::before {
+						top: -2px;
+						bottom: auto;
+					}
+
+					&__burger::after {
+						top: auto;
+						bottom: 1px;
+					}
+
+					&__burger.active span {
+						transform: scale(0);
+					}
+
+					&__burger.active::after {
+						transform: rotate(45deg);
+						bottom: calc(50% - 1px);
+					}
+
+					&__burger.active::before {
+						transform: rotate(-45deg);
+						top: calc(45% - 1px);
+					}
+				}
+			}
+		}
+	}
+
+}

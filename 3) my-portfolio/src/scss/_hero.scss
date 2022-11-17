@@ -1,0 +1,159 @@
+.hero {
+
+  padding-top: 60px;
+  padding-bottom: 60px;
+  transition: all .3s;
+
+  &__container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  &__content {
+    margin-right: 150px;
+  }
+
+  &__content>:not(:last-child) {
+    margin-bottom: 40px;
+  }
+
+  &__title {
+    font-size: 40px;
+    line-height: 128%;
+    font-weight: 700;
+  }
+
+  &__descr {
+
+    font-size: 20px;
+    line-height: 150%;
+    font-weight: 500;
+  }
+
+  &__img {
+    z-index: 5;
+  }
+
+  &__img img {
+    border-radius: 50%;
+  }
+
+
+
+
+
+  // button   // button   // button   // button   // button   // button   // button   // button   // button   // button   // button   // button 
+
+  $bg: #fff;
+  $text: #373737;
+  $light-pink: #fff0f0;
+  $pink: #ffe9e9;
+  $dark-pink: #f9c4d2;
+  $pink-border: #b18597;
+  $pink-shadow: #ffe3e2;
+
+  .button {
+    position: relative;
+    display: inline-block;
+    cursor: pointer;
+    outline: none;
+    border: 0;
+    vertical-align: middle;
+    text-decoration: none;
+    font-size: inherit;
+    font-family: inherit;
+
+    &.learn-more {
+      max-width: 270px;
+      font-weight: 600;
+      color: $text;
+      text-transform: uppercase;
+      text-align: center;
+      padding: 20px 35px;
+      background: $light-pink;
+      border: 2px solid $pink-border;
+      border-radius: 10px;
+      transform-style: preserve-3d;
+      transition: transform 150ms cubic-bezier(0, 0, 0.58, 1), background 150ms cubic-bezier(0, 0, 0.58, 1);
+
+      &::before {
+        position: absolute;
+        content: '';
+        width: 100%;
+        height: 100%;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        background: $dark-pink;
+        border-radius: inherit;
+        box-shadow: 0 0 0 2px $pink-border;
+        transform: translate3d(0, 12px, -16px);
+        transition: transform 150ms cubic-bezier(0, 0, 0.58, 1), box-shadow 150ms cubic-bezier(0, 0, 0.58, 1);
+      }
+
+      &:hover {
+        background: $pink;
+        transform: translate(0, 4px);
+
+        &::before {
+          // box-shadow: 0 0 0 2px $pink-border, 0 8px 0 0 $pink-shadow;
+          transform: translate3d(0, 8px, -16px);
+        }
+      }
+
+      &:active {
+        background: $pink;
+        transform: translate(0em, 12px);
+
+        &::before {
+          // box-shadow: 0 0 0 2px $pink-border, 0 0 $pink-shadow;
+          transform: translate3d(0, 0, -16px);
+        }
+      }
+    }
+  }
+
+  // button   // button   // button   // button   // button   // button   // button   // button   // button   // button   // button   // button 
+
+
+
+}
+
+
+@media (max-width: 1000px) {
+  .hero {
+    padding-top: calc(50px + 40 * ((100vw - 320px)/ 680));
+    padding-bottom: calc(35px + 10 * ((100vw - 320px)/ 680));
+  }
+}
+
+
+
+@media (max-width: 991.98px) {
+  .hero {
+    &__content {
+      margin-right: 0;
+    }
+
+    &__title {
+      font-size: calc(20px + 24 * ((100vw - 320px)/ 680));
+    }
+  }
+}
+
+@media (max-width: 767.98px) {
+
+  .hero {
+    &__container {
+      max-width: 750px;
+      flex-direction: column-reverse;
+      text-align: center;
+    }
+
+    &__content {
+      padding-top: 20px;
+    }
+  }
+}

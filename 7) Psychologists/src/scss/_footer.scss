@@ -1,0 +1,257 @@
+.footer {
+  position: relative;
+
+  padding-top: 67px;
+  padding-bottom: 66px;
+
+  background: var(--footer-color);
+  color: var(--white-color);
+
+  .top {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 100px;
+
+    .left {
+
+      &__list {
+        display: flex;
+        margin-bottom: 30px;
+      }
+
+      &__list-item:not(:last-child) {
+        margin-right: 62px;
+      }
+
+      &__list-item-link {
+        font-weight: 600;
+        font-size: 18px;
+        line-height: 138.19%;
+        text-transform: capitalize;
+      }
+
+      &__social {
+        display: flex;
+      }
+
+      &__social-item:not(:last-child) {
+        margin-right: 31px;
+      }
+
+      &__list-item-link,
+      &__social-item-link svg {
+        position: relative;
+        transition: .3s ease;
+      }
+
+      &__list-item-link::before {
+        content: "";
+        bottom: -3px;
+        left: 0;
+        position: absolute;
+        width: 100%;
+        border-radius: 20px;
+        height: 1px;
+        background: var(--white-color);
+        transition: .5s;
+        transform: scaleX(0);
+      }
+
+      &__list-item-link:hover::before {
+        transform: scaleX(1);
+      }
+
+      &__social-item-link:hover svg {
+        transform: scale(1.3);
+      }
+
+      .social {
+        fill: var(--white-color);
+      }
+    }
+
+    .mid {
+      width: 36%;
+
+      span {
+        font-size: 16px;
+        line-height: 138.19%;
+
+        color: rgba(255, 255, 255, 0.5);
+
+      }
+    }
+
+    .right {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+
+
+      &__btn {
+        padding: 14px 24px;
+
+        font-size: 18px;
+        line-height: 138.19%;
+      }
+
+      &__link {
+        padding-top: 34px;
+
+        font-family: 'Open Sans';
+        font-size: 16px;
+        line-height: 138.19%;
+        text-decoration-line: underline;
+        transition: .3s ease;
+      }
+
+      &__link:hover {
+        color: var(--dark-grey);
+      }
+
+      &__social {
+        display: none;
+      }
+    }
+  }
+
+  .bottom {
+
+    color: rgba(255, 255, 255, 0.3);
+
+    &__list {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    &__list-item {
+      font-size: 16px;
+      line-height: 138.19%;
+    }
+
+    &__list-item-link {
+      text-decoration-line: underline;
+      transition: .3s ease;
+    }
+
+    &__list-item-link:hover {
+      color: var(--white-color);
+    }
+
+  }
+}
+
+.footer::before {
+  content: "";
+  position: absolute;
+  bottom: 39%;
+  width: 100%;
+  height: 1px;
+  background: rgba(255, 255, 255, 0.1);
+}
+
+@media (max-width: 1060px) {
+  .footer {
+
+    .bottom {
+      &__list {
+        flex-direction: column;
+        text-align: center;
+      }
+
+      &__list-item:not(:last-child) {
+        margin-right: 0;
+        margin-bottom: 20px;
+      }
+    }
+  }
+}
+
+@media (max-width: 999px) {
+  .footer {
+
+
+
+    .top {
+      justify-content: space-around;
+
+      .mid {
+        display: none;
+      }
+    }
+  }
+}
+
+
+@media (max-width: 750px) {
+  .footer {
+    padding-top: 41px;
+    padding-bottom: 51px;
+
+    .top {
+      flex-direction: column;
+      align-items: center;
+
+      margin-bottom: 200px;
+
+      .left {
+        &__list {
+          margin-bottom: 25px;
+        }
+
+        &__list-item:not(:last-child) {
+          margin-right: 80px;
+        }
+
+        &__list-item-link {
+          font-size: 15px;
+        }
+
+        &__social {
+          display: none;
+        }
+      }
+
+      .right {
+        &__social-item:not(:last-child) {
+          margin-right: 31px;
+        }
+
+        .social {
+          fill: var(--white-color);
+        }
+
+        &__btn {
+          padding: 14px 23px;
+          font-size: 16px;
+          line-height: 148.19%;
+        }
+
+        &__link {
+          padding-top: 20px;
+          font-size: 16px;
+          letter-spacing: -0.5px;
+        }
+
+        &__social {
+          display: flex;
+
+          margin-top: 35px;
+        }
+      }
+    }
+
+    .bottom {
+
+      &__list-item {
+        font-size: 14px;
+        line-height: 138.19%;
+      }
+    }
+  }
+
+  .footer::before {
+    bottom: 33%;
+  }
+}

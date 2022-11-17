@@ -1,0 +1,303 @@
+@font-face {
+  font-family: "Roboto";
+  src: local("Roboto"),
+    url(../fonts/Roboto-Regular.woff2) format("woff2"),
+    url(../fonts/Roboto-Regular.woff) format("woff");
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Roboto";
+  src: local("Roboto"),
+    url(../fonts/Roboto-Medium.woff2) format("woff2"),
+    url(../fonts/Roboto-Medium.woff) format("woff");
+  font-weight: 500;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Roboto";
+  src: local("Roboto"),
+    url(../fonts/Roboto-Bold.woff2) format("woff2"),
+    url(../fonts/Roboto-Bold.woff) format("woff");
+  font-weight: 700;
+  font-style: normal;
+  font-display: swap;
+}
+
+
+html {
+  box-sizing: border-box;
+}
+
+:root {
+  --main-black: #222837;
+
+
+  --eaeaea-color: #eaeaea;
+  --f7f7f7-color: #F7F7F7;
+  --cacaca-color: #cacaca;
+  --e9e9e9-color: #e9e9e9;
+  --grey-color: #999;
+  --dark-grey: #666;
+
+
+  --purple-color: #7F56D9;
+  --dark-purple: #6941C6;
+
+
+  --yellow-color: #FDDA25;
+  --orange-color: #FF862F;
+  --light-orange: #b89c72;
+  --dark-orange: #BB370E;
+}
+
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+*:focus-visible {
+  outline: none;
+}
+
+*:focus {
+  outline: none;
+}
+
+a {
+  position: relative;
+  color: inherit;
+  text-decoration: none;
+}
+
+input,
+textarea {
+  outline: none;
+  border: none;
+}
+
+input[type=text]::-ms-clear {
+  display: none;
+  width: 0;
+  height: 0;
+}
+
+input[type=text]::-ms-reveal {
+  display: none;
+  width: 0;
+  height: 0;
+}
+
+input[type=search]::-webkit-search-decoration,
+input[type=search]::-webkit-search-cancel-button,
+input[type=search]::-webkit-search-results-button,
+input[type=search]::-webkit-search-results-decoration {
+  display: none;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  margin: 0;
+  padding: 0;
+}
+
+img,
+svg {
+  max-width: 100%;
+}
+
+body {
+  margin: 0;
+  padding-top: 82px;
+  font-family: "Roboto", sans-serif;
+  font-weight: 400;
+  background-color: #f2f4f7;
+  color: var(--carbonic);
+  transition: all .3s;
+
+  --white-color: #fff;
+  --carbonic: #373737;
+  --almost-white: #f4f4f4;
+  --e0e0e0: #e0e0e0;
+  --transparent: #ffffffcc;
+  --socials: #373737;
+
+  --box-shadow-light: #c4cacc;
+}
+
+body.dark {
+  --white-color: #333333;
+  --carbonic: #f4f4f4;
+  --almost-white: #373737;
+  --e0e0e0: #333333;
+  --transparent: #000000cc;
+  --socials: rgb(192, 192, 192);
+
+  --box-shadow-light: #717779;
+}
+
+.container {
+  max-width: 1536px;
+  margin: 0 auto;
+  padding-right: 48px;
+  padding-left: 48px;
+}
+
+.list-reset {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.ibg {
+  position: relative;
+}
+
+.my-btn {
+  padding: 0;
+  border: none;
+  outline: none;
+  cursor: pointer;
+
+  background: transparent;
+}
+
+.title {
+  font-size: 44px;
+  font-weight: 700;
+  line-height: 136%;
+  text-align: center;
+}
+
+@media (max-width: 1000px) {
+  .title {
+    font-size: calc(20px + 24 * ((100vw - 320px)/ 680));
+  }
+}
+
+.red-btn {
+  background-color: #ce4541;
+  border-radius: 2px;
+  font-weight: 500;
+  font-size: 20px;
+  color: var(--almost-white);
+  line-height: 145%;
+  height: 47px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  padding: 0 20px;
+  transition: background-color .3s ease 0s;
+}
+
+.red-btn:hover {
+  background-color: #e02a2a;
+}
+
+.red-btn:active {
+  background-color: #bb2f2f;
+}
+
+.red-btn:focus-visible {
+  background-color: #bb2f2f;
+}
+
+.hidden {
+  display: none;
+  opacity: 0;
+  visibility: hidden;
+}
+
+.visible {
+  display: inline-flex;
+  opacity: 1;
+  visibility: visible;
+}
+
+// серые ссылки // серые ссылки // серые ссылки // серые ссылки // серые ссылки // серые ссылки // серые ссылки 
+
+.grey-link {
+  font-size: 14px;
+  color: var(--grey-color);
+}
+
+.grey-link:hover {
+  color: var(--purple-color);
+}
+
+.grey-link:focus-visible {
+  color: #7033AC;
+  background: #EBD1FF;
+}
+
+.grey-link:active {
+  color: #7033AC;
+}
+
+
+
+// общие стили для переходам по дереву ссылок
+
+.list-item:not(:last-child) {
+  margin-right: 32px;
+}
+
+.item-link {
+  position: relative;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 20px;
+  color: #667085;
+  transition: all .3s ease-in-out;
+}
+
+.item-link::before {
+  content: "";
+  position: absolute;
+  display: inline-block;
+  width: 7px;
+  height: 7px;
+  border-top: 1px solid;
+  border-right: 1px solid;
+  margin-left: 10px;
+  transform: rotate(45deg);
+  transition: transform .5s;
+  transform-origin: center;
+  right: -16px;
+  top: 7px;
+}
+
+.link-active {
+  color: var(--purple-color);
+  margin-right: 0;
+  padding: 1px 4px;
+}
+
+.link-active::before {
+  content: '';
+  display: none;
+}
+
+
+
+@media (max-width: 767.98px) {
+  .container {
+    max-width: none;
+    margin: 0 auto;
+    padding-right: 20px;
+    padding-left: 20px;
+  }
+}

@@ -1,0 +1,1306 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+@include('html/head.html', {
+"title":"ЭПА"
+})
+
+<body>
+	@include('html/header.html', {})
+	<main>
+
+		<section class="hero" id="hero">
+			<div class="container hero__container">
+				<div class="hero__content">
+					<div class="hero__content-left left">
+						<h1 class="hero__title">
+							СЕРВИС ЭЛЕКТРОННОЙ ОЦЕНКИ ДЛЯ НОТАРИАЛЬНЫХ УСЛУГ
+						</h1>
+
+						<ul class="hero__list list-reset">
+
+							<li class="hero__list-item">
+								<svg class="rhomb" width="40" height="40">
+									<use xlink:href="img/sprite.svg#rhomb"></use>
+								</svg>
+								<span>для получения <br class="del"> наследства</span>
+							</li>
+
+							<li class="hero__list-item">
+								<svg class="rhomb" width="40" height="40">
+									<use xlink:href="img/sprite.svg#rhomb"></use>
+								</svg>
+								<span>раздел имущества <br class="del"> между супругами</span>
+							</li>
+
+							<li class="hero__list-item">
+								<svg class="rhomb" width="40" height="40">
+									<use xlink:href="img/sprite.svg#rhomb"></use>
+								</svg>
+								<span>продажа имущества <br class="del"> через Нотариуса</span>
+							</li>
+
+						</ul>
+
+						<div class="hero__descr">
+							Оформление и&nbsp;выдача электронного отчета об&nbsp;оценке полностью онлайн&nbsp;по&nbsp;минимальной цене
+							и&nbsp;самым удобным способом в&nbsp;России. Местонахождение&nbsp;наследников и&nbsp;нотариуса
+							не&nbsp;имеет
+							значения.
+						</div>
+						<div class="hero__btns">
+							<button class="hero__btn my-btn left-btn blue-b">Заказать оценку</button>
+							<button class="hero__btn my-btn right-btn transp-b">Обратный звонок</button>
+						</div>
+					</div>
+
+					<div class="hero__content-right right">
+
+						<picture>
+							<source srcset="img/main-banner-360.webp" media="(max-width: 550px)">
+							<source srcset="img/main-banner-768.webp" media="(max-width: 1024px)">
+							<img src="img/main-banner.webp" alt="Главный баннер">
+						</picture>
+
+					</div>
+
+				</div>
+				<ul class="hero__bottom-list list list-reset">
+
+					<li class="list__item">
+						<span class="digit">8500+</span>
+						<span class="descr">сделанных оценок <br> имущества</span>
+					</li>
+
+					<li class="list__item">
+						<span class="digit">6374</span>
+						<span class="descr">нотариуса в РФ <br> работают с нами</span>
+					</li>
+
+					<li class="list__item">
+						<span class="digit">23</span>
+						<span class="descr">вида оценок для <br> нотариальных услуг</span>
+					</li>
+
+					<li class="list__item">
+						<span class="digit">3+</span>
+						<span class="descr">года успешной <br> работы сервиса</span>
+					</li>
+
+				</ul>
+			</div>
+		</section>
+
+		<section class="rating" id="rating">
+			<div class="container rating__container">
+				<h2 class="rating__title h2-title">
+					Как заказать электронную оценку?
+				</h2>
+				<ul class="rating__list list-reset">
+
+					<li class="rating__list-item item">
+						<div class="item__img">
+							<svg class="" width="100" height="100">
+								<use xlink:href="img/sprite.svg#service"></use>
+							</svg>
+						</div>
+						<div class="item__txt">
+							<h3 class="item__title">
+								1. Выберите услугу
+							</h3>
+							<div class="item__descr">
+								Для заказа электронной оценки выберите услугу и&nbsp;начните&nbsp;её оформление. Время заказа составляет
+								<span style="color: #073ba1;">2-5&nbsp;минут.</span>
+							</div>
+						</div>
+					</li>
+
+					<li class="rating__list-item item">
+						<div class="item__img">
+							<svg class="" width="100" height="100">
+								<use xlink:href="img/sprite.svg#creditcard"></use>
+							</svg>
+						</div>
+						<div class="item__txt">
+							<h3 class="item__title">
+								2. Оплатите заказ
+							</h3>
+							<div class="item__descr">
+								Оплата на&nbsp;сайте осуществляется через платежный шлюз &laquo;ПАО Сбербанк&raquo;&nbsp;через
+								<span style="color: #073ba1;">шифровальное соединение SSL</span> согласно <br class="del"> правилам
+								банка.
+							</div>
+						</div>
+					</li>
+
+					<li class="rating__list-item item">
+						<div class="item__img">
+							<svg class="" width="100" height="100">
+								<use xlink:href="img/sprite.svg#passcode"></use>
+							</svg>
+						</div>
+						<div class="item__txt">
+							<h3 class="item__title">
+								3. Войдите на сайт
+							</h3>
+							<div class="item__descr">
+								После оплаты вы&nbsp;получаете доступ в&nbsp;ваш <span style="color: #073ba1;">Личный кабинет
+									по&nbsp;SMS,</span> где будут отображаться результаты ваших оценок.
+							</div>
+						</div>
+					</li>
+
+					<li class="rating__list-item item">
+						<div class="item__img">
+							<svg class="" width="100" height="100">
+								<use xlink:href="img/sprite.svg#success"></use>
+							</svg>
+						</div>
+						<div class="item__txt">
+							<h3 class="item__title">
+								4. Получите оценку
+							</h3>
+							<div class="item__descr">
+								В&nbsp;течение 1&nbsp;часа мы&nbsp;составим оценку. Результат придёт вам на&nbsp;телефон по&nbsp;SMS
+								в&nbsp;виде <span style="color: #073ba1;">ссылки для просмотра и&nbsp;скачивания.</span>
+							</div>
+						</div>
+					</li>
+
+				</ul>
+			</div>
+		</section>
+
+		<section class="popular" id="popular">
+			<div class="container popular__container">
+				<h2 class="popular__title h2-title">
+					Популярные оценки
+				</h2>
+
+				<ul class="popular__list list-reset common-list">
+
+					<li class="popular__list-item list-item">
+						<div class="list-item__wrap">
+							<div class="list-item__wrap-left">
+								<svg class="" width="100" height="100">
+									<use xlink:href="img/sprite.svg#car"></use>
+								</svg>
+							</div>
+							<div class="list-item__wrap-right right">
+								<div class="right__top">
+									<h3 class="right__title h3-title">
+										Легковой автомобиль
+									</h3>
+									<div class="right__descr">
+										<svg class="" width="24" height="24">
+											<use xlink:href="img/sprite.svg#time"></use>
+										</svg>
+										<span>Срок изготовления&nbsp;&mdash; 1&nbsp;час</span>
+									</div>
+									<div class="right__bottom bottom">
+										<div class="bottom__price">
+											1100₽
+										</div>
+										<a class="bottom__btn my-btn red-btn red-b" href="#">
+											Заказать
+										</a>
+									</div>
+								</div>
+							</div>
+						</div>
+					</li>
+
+					<li class="popular__list-item list-item">
+						<div class="list-item__wrap">
+							<div class="list-item__wrap-left">
+								<svg class="" width="100" height="100">
+									<use xlink:href="img/sprite.svg#landplot"></use>
+								</svg>
+							</div>
+							<div class="list-item__wrap-right right">
+								<div class="right__top">
+									<h3 class="right__title h3-title">
+										Земельный участок
+									</h3>
+									<div class="right__descr">
+										<svg class="" width="24" height="24">
+											<use xlink:href="img/sprite.svg#time"></use>
+										</svg>
+										<span>Срок изготовления&nbsp;&mdash; 1&nbsp;час</span>
+									</div>
+								</div>
+								<div class="right__bottom bottom">
+									<div class="bottom__price">
+										1900₽
+									</div>
+									<a class="bottom__btn my-btn red-btn red-b" href="#">
+										Заказать
+									</a>
+								</div>
+							</div>
+						</div>
+					</li>
+
+					<li class="popular__list-item list-item">
+						<div class="list-item__wrap">
+							<div class="list-item__wrap-left">
+								<svg class="" width="100" height="100">
+									<use xlink:href="img/sprite.svg#stocks"></use>
+								</svg>
+							</div>
+							<div class="list-item__wrap-right right">
+								<div class="right__top">
+									<h3 class="right__title h3-title">
+										Акции
+									</h3>
+									<div class="right__descr">
+										<svg class="" width="24" height="24">
+											<use xlink:href="img/sprite.svg#time"></use>
+										</svg>
+										<span>Срок изготовления&nbsp;&mdash; 1&nbsp;час</span>
+									</div>
+								</div>
+								<div class="right__bottom bottom">
+									<div class="bottom__price">
+										1750₽
+									</div>
+									<a class="bottom__btn my-btn red-btn red-b" href="#">
+										Заказать
+									</a>
+								</div>
+							</div>
+						</div>
+					</li>
+
+					<li class="popular__list-item list-item">
+						<div class="list-item__wrap">
+							<div class="list-item__wrap-left">
+								<svg class="" width="100" height="100">
+									<use xlink:href="img/sprite.svg#gun"></use>
+								</svg>
+							</div>
+							<div class="list-item__wrap-right right">
+								<div class="right__top">
+									<h3 class="right__title h3-title">
+										Оружие
+									</h3>
+									<div class="right__descr">
+										<svg class="" width="24" height="24">
+											<use xlink:href="img/sprite.svg#time"></use>
+										</svg>
+										<span>Срок изготовления&nbsp;&mdash; 1&nbsp;час</span>
+									</div>
+								</div>
+								<div class="right__bottom bottom">
+									<div class="bottom__price">
+										1200₽
+									</div>
+									<a class="bottom__btn my-btn red-btn red-b" href="#">
+										Заказать
+									</a>
+								</div>
+							</div>
+						</div>
+					</li>
+
+				</ul>
+			</div>
+		</section>
+
+		<section class="option" id="option">
+			<div class="container option__container">
+				<h2 class="option__title h2-title">
+					Виды оценок
+				</h2>
+
+				<div class="option__tabs tabs">
+
+					<!-- кнопки табов -->
+					<ul class="tabs__btns-list list-reset">
+						<li class="tabs__btns-list-item">
+							<button class="tabs__btn-switch my-btn tab-btn-active" type="button" data-path="one">
+								Недвижимое имущество
+							</button>
+						</li>
+
+						<li class="tabs__btns-list-item">
+							<button class="tabs__btn-switch my-btn" type="button" data-path="two">
+								Активы и&nbsp;аренда
+							</button>
+						</li>
+
+						<li class="tabs__btns-list-item">
+							<button class="tabs__btn-switch my-btn" type="button" data-path="three">
+								Движимое имущество
+							</button>
+						</li>
+					</ul>
+
+					<!-- первая страница -->
+					<ul class="tabs__list list-reset common-list tab-active" data-target="one">
+
+						<li class="tabs__list-item list-item">
+							<div class="list-item__wrap">
+								<div class="list-item__wrap-left">
+									<svg class="" width="100" height="100">
+										<use xlink:href="img/sprite.svg#flat"></use>
+									</svg>
+								</div>
+								<div class="list-item__wrap-right right">
+									<div class="right__top">
+										<h3 class="right__title h3-title">
+											Квартира
+										</h3>
+										<div class="right__descr">
+											<svg class="" width="24" height="24">
+												<use xlink:href="img/sprite.svg#time"></use>
+											</svg>
+											<span>Срок изготовления&nbsp;&mdash; 1&nbsp;час</span>
+										</div>
+										<div class="right__bottom bottom">
+											<div class="bottom__price">
+												1550₽
+											</div>
+											<a class="bottom__btn my-btn red-btn red-b" href="#">
+												Заказать
+											</a>
+										</div>
+									</div>
+								</div>
+							</div>
+						</li>
+
+						<li class="tabs__list-item list-item">
+							<div class="list-item__wrap">
+								<div class="list-item__wrap-left">
+									<svg class="" width="100" height="100">
+										<use xlink:href="img/sprite.svg#garage"></use>
+									</svg>
+								</div>
+								<div class="list-item__wrap-right right">
+									<div class="right__top">
+										<h3 class="right__title h3-title">
+											Гараж
+										</h3>
+										<div class="right__descr">
+											<svg class="" width="24" height="24">
+												<use xlink:href="img/sprite.svg#time"></use>
+											</svg>
+											<span>Срок изготовления&nbsp;&mdash; 1&nbsp;час</span>
+										</div>
+									</div>
+									<div class="right__bottom bottom">
+										<div class="bottom__price">
+											1400₽
+										</div>
+										<a class="bottom__btn my-btn red-btn red-b" href="#">
+											Заказать
+										</a>
+									</div>
+								</div>
+							</div>
+						</li>
+
+						<li class="tabs__list-item list-item">
+							<div class="list-item__wrap">
+								<div class="list-item__wrap-left">
+									<svg class="" width="100" height="100">
+										<use xlink:href="img/sprite.svg#landplot"></use>
+									</svg>
+								</div>
+								<div class="list-item__wrap-right right">
+									<div class="right__top">
+										<h3 class="right__title h3-title">
+											Земельный участок
+										</h3>
+										<div class="right__descr">
+											<svg class="" width="24" height="24">
+												<use xlink:href="img/sprite.svg#time"></use>
+											</svg>
+											<span>Срок изготовления&nbsp;&mdash; 1&nbsp;час</span>
+										</div>
+									</div>
+									<div class="right__bottom bottom">
+										<div class="bottom__price">
+											1900₽
+										</div>
+										<a class="bottom__btn my-btn red-btn red-b" href="#">
+											Заказать
+										</a>
+									</div>
+								</div>
+							</div>
+						</li>
+
+						<li class="tabs__list-item list-item">
+							<div class="list-item__wrap">
+								<div class="list-item__wrap-left">
+									<svg class="" width="100" height="100">
+										<use xlink:href="img/sprite.svg#house2"></use>
+									</svg>
+								</div>
+								<div class="list-item__wrap-right right">
+									<div class="right__top">
+										<h3 class="right__title h3-title">
+											Жилой дом с&nbsp;участком
+										</h3>
+										<div class="right__descr">
+											<svg class="" width="24" height="24">
+												<use xlink:href="img/sprite.svg#time"></use>
+											</svg>
+											<span>Срок изготовления&nbsp;&mdash; 1&nbsp;час</span>
+										</div>
+									</div>
+									<div class="right__bottom bottom">
+										<div class="bottom__price">
+											2600₽
+										</div>
+										<a class="bottom__btn my-btn red-btn red-b" href="#">
+											Заказать
+										</a>
+									</div>
+								</div>
+							</div>
+						</li>
+
+						<li class="tabs__list-item list-item">
+							<div class="list-item__wrap">
+								<div class="list-item__wrap-left">
+									<svg class="" width="100" height="100">
+										<use xlink:href="img/sprite.svg#house"></use>
+									</svg>
+								</div>
+								<div class="list-item__wrap-right right">
+									<div class="right__top">
+										<h3 class="right__title h3-title">
+											Жилой дом без участка
+										</h3>
+										<div class="right__descr">
+											<svg class="" width="24" height="24">
+												<use xlink:href="img/sprite.svg#time"></use>
+											</svg>
+											<span>Срок изготовления&nbsp;&mdash; 1&nbsp;час</span>
+										</div>
+									</div>
+									<div class="right__bottom bottom">
+										<div class="bottom__price">
+											2100₽
+										</div>
+										<a class="bottom__btn my-btn red-btn red-b" href="#">
+											Заказать
+										</a>
+									</div>
+								</div>
+							</div>
+						</li>
+
+						<li class="tabs__list-item list-item">
+							<div class="list-item__wrap">
+								<div class="list-item__wrap-left">
+									<svg class="" width="100" height="100">
+										<use xlink:href="img/sprite.svg#warehouse"></use>
+									</svg>
+								</div>
+								<div class="list-item__wrap-right right">
+									<div class="right__top">
+										<h3 class="right__title h3-title">
+											Нежилая и&nbsp;коммерческая недвижимость
+										</h3>
+										<div class="right__descr">
+											<svg class="" width="24" height="24">
+												<use xlink:href="img/sprite.svg#time"></use>
+											</svg>
+											<span>Срок изготовления&nbsp;&mdash; 1&nbsp;час</span>
+										</div>
+									</div>
+									<div class="right__bottom bottom">
+										<div class="bottom__price">
+											2100₽
+										</div>
+										<a class="bottom__btn my-btn red-btn red-b" href="#">
+											Заказать
+										</a>
+									</div>
+								</div>
+							</div>
+						</li>
+
+					</ul>
+					<!-- вторая страница -->
+					<ul class="tabs__list list-reset common-list" data-target="two">
+
+						<li class="tabs__list-item list-item">
+							<div class="list-item__wrap">
+								<div class="list-item__wrap-left">
+									<svg class="" width="100" height="100">
+										<use xlink:href="img/sprite.svg#house"></use>
+									</svg>
+								</div>
+								<div class="list-item__wrap-right right">
+									<div class="right__top">
+										<h3 class="right__title h3-title">
+											Жилой дом без участка
+										</h3>
+										<div class="right__descr">
+											<svg class="" width="24" height="24">
+												<use xlink:href="img/sprite.svg#time"></use>
+											</svg>
+											<span>Срок изготовления&nbsp;&mdash; 1&nbsp;час</span>
+										</div>
+									</div>
+									<div class="right__bottom bottom">
+										<div class="bottom__price">
+											2100₽
+										</div>
+										<a class="bottom__btn my-btn red-btn red-b" href="#">
+											Заказать
+										</a>
+									</div>
+								</div>
+							</div>
+						</li>
+
+						<li class="tabs__list-item list-item">
+							<div class="list-item__wrap">
+								<div class="list-item__wrap-left">
+									<svg class="" width="100" height="100">
+										<use xlink:href="img/sprite.svg#warehouse"></use>
+									</svg>
+								</div>
+								<div class="list-item__wrap-right right">
+									<div class="right__top">
+										<h3 class="right__title h3-title">
+											Нежилая и&nbsp;коммерческая недвижимость
+										</h3>
+										<div class="right__descr">
+											<svg class="" width="24" height="24">
+												<use xlink:href="img/sprite.svg#time"></use>
+											</svg>
+											<span>Срок изготовления&nbsp;&mdash; 1&nbsp;час</span>
+										</div>
+									</div>
+									<div class="right__bottom bottom">
+										<div class="bottom__price">
+											2100₽
+										</div>
+										<a class="bottom__btn my-btn red-btn red-b" href="#">
+											Заказать
+										</a>
+									</div>
+								</div>
+							</div>
+						</li>
+
+					</ul>
+					<!-- третья страница -->
+					<ul class="tabs__list list-reset common-list" data-target="three">
+
+						<li class="tabs__list-item list-item">
+							<div class="list-item__wrap">
+								<div class="list-item__wrap-left">
+									<svg class="" width="100" height="100">
+										<use xlink:href="img/sprite.svg#landplot"></use>
+									</svg>
+								</div>
+								<div class="list-item__wrap-right right">
+									<div class="right__top">
+										<h3 class="right__title h3-title">
+											Земельный участок
+										</h3>
+										<div class="right__descr">
+											<svg class="" width="24" height="24">
+												<use xlink:href="img/sprite.svg#time"></use>
+											</svg>
+											<span>Срок изготовления&nbsp;&mdash; 1&nbsp;час</span>
+										</div>
+									</div>
+									<div class="right__bottom bottom">
+										<div class="bottom__price">
+											1900₽
+										</div>
+										<a class="bottom__btn my-btn red-btn red-b" href="#">
+											Заказать
+										</a>
+									</div>
+								</div>
+							</div>
+						</li>
+
+						<li class="tabs__list-item list-item">
+							<div class="list-item__wrap">
+								<div class="list-item__wrap-left">
+									<svg class="" width="100" height="100">
+										<use xlink:href="img/sprite.svg#house2"></use>
+									</svg>
+								</div>
+								<div class="list-item__wrap-right right">
+									<div class="right__top">
+										<h3 class="right__title h3-title">
+											Жилой дом с&nbsp;участком
+										</h3>
+										<div class="right__descr">
+											<svg class="" width="24" height="24">
+												<use xlink:href="img/sprite.svg#time"></use>
+											</svg>
+											<span>Срок изготовления&nbsp;&mdash; 1&nbsp;час</span>
+										</div>
+									</div>
+									<div class="right__bottom bottom">
+										<div class="bottom__price">
+											2600₽
+										</div>
+										<a class="bottom__btn my-btn red-btn red-b" href="#">
+											Заказать
+										</a>
+									</div>
+								</div>
+							</div>
+						</li>
+
+						<li class="tabs__list-item list-item">
+							<div class="list-item__wrap">
+								<div class="list-item__wrap-left">
+									<svg class="" width="100" height="100">
+										<use xlink:href="img/sprite.svg#warehouse"></use>
+									</svg>
+								</div>
+								<div class="list-item__wrap-right right">
+									<div class="right__top">
+										<h3 class="right__title h3-title">
+											Нежилая и&nbsp;коммерческая недвижимость
+										</h3>
+										<div class="right__descr">
+											<svg class="" width="24" height="24">
+												<use xlink:href="img/sprite.svg#time"></use>
+											</svg>
+											<span>Срок изготовления&nbsp;&mdash; 1&nbsp;час</span>
+										</div>
+									</div>
+									<div class="right__bottom bottom">
+										<div class="bottom__price">
+											2100₽
+										</div>
+										<a class="bottom__btn my-btn red-btn red-b" href="#">
+											Заказать
+										</a>
+									</div>
+								</div>
+							</div>
+						</li>
+
+						<li class="tabs__list-item list-item">
+							<div class="list-item__wrap">
+								<div class="list-item__wrap-left">
+									<svg class="" width="100" height="100">
+										<use xlink:href="img/sprite.svg#house2"></use>
+									</svg>
+								</div>
+								<div class="list-item__wrap-right right">
+									<div class="right__top">
+										<h3 class="right__title h3-title">
+											Жилой дом с&nbsp;участком
+										</h3>
+										<div class="right__descr">
+											<svg class="" width="24" height="24">
+												<use xlink:href="img/sprite.svg#time"></use>
+											</svg>
+											<span>Срок изготовления&nbsp;&mdash; 1&nbsp;час</span>
+										</div>
+									</div>
+									<div class="right__bottom bottom">
+										<div class="bottom__price">
+											2600₽
+										</div>
+										<a class="bottom__btn my-btn red-btn red-b" href="#">
+											Заказать
+										</a>
+									</div>
+								</div>
+							</div>
+						</li>
+
+					</ul>
+
+				</div>
+
+
+
+			</div>
+		</section>
+
+		<section class="faq" id="faq">
+			<div class="container faq__container">
+				<h2 class="faq__title h2-title">
+					Часто задаваемые вопросы
+				</h2>
+
+				<div class="faq__content">
+
+					<div class="faq__img">
+						<svg class="" width="400" height="380">
+							<use xlink:href="img/sprite.svg#illustration"></use>
+						</svg>
+					</div>
+
+					<div class="faq__accordion-wrapper accordion">
+
+						<ul class="accordion__list list-reset one">
+
+							<li class="accordion__list-item">
+								<div class="accordion__wrap" tabindex="0">
+									<span class="accordion__span">1</span>
+									<h3 class="accordion__title">
+										Законен&nbsp;ли отчет об&nbsp;оценке в&nbsp;электроном виде?
+									</h3>
+
+								</div>
+								<div class="accordion__text">
+									<p>
+										Полностью. Согласно ст.&nbsp;11&nbsp;Закона &#8470;&nbsp;135-ФЗ &laquo;Об&nbsp;оценочной
+										деятельности
+										в&nbsp;Российской Федерации&raquo;:
+									</p>
+
+									<p>
+										1. Отчет составляется на&nbsp;бумажном носителе&nbsp;и (или) в&nbsp;форме электронного документа.
+									</p>
+									<p>
+										2. Отчет, составленный в&nbsp;форме электронного документа, должен быть подписан усиленной
+										квалифицированной электронной подписью в соответствии с&nbsp;законодательством Российской Федерации.
+									</p>
+								</div>
+							</li>
+
+							<li class="accordion__list-item">
+								<div class="accordion__wrap" tabindex="0">
+									<!--  active - если нужен один открытый -->
+									<span class="accordion__span">2</span>
+									<h3 class="accordion__title">
+										Может&nbsp;ли нотариус не&nbsp;принять электронный документ?
+									</h3>
+									<span class="accordion__arrow"></span>
+								</div>
+								<div class="accordion__text">
+									<!--  style = "display: block;" - если нужен один открытый -->
+									<div class="accordion__content">
+										2
+									</div>
+								</div>
+							</li>
+
+							<li class="accordion__list-item">
+								<div class="accordion__wrap" tabindex="0">
+									<span class="accordion__span">3</span>
+									<h3 class="accordion__title">
+										Как можно передать отчет нотариусу?
+									</h3>
+									<span class="accordion__arrow"></span>
+								</div>
+								<div class="accordion__text">
+									<div class="accordion__content">
+										3
+									</div>
+								</div>
+							</li>
+
+							<li class="accordion__list-item">
+								<div class="accordion__wrap" tabindex="0">
+									<span class="accordion__span">4</span>
+									<h3 class="accordion__title">
+										Какие выдаются документы и&nbsp;в&nbsp;каком виде?
+									</h3>
+									<span class="accordion__arrow"></span>
+								</div>
+								<div class="accordion__text">
+									<div class="accordion__content">
+										4
+									</div>
+								</div>
+							</li>
+
+							<li class="accordion__list-item">
+								<div class="accordion__wrap" tabindex="0">
+									<span class="accordion__span">5</span>
+									<h3 class="accordion__title">
+										Какие документы я&nbsp;получу?
+									</h3>
+									<span class="accordion__arrow"></span>
+								</div>
+								<div class="accordion__text">
+									<div class="accordion__content">
+										5
+									</div>
+								</div>
+							</li>
+
+						</ul>
+
+						<a class="accordion__btn my-btn" href="#">Все вопросы</a>
+
+					</div>
+				</div>
+
+			</div>
+		</section>
+
+		<section class="benefits" id="benefits">
+			<div class="container benefits__container">
+				<h2 class="benefits__title h2-title">
+					Преимущества сервиса
+				</h2>
+
+				<!-- список со свайпером -->
+
+				<div class="benefits__swiper-wrap">
+
+					<div class="benefits__swiper swiper">
+
+						<ul class="benefits__swiper-wrapper swiper-wrapper list-reset">
+
+							<li class="benefits__swiper-slide swiper-slide content-common">
+								<div class="content-common__wrap">
+									<div class="content-common__title">
+										Экономия вашего времени
+									</div>
+									<div class="content-common__descr">
+										Сделаем готовую оценку <br> в&nbsp;течение 1&nbsp;часа
+									</div>
+									<div class="content-common__img">
+										<svg class="" width="64" height="64">
+											<use xlink:href="img/sprite.svg#clock"></use>
+										</svg>
+									</div>
+								</div>
+							</li>
+
+							<li class="benefits__swiper-slide swiper-slide content-common">
+								<div class="content-common__wrap">
+									<div class="content-common__title">
+										Отчёт с&nbsp;подписью
+									</div>
+									<div class="content-common__descr">
+										Квалифицированная электронная подпись в&nbsp;формате Sig
+									</div>
+									<div class="content-common__img">
+										<svg class="" width="64" height="64">
+											<use xlink:href="img/sprite.svg#signature"></use>
+										</svg>
+									</div>
+								</div>
+							</li>
+
+							<li class="benefits__swiper-slide swiper-slide content-common">
+								<div class="content-common__wrap">
+									<div class="content-common__title">
+										Законные основания
+									</div>
+									<div class="content-common__descr">
+										Работа сервиса в&nbsp;соответствие <br> с&nbsp;ФЗ и&nbsp;НПА
+									</div>
+									<div class="content-common__img">
+										<svg class="" width="64" height="64">
+											<use xlink:href="img/sprite.svg#gavel"></use>
+										</svg>
+									</div>
+								</div>
+							</li>
+
+							<li class="benefits__swiper-slide swiper-slide content-common">
+								<div class="content-common__wrap">
+									<div class="content-common__title">
+										Отправка оценки нотариусу
+									</div>
+									<div class="content-common__descr">
+										Вы&nbsp;можете прикрепиться к&nbsp;своему <br> нотариусу, чтобы результаты <br> отправлялись
+										автоматически
+									</div>
+									<div class="content-common__img">
+										<svg class="" width="64" height="64">
+											<use xlink:href="img/sprite.svg#notary"></use>
+										</svg>
+									</div>
+								</div>
+							</li>
+
+							<li class="benefits__swiper-slide swiper-slide content-common">
+								<div class="content-common__wrap">
+									<div class="content-common__title">
+										Отслеживание работы
+									</div>
+									<div class="content-common__descr">
+										Сервис позволяет отслеживать <br> статус выполнения заказов
+									</div>
+									<div class="content-common__img">
+										<svg class="" width="64" height="64">
+											<use xlink:href="img/sprite.svg#process"></use>
+										</svg>
+									</div>
+								</div>
+							</li>
+
+							<li class="benefits__swiper-slide swiper-slide content-common">
+								<div class="content-common__wrap">
+									<div class="content-common__title">
+										Удобства для вас
+									</div>
+									<div class="content-common__descr">
+										Вам не&nbsp;нужно искать оценочную <br> организацию&nbsp;&mdash; оценку можно <br> заказать онлайн
+									</div>
+									<div class="content-common__img">
+										<svg class="" width="64" height="64">
+											<use xlink:href="img/sprite.svg#map"></use>
+										</svg>
+									</div>
+								</div>
+							</li>
+
+						</ul>
+
+					</div>
+
+					<!-- If we need navigation buttons -->
+					<div class="benefits__swiper-button-prev swiper-button-prev">
+						<svg class="" width="10" height="14">
+							<use xlink:href="img/sprite.svg#arrow"></use>
+						</svg>
+					</div>
+					<div class="benefits__swiper-button-next swiper-button-next">
+						<svg class="" width="10" height="14">
+							<use xlink:href="img/sprite.svg#arrow"></use>
+						</svg>
+					</div>
+				</div>
+
+				<!-- список без свайпера -->
+
+				<ul class="benefits__card-wrap list-reset card-wrap">
+
+					<li class="card-wrap__item content-common">
+						<div class="content-common__wrap">
+							<div class="content-common__title">
+								Экономия вашего времени
+							</div>
+							<div class="content-common__descr">
+								Сделаем готовую оценку <br> в&nbsp;течение 1&nbsp;часа
+							</div>
+							<div class="content-common__img">
+								<svg class="" width="64" height="64">
+									<use xlink:href="img/sprite.svg#clock"></use>
+								</svg>
+							</div>
+						</div>
+					</li>
+
+					<li class="card-wrap__item content-common">
+						<div class="content-common__wrap">
+							<div class="content-common__title">
+								Отчёт с&nbsp;подписью
+							</div>
+							<div class="content-common__descr">
+								Квалифицированная электронная подпись в&nbsp;формате Sig
+							</div>
+							<div class="content-common__img omg">
+								<svg class="" width="64" height="64">
+									<use xlink:href="img/sprite.svg#signature"></use>
+								</svg>
+							</div>
+						</div>
+					</li>
+
+					<li class="card-wrap__item content-common">
+						<div class="content-common__wrap">
+							<div class="content-common__title">
+								Законные основания
+							</div>
+							<div class="content-common__descr">
+								Работа сервиса в&nbsp;соответствие <br> с&nbsp;ФЗ и&nbsp;НПА
+							</div>
+							<div class="content-common__img">
+								<svg class="" width="64" height="64">
+									<use xlink:href="img/sprite.svg#gavel"></use>
+								</svg>
+							</div>
+						</div>
+					</li>
+
+					<li class="card-wrap__item content-common">
+						<div class="content-common__wrap">
+							<div class="content-common__title">
+								Отправка оценки нотариусу
+							</div>
+							<div class="content-common__descr">
+								Вы&nbsp;можете прикрепиться к&nbsp;своему <br> нотариусу, чтобы результаты <br> отправлялись
+								автоматически
+							</div>
+							<div class="content-common__img omg">
+								<svg class="" width="64" height="64">
+									<use xlink:href="img/sprite.svg#notary"></use>
+								</svg>
+							</div>
+						</div>
+					</li>
+
+					<li class="card-wrap__item content-common">
+						<div class="content-common__wrap">
+							<div class="content-common__title">
+								Отслеживание работы
+							</div>
+							<div class="content-common__descr">
+								Сервис позволяет отслеживать <br> статус выполнения заказов
+							</div>
+							<div class="content-common__img">
+								<svg class="" width="64" height="64">
+									<use xlink:href="img/sprite.svg#process"></use>
+								</svg>
+							</div>
+						</div>
+					</li>
+
+					<li class="card-wrap__item content-common">
+						<div class="content-common__wrap">
+							<div class="content-common__title">
+								Удобства для вас
+							</div>
+							<div class="content-common__descr">
+								Вам не&nbsp;нужно искать оценочную <br> организацию&nbsp;&mdash; оценку можно <br> заказать онлайн
+							</div>
+							<div class="content-common__img">
+								<svg class="" width="64" height="64">
+									<use xlink:href="img/sprite.svg#map"></use>
+								</svg>
+							</div>
+						</div>
+					</li>
+
+				</ul>
+
+
+			</div>
+		</section>
+
+		<section class="reviews" id="reviews">
+			<div class="container reviews__container">
+				<h2 class="reviews__title h2-title">
+					Отзывы наших клиентов
+				</h2>
+
+				<div class="reviews__swiper-wrap">
+
+
+					<div class="reviews__swiper swiper">
+
+						<ul class="reviews__swiper-wrapper swiper-wrapper list-reset">
+
+							<li class="reviews__swiper-slide swiper-slide wrap">
+								<div class="wrap__content content">
+									<div class="content__img">
+										<svg class="" width="40" height="40">
+											<use xlink:href="img/sprite.svg#quote"></use>
+										</svg>
+									</div>
+									<h4 class="content__title">
+										Алексей&nbsp;К.
+									</h4>
+									<span class="content__city">
+										г. Москва
+									</span>
+									<div class="content__txt">
+										Заказал оценку, через час на телефон пришла ссылка с подробным разъяснением. Мало кто
+										делает так оперативно и&nbsp;качественно.
+									</div>
+								</div>
+							</li>
+
+							<li class="reviews__swiper-slide swiper-slide wrap">
+								<div class="wrap__content content">
+									<div class="content__img">
+										<svg class="" width="40" height="40">
+											<use xlink:href="img/sprite.svg#quote"></use>
+										</svg>
+									</div>
+									<h4 class="content__title">
+										Валерия&nbsp;Ф.
+									</h4>
+									<span class="content__city">
+										г. Санкт-Петербург
+									</span>
+									<div class="content__txt">
+										10.08.2022 обратилась за&nbsp;срочной оценкой по&nbsp;нотариальным действиям, результат получила
+										в&nbsp;кратчайший срок. Обращаться сюда искренне рекомендую всем, работа делается на&nbsp;отлично!
+									</div>
+								</div>
+							</li>
+
+							<li class="reviews__swiper-slide swiper-slide wrap">
+								<div class="wrap__content content">
+									<div class="content__img">
+										<svg class="" width="40" height="40">
+											<use xlink:href="img/sprite.svg#quote"></use>
+										</svg>
+									</div>
+									<h4 class="content__title">
+										Михаил&nbsp;М.
+									</h4>
+									<span class="content__city">
+										г. Рязань
+									</span>
+									<div class="content__txt">
+										Спасибо большое за&nbsp;оказанную консультацию и&nbsp;оценку. Нотариус получил оценку автоматически.
+									</div>
+								</div>
+							</li>
+
+							<li class="reviews__swiper-slide swiper-slide wrap">
+								<div class="wrap__content content">
+									<div class="content__img">
+										<svg class="" width="40" height="40">
+											<use xlink:href="img/sprite.svg#quote"></use>
+										</svg>
+									</div>
+									<h4 class="content__title">
+										Алексей&nbsp;К.
+									</h4>
+									<span class="content__city">
+										г. Москва
+									</span>
+									<div class="content__txt">
+										Работу выполнили быстро. Отдельная благодарность за&nbsp;возможность отправить документы сразу
+										нотариусу, не&nbsp;пришлось тратить время на&nbsp;поездку в&nbsp;офис.
+									</div>
+								</div>
+							</li>
+
+							<li class="reviews__swiper-slide swiper-slide wrap">
+								<div class="wrap__content content">
+									<div class="content__img">
+										<svg class="" width="40" height="40">
+											<use xlink:href="img/sprite.svg#quote"></use>
+										</svg>
+									</div>
+									<h4 class="content__title">
+										Валерия&nbsp;Ф.
+									</h4>
+									<span class="content__city">
+										г. Санкт-Петербург
+									</span>
+									<div class="content__txt">
+										Супер! В&nbsp;моем городе нигде не&nbsp;было срочной записи на&nbsp;ближайшее время, а&nbsp;тут
+										быстро приняли оценку в&nbsp;работу, очень доволен.
+									</div>
+								</div>
+							</li>
+
+							<li class="reviews__swiper-slide swiper-slide wrap">
+								<div class="wrap__content content">
+									<div class="content__img">
+										<svg class="" width="40" height="40">
+											<use xlink:href="img/sprite.svg#quote"></use>
+										</svg>
+									</div>
+									<h4 class="content__title">
+										Михаил&nbsp;М.
+									</h4>
+									<span class="content__city">
+										г. Рязань
+									</span>
+									<div class="content__txt">
+										Всегда только положительные впечатления. Пользуюсь услугами не&nbsp;первый раз по&nbsp;своей фирме
+										и&nbsp;деятельности. Всегда грамотно, четко и&nbsp;быстро.
+									</div>
+								</div>
+							</li>
+
+							<li class="reviews__swiper-slide swiper-slide wrap">
+								<div class="wrap__content content">
+									<div class="content__img">
+										<svg class="" width="40" height="40">
+											<use xlink:href="img/sprite.svg#quote"></use>
+										</svg>
+									</div>
+									<h4 class="content__title">
+										Михаил&nbsp;М.
+									</h4>
+									<span class="content__city">
+										г. Рязань
+									</span>
+									<div class="content__txt">
+										Всё хорошо, быстро оформили оценку на&nbsp;машину, вежливый персонал. Мне помог сотрудник Иван,
+										спасибо, всё доходчиво объяснил. Буду при необходимости общаться сюда.
+									</div>
+								</div>
+							</li>
+
+						</ul>
+
+					</div>
+					<!-- If we need navigation buttons -->
+					<div class="reviews__swiper-button-prev swiper-button-prev">
+						<svg class="" width="10" height="14">
+							<use xlink:href="img/sprite.svg#arrow"></use>
+						</svg>
+					</div>
+					<div class="reviews__swiper-button-next swiper-button-next">
+						<svg class="" width="10" height="14">
+							<use xlink:href="img/sprite.svg#arrow"></use>
+						</svg>
+					</div>
+				</div>
+
+			</div>
+		</section>
+
+		<section class="contacts" id="contacts">
+			<div class="container contacts__container">
+				<div class="contacts__content">
+					<h2 class="contacts__title h2-title desktop-title">
+						Нужна помощь или остались вопросы?
+					</h2>
+
+					<h2 class="contacts__title h2-title mobile-title">
+						Нужна помощь <br class="del"> с&nbsp;оценкой?
+					</h2>
+
+					<div class="contacts__wrap wrap">
+
+						<div class="wrap__content content">
+							<div class="content__txt">
+								Заполните форму и&nbsp;наш менеджер свяжется с&nbsp;вами <br class="del"> для бесплатной
+								консультации&nbsp;по интересующим вопросам.
+							</div>
+							<form class="content__form form" action="#" method="POST">
+								<label class="form__label" for="name">
+									<span class="form__span">Имя</span>
+									<input class="form__input" type="text" placeholder="Иван" id="name">
+								</label>
+								<label class="form__label" for="phone">
+									<span class="form__span">Номер телефона</span>
+									<input class="form__input" type="tel" id="phone" placeholder="+7 (900) 000-00-00">
+								</label>
+							</form>
+							<div class="content__descr">
+								Нажимая на&nbsp;кнопку, вы&nbsp;соглашаетесь на&nbsp;обработку <br> персональных данных.
+							</div>
+							<button class="content__btn my-btn red-b" type="button">Отправить</button>
+						</div>
+
+						<div class="wrap__img">
+							<svg class="" width="300" height="300">
+								<use xlink:href="img/sprite.svg#pict_phone"></use>
+							</svg>
+						</div>
+					</div>
+
+					<svg class="phone-svg" width="320" height="340">
+						<use xlink:href="img/sprite.svg#pict-phone-2"></use>
+					</svg>
+				</div>
+			</div>
+		</section>
+
+	</main>
+	@include('html/footer.html', {})
+
+  @include('html/modals.html', {})
+</body>
+
+</html>

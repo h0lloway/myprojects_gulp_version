@@ -1,0 +1,82 @@
+.contacts {
+  padding-top: 60px;
+  padding-bottom: 60px;
+  transition: all .3s;
+
+  &__content {
+    display: flex;
+    justify-content: space-between;
+    padding-top: 35px;
+  }
+
+  .contacts-content {
+    flex: 0 1 50%;
+
+    &__title {
+      margin-bottom: 20px;
+
+      font-size: 26px;
+      font-weight: 700;
+      line-height: 146.66667%;
+      text-align: center;
+    }
+
+    .telegram {
+      fill: #5c7aaf;
+      stroke: var(--socials);
+    }
+
+    .gmail {
+      stroke: var(--socials);
+    }
+
+    &__link {
+      display: flex;
+      margin: 0 30px 0 0;
+      color: var(--carbonic);
+      font-size: 24px;
+      font-weight: 500;
+      line-height: 130%;
+      transition: all .3s ease 0s;
+      justify-content: center;
+    }
+
+    &__link svg {
+      transition: all .3s ease 0s;
+
+    }
+
+    &__link:hover svg {
+      opacity: 0.7;
+      transform: scale(1.2);
+    }
+
+    &__link:nth-child(1) {
+      padding-right: 30px;
+    }
+
+    &__link:nth-child(2) {
+      margin-right: 0;
+    }
+  }
+}
+
+@media (max-width: 1000px) {
+  .contacts {
+    padding-top: calc(25px + 20 * ((100vw - 320px)/ 680));
+    padding-bottom: calc(25px + 20 * ((100vw - 320px)/ 680));
+
+    .contacts-content {
+
+      &__title {
+        display: none;
+      }
+
+      .telegram,
+      .gmail {
+        width: 120px;
+        height: 120px;
+      }
+    }
+  }
+}

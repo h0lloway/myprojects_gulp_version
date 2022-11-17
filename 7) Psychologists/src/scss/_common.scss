@@ -1,0 +1,265 @@
+// .title {
+
+// }
+
+// @media (max-width: 1000px) {
+//   .title {
+//     font-size: calc(20px + 24 * ((100vw - 320px)/ 680));
+//   }
+// }
+
+
+.transp-btn {
+  background-color: transparent;
+  border: 2px solid var(--purple-color);
+  border-radius: 5px;
+  font-family: "OpenSans", sans-serif;
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 138.19%;
+  color: var(--purple-color);
+
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  padding: 14px 50px;
+  transition: .3s ease 0s;
+}
+
+.transp-btn:hover {
+  color: var(--white-color);
+  background-color: var(--purple-color);
+}
+
+.transp-btn:active {
+  color: var(--white-color);
+  background-color: #3e2c8f;
+}
+
+.purple-btn {
+  background-color: var(--purple-color);
+  border-radius: 5px;
+  font-family: "OpenSans", sans-serif;
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 138.19%;
+  color: var(--white-color);
+
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  padding: 14px 50px;
+  transition: background-color .3s ease 0s;
+}
+
+.purple-btn:hover {
+  background-color: #5f4bb8;
+}
+
+.purple-btn:active {
+  background-color: #3e2c8f;
+}
+
+.purple-btn:focus-visible {
+  background-color: #3e2c8f;
+}
+
+.hidden {
+  display: none;
+  opacity: 0;
+  visibility: hidden;
+}
+
+.visible {
+  display: inline-flex;
+  opacity: 1;
+  visibility: visible;
+}
+
+.star {
+  fill: #F9A068;
+}
+
+.check {
+  fill: #F9A068;
+}
+
+// серые ссылки // серые ссылки // серые ссылки // серые ссылки // серые ссылки // серые ссылки // серые ссылки 
+
+.grey-link {
+  font-size: 14px;
+  color: var(--grey-color);
+}
+
+.grey-link:hover {
+  color: var(--purple-color);
+}
+
+.grey-link:focus-visible {
+  color: #7033AC;
+  background: #EBD1FF;
+}
+
+.grey-link:active {
+  color: #7033AC;
+}
+
+// общая цена 
+
+.price {
+
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  &__descr {
+    display: block;
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 138.19%;
+  }
+
+  &__subdescr {
+    display: block;
+    font-size: 12px;
+    line-height: 138.19%;
+    color: var(--dark-grey);
+  }
+
+  &__cost {
+    margin-left: 5px;
+    min-width: 86px;
+    text-align: center;
+    padding: 3px 7px;
+    background: #5AC698;
+    border-radius: 4px;
+    font-size: 18px;
+    line-height: 138.19%;
+    color: var(--white-color);
+  }
+}
+
+// общие стили для переходам по дереву ссылок
+
+.breadcrumbs {
+  display: flex;
+  margin-bottom: 52px;
+
+  &__item-link {
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 138.19%;
+
+    transition: .3s ease;
+  }
+
+  &__item:first-child a {
+    padding-right: 5px;
+    text-transform: capitalize;
+  }
+
+  &__item:last-child a {
+    color: var(--dark-grey);
+  }
+
+  &__item-link:hover {
+    color: var(--purple-color);
+  }
+}
+
+@media (max-width: 780px) {
+
+
+  .breadcrumbs {
+    margin-bottom: 40px;
+  }
+}
+
+// common-fonts 
+
+
+
+
+// common - descr (Отзывы)
+
+.descr {
+  display: flex;
+  align-items: center;
+
+  margin-bottom: 20px;
+
+  &__name {
+    margin-right: 17px;
+    font-size: 16px;
+    line-height: 138.19%;
+    color: #000;
+  }
+
+  &__city {
+    margin-right: 14px;
+    font-size: 16px;
+    line-height: 138.19%;
+    color: var(--dark-grey);
+  }
+
+  &__date {
+    font-style: italic;
+    font-size: 16px;
+    line-height: 138.19%;
+    color: rgba(66, 159, 226, 0.49);
+  }
+}
+
+
+
+// общая инфа из карточек
+
+
+.common {
+
+  img {
+    margin-bottom: 55px;
+  }
+
+  &__rating {
+    margin-bottom: 12px;
+  }
+
+  &__name {
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 138.19%;
+  }
+
+  &__text {
+    display: flex;
+    justify-content: space-between;
+    font-size: 14px;
+    line-height: 138.19%;
+    color: var(--dark-grey);
+  }
+}
+
+// @media (max-width: 1012px) {
+//   .container {
+//     max-width: 970px;
+//     padding: 0 15px;
+//   }
+// }
+
+
+// @media (max-width: 991.98px) {
+//   .container {
+//     max-width: 750px;
+//   }
+// }
+
+// @media (max-width: 767.98px) {
+//   .container {
+//     max-width: none;
+//     padding: 0 10px;
+//   }
+
+// }

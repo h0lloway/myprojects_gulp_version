@@ -1,0 +1,261 @@
+.table {
+
+  padding-top: 62px;
+
+
+  &__list {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    column-gap: 20px;
+    row-gap: 20px;
+  }
+
+  .card {
+    display: flex;
+    justify-content: space-between;
+    background: #FCFCFC;
+    box-shadow: 0px 3px 16px rgba(118, 96, 220, 0.15);
+    border-radius: 8px;
+
+    padding: 33px 24px 27px 24px;
+
+    .star {
+      margin-right: 6px;
+    }
+
+    .left {
+      width: 43%;
+
+      img {
+        margin-bottom: 55px;
+      }
+
+      &__rating {
+        margin-bottom: 12px;
+      }
+
+      &__name {
+        font-weight: 600;
+        font-size: 20px;
+        line-height: 138.19%;
+      }
+
+      &__text {
+        display: flex;
+        justify-content: space-between;
+        font-size: 14px;
+        line-height: 138.19%;
+        color: var(--dark-grey);
+      }
+    }
+
+    .right {
+      width: 54%;
+
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+
+      &__descr {
+        display: none;
+      }
+
+      &__rating {
+        display: none;
+      }
+
+      &__activity {
+        min-height: 50px;
+        font-size: 18px;
+        line-height: 138.19%;
+        color: var(--dark-grey);
+      }
+
+      &__list {
+
+        padding: 5px 12px 8px 34px;
+        border: 1px solid var(--purple-color);
+        border-radius: 4px;
+      }
+
+      &__list-item {
+        font-size: 16px;
+        line-height: 138.19%;
+      }
+
+      &__list-item::before {
+        content: "\2022";
+        /* юникод точки */
+        color: var(--main-black);
+        /* Менять цвет */
+        font-weight: bold;
+        /* Менять жирность */
+        display: inline-block;
+        /* Расстояние между точкой и текстом */
+        width: 1em;
+        /* Задать значение расстояния */
+      }
+
+      &__list-item:not(:last-child) {
+        margin-bottom: 8px;
+      }
+
+
+      .price {
+
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+
+        &__descr {
+          display: block;
+          font-weight: 600;
+          font-size: 14px;
+          line-height: 138.19%;
+        }
+
+        &__subdescr {
+          display: block;
+          font-size: 12px;
+          line-height: 138.19%;
+          color: var(--dark-grey);
+        }
+
+        &__cost {
+          min-width: 86px;
+          text-align: center;
+          padding: 3px 7px;
+          background: #5AC698;
+          border-radius: 4px;
+          font-size: 18px;
+          line-height: 138.19%;
+          color: var(--white-color);
+        }
+      }
+
+      &__btn {
+        align-self: flex-end;
+        padding: 12px 37px;
+        font-weight: 600;
+        font-size: 16px;
+        line-height: 138.19%;
+      }
+
+      .price.margin {
+        margin-bottom: 10px;
+      }
+    }
+  }
+
+  &__btn {
+
+    position: relative;
+    left: 50%;
+    transform: translateX(-50%);
+
+    margin-top: 50px;
+    margin-bottom: 49px;
+    padding: 18px 44px;
+
+    background-color: transparent;
+    border: 2px solid var(--purple-color);
+    color: var(--purple-color);
+
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 138.19%;
+  }
+}
+
+
+
+
+@media (max-width: 780px) {
+
+  .table {
+
+
+    &__list {
+
+      grid-template-columns: 1fr;
+      grid-row: 1;
+      column-gap: 0;
+      row-gap: 30px;
+    }
+  }
+}
+
+
+@media (max-width: 1050px) {
+  .table {
+
+
+    .expert {
+
+      .card {
+
+        display: flex;
+        flex-direction: column;
+        padding: 25px 28px 27px 28px;
+
+        .left {
+          width: 100%;
+
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+
+          img {
+            margin: 0;
+          }
+
+          &__rating {
+            display: none;
+          }
+
+          &__descr {
+            display: none;
+          }
+        }
+
+        .right {
+          width: 100%;
+
+          &__descr {
+            display: block;
+            margin-bottom: 20px;
+            width: 210px;
+          }
+
+          &__activity {
+            align-self: center;
+            margin-top: 17px;
+            margin-bottom: 19px;
+          }
+
+          &__name {
+            margin-bottom: 6px;
+          }
+
+          &__list {
+            margin-bottom: 20px;
+            padding: 10px 12px 13px 48px;
+          }
+
+          &__rating {
+            display: block;
+            margin-bottom: 14px;
+          }
+
+          .price.margin {
+            margin-bottom: 20px;
+          }
+
+          &__btn {
+            margin-top: 24px;
+          }
+        }
+      }
+    }
+  }
+}

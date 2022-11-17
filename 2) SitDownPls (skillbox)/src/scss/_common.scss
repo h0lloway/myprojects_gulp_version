@@ -1,0 +1,587 @@
+.container {
+  max-width: 1320px;
+  margin: 0 auto;
+  padding-right: 20px;
+  padding-left: 20px;
+}
+
+.list-reset {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.flex {
+  display: flex;
+}
+
+.my-btn {
+  padding: 0;
+  border: none;
+  outline: none;
+  cursor: pointer;
+
+  background: transparent;
+}
+
+.hidden {
+  display: none;
+  opacity: 0;
+  visibility: hidden;
+}
+
+.title {
+  margin-bottom: 24px;
+
+  font-weight: 400;
+  font-size: 32px;
+  line-height: 32px;
+
+  color: var(--black-color);
+}
+
+@media (max-width: 600px) {
+  .title {
+    margin-bottom: 26px;
+    font-size: 24px;
+    line-height: 24px;
+  }
+}
+
+// прозрачная кнопка // прозрачная кнопка // прозрачная кнопка // прозрачная кнопка // прозрачная кнопка 
+
+.transp-btn {
+  align-self: flex-start;
+  padding: 16px 34px 18px;
+
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 16px;
+
+  color: var(--purple-color);
+  border: 2px solid var(--purple-color);
+  border-radius: 10px;
+  background-color: transparent;
+
+  transition: all .3s ease;
+}
+
+.transp-btn:hover {
+  background-color: var(--purple-color);
+  color: var(--white-color);
+}
+
+.transp-btn:focus-visible {
+  background-color: #C998FB;
+  color: var(--white-color);
+}
+
+.transp-btn:active {
+  background-color: #7033AC;
+  color: var(--white-color);
+  border: 2px solid #7033AC;
+}
+
+@media (max-width: 500px) {
+  .transp-btn {
+    margin: 0 !important;
+    padding: 10px 23px !important;
+  }
+
+  .padding-btn {
+    padding: 17px 33px !important; // 17 33 для остальных
+  }
+}
+
+// фиолетовая кнопка // фиолетовая кнопка // фиолетовая кнопка // фиолетовая кнопка // фиолетовая кнопка // фиолетовая кнопка 
+
+.purple-btn {
+  align-self: flex-start;
+  padding: 22px 50px;
+
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 16px;
+
+  color: var(--white-color);
+  background: var(--purple-color);
+  border: 2px solid transparent;
+  border-radius: 10px;
+
+  transition: all .3s ease;
+}
+
+.purple-btn:hover {
+  background: #C998FB;
+}
+
+.purple-btn:focus-visible {
+  background: #C998FB;
+  border-color: #7033AC;
+}
+
+.purple-btn:active {
+  background: #7033AC;
+}
+
+
+// круглые кнопки // круглые кнопки // круглые кнопки // круглые кнопки // круглые кнопки 
+
+.btn-effects {
+  background-color: transparent;
+  border-radius: 16px;
+  transition: all .3s ease;
+}
+
+.btn-effects svg path,
+.btn-effects svg circle {
+  transition: all .3s ease;
+}
+
+.btn-effects:hover svg path {
+  stroke: var(--white-color);
+}
+
+.btn-effects:hover {
+  background: var(--purple-color);
+}
+
+.btn-effects:focus-visible svg path {
+  stroke: var(--white-color);
+}
+
+.btn-effects:focus-visible svg circle {
+  stroke: var(--purple-color);
+}
+
+.btn-effects:focus-visible {
+  background: #C998FB;
+}
+
+.btn-effects:active svg path {
+  stroke: var(--white-color);
+}
+
+.btn-effects:active svg circle {
+  stroke: #7033AC;
+}
+
+.btn-effects:active {
+  background: #7033AC;
+}
+
+// серые и черные ссылки // серые и черные ссылки // серые и черные ссылки
+
+.grey-link {
+  font-size: 14px;
+  color: var(--grey-color);
+}
+
+.black-link {
+  font-size: 16px;
+  color: var(--black-color);
+}
+
+.grey-link:hover,
+.black-link:hover {
+  color: var(--purple-color);
+}
+
+.grey-link:focus-visible,
+.black-link:focus-visible {
+  color: #7033AC;
+  background: #EBD1FF;
+}
+
+.grey-link:active,
+.black-link:active {
+  color: #7033AC;
+}
+
+// общие стили для переходам по дереву ссылок
+
+.partnership__list,
+.catalog__list,
+.sofa-sample__list {
+  display: flex;
+}
+
+.list-item:not(:last-child) {
+  margin-right: 0;
+}
+
+.item-link {
+  position: relative;
+  font-size: 14px;
+  line-height: 14px;
+  padding-right: 14px;
+  transition: all .3s ease-in-out;
+}
+
+.item-link::before {
+  content: '/';
+  position: absolute;
+  right: 1px;
+  top: 4px;
+  margin-left: 10px;
+}
+
+.link-active {
+  color: var(--purple-color);
+  margin-right: 0;
+  padding: 1px 4px;
+}
+
+.link-active::before {
+  content: '';
+}
+
+@media (max-width: 1024px) {
+  .list-item:not(:last-child) {
+    margin-right: 1px;
+  }
+}
+
+// общие стили для карточек товаров
+
+.common-list {
+  display: grid;
+  grid-template-columns: 23% 23% 23% 23%;
+  grid-template-rows: auto;
+  gap: 31px 33px;
+  margin-bottom: 33px;
+}
+
+.common-list-item {
+  display: block;
+  background: var(--f7f7f7-color);
+  border-radius: 10px;
+}
+
+.common-product {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 100%;
+  background-color: var(--f7f7f7-color);
+  border-radius: 10px;
+  padding: 27px 15px 30px;
+}
+
+.common-rating {
+  position: relative;
+  top: 5px;
+  left: 16px;
+
+  font-size: 16px;
+  line-height: 21px;
+  color: var(--orange-color);
+}
+
+.common-img {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  width: 100%;
+  position: relative;
+  height: 143px;
+  margin-bottom: 18px;
+}
+
+.common-img img {
+  display: block;
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  max-width: 100%;
+  transform: translateX(-50%);
+}
+
+.common-text {
+  display: flex;
+  flex-direction: column;
+  flex: 1 1 auto;
+  padding: 0 10px 0 16px;
+  margin-bottom: 24px;
+}
+
+.common-subtitle {
+  flex: 1 1 auto;
+  margin-bottom: 21px;
+}
+
+.common-link {
+  display: flex;
+  flex-direction: column;
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 31px;
+  color: var(--black-color);
+  transition: all .3s ease-in-out;
+}
+
+.rating {
+  width: 15.79px;
+  height: 15px;
+
+  fill: #FF862F;
+  transition: all .3s ease;
+}
+
+.price {
+  font-size: 16px;
+  line-height: 21px;
+  color: #666;
+}
+
+@media (max-width: 500px) {
+  .common-product {
+    padding: 18px 16px 16px;
+  }
+
+  .common-rating {
+    top: -2px;
+    left: 0px;
+
+    font-size: 12px;
+    line-height: 14px;
+  }
+
+  .common-link {
+    font-size: 16px;
+    line-height: 21px;
+  }
+
+  .common-text {
+    padding: 0;
+    margin-bottom: 15px;
+  }
+}
+
+// input общий 
+
+.input-common {
+  width: 100%;
+  height: 54px;
+
+  margin-bottom: 30px;
+  padding: 20px 20px 20px 16px;
+  font-size: 16px;
+  line-height: 40px;
+
+  border: 1px solid transparent;
+  background-color: var(--f7f7f7-color);
+  color: var(--black-color);
+
+  border-radius: 10px;
+  transition: all .4s ease;
+}
+
+.input-common:hover {
+  background: var(--eaeaea-color);
+}
+
+.input-common:focus-visible {
+  background: #F8EFFF;
+  border: 1px solid var(--purple-color);
+}
+
+.input-common.focus-visible {
+  background: var(--f7f7f7-color);
+  border: 1px solid #B8EC64;
+}
+
+// общий чекбокс
+
+.checkbox-common {
+  position: relative;
+  margin-top: -2px;
+}
+
+.input-checkbox {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 14px;
+  height: 14px;
+  cursor: pointer;
+  margin: 0;
+  opacity: 0;
+  z-index: 3;
+}
+
+.checkbox-common span {
+  position: relative;
+  padding-left: 22px;
+
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 19px;
+  color: var(--black-color);
+}
+
+@media (max-width: 500px) {
+  .checkbox-common span {
+    font-size: 12px;
+    line-height: 16px;
+  }
+}
+
+
+.checkbox-common span::before {
+  content: "";
+  position: absolute;
+  width: 14px;
+  height: 14px;
+  top: 2px;
+  left: 0;
+  border: 1px solid #999;
+  border-radius: 2px;
+  background-color: var(--purple-color);
+  cursor: pointer;
+}
+
+.checkbox-common span::after {
+  content: "";
+  position: absolute;
+  width: 8px;
+  height: 6px;
+  top: 5px;
+  left: 3px;
+  border-top: 2px solid var(--white-color);
+  border-right: 2px solid var(--white-color);
+  border-radius: 2px;
+  transform: rotate(133deg);
+  cursor: pointer;
+  opacity: 0;
+}
+
+.input-checkbox:checked+span::after {
+  opacity: 1;
+}
+
+// ещё один общий чекбокс
+
+.common-label {
+  position: relative;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 130%;
+  color: #666;
+  margin-bottom: 11px;
+  cursor: pointer;
+  width: max-content;
+}
+
+.common-input {
+  position: absolute;
+  top: 0;
+  left: 0;
+  cursor: pointer;
+  width: 20px;
+  height: 20px;
+  z-index: 2;
+  opacity: 0;
+}
+
+.common-label span {
+  position: relative;
+  padding-left: 32px;
+}
+
+.common-label span::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 20px;
+  height: 20px;
+  border: 1px solid #666;
+  border-radius: 2px;
+  transition: all .2s ease-in-out;
+}
+
+.common-label span::after {
+  content: "";
+  position: absolute;
+  top: 2px;
+  left: 6px;
+  width: 8px;
+  height: 13px;
+  border-right: 2px solid var(--white-color);
+  border-bottom: 2px solid var(--white-color);
+  opacity: 0;
+  transform: rotate(45deg);
+  transition: all .2s ease-in-out;
+}
+
+.common-input:checked+span:before {
+  background: #A65CF0;
+}
+
+.common-input:checked+span::after {
+  opacity: 1;
+}
+
+.common-input:focus-visible+span::before {
+  background-color: #EBD1FF;
+}
+
+//                  //                         //                           //                            //
+
+
+.rules-link {
+  color: var(--purple-color);
+  text-decoration: underline;
+  padding: 0 2px 2px;
+  margin-left: -2px;
+  transition: all .3s ease;
+}
+
+.rules-link:hover {
+  color: #C998FB;
+}
+
+.rules-link:focus-visible {
+  background: #EBD1FF;
+  color: #7033AC;
+}
+
+.rules-link:active {
+  color: #7033AC;
+}
+
+.active {
+  display: none;
+}
+
+.block-vidno {
+  display: block;
+}
+
+
+@media (max-width: 1350px) {
+  .container {
+    padding: 0 36px;
+  }
+}
+
+
+@media (max-width: 1000px) {
+  .container {
+    padding: 0 72px;
+  }
+}
+
+@media (max-width: 767px) {
+  .container {
+    padding: 0 40px;
+  }
+}
+
+@media (max-width: 600px) {
+  .container {
+    padding: 0 12px;
+  }
+}

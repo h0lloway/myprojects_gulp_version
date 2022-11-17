@@ -1,0 +1,73 @@
+.license {
+  padding-top: 80px;
+  padding-bottom: 80px;
+
+  &__title {
+    margin-bottom: 42px;
+  }
+
+  .wrap {
+    display: flex;
+    justify-content: space-between;
+    padding: 41px 81px 44px 38px;
+
+    border: 5px solid #E5F1FF;
+    border-radius: 25px;
+
+    .descr {
+      padding-top: 29px;
+
+      &__title {
+        position: relative;
+        font: 500 28px/35px 'Roboto', sans-serif;
+        font-style: italic;
+      }
+
+      &__title::before {
+        position: absolute;
+        content: "";
+        width: 40px;
+        height: 3px;
+        border-top: 3px solid #C1F100;
+        bottom: -15px;
+        left: 0;
+      }
+
+      &__text {
+        margin-top: 30px;
+      }
+    }
+
+
+    &__img {
+      display: flex;
+      flex-direction: row;
+    }
+
+    &__img-item:not(:last-child) {
+      margin-right: 85px;
+    }
+
+    &__img-item {
+
+      span {
+        position: relative;
+        display: block;
+        text-align: center;
+        margin-top: 43px;
+      }
+
+      span::before {
+        position: absolute;
+        content: "";
+        width: 40px;
+        height: 3px;
+        border-top: 3px solid #C1F100;
+        top: -15px;
+        left: 42%;
+      }
+    }
+
+
+  }
+}

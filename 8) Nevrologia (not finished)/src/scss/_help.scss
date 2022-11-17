@@ -1,0 +1,120 @@
+.help {
+  padding-top: 80px;
+  padding-bottom: 33px;
+
+  &__title {
+    margin-bottom: 64px;
+  }
+
+  .content {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    .left {
+
+      // border: 5px solid #E5F1FF;
+      // border-radius: 25px;
+
+      &__title {
+        padding: 20px 60px 20px 60px;
+
+        background: linear-gradient(180deg, var(--blue-color) 0%, rgba(33, 134, 250, 0.7) 100%);
+        border: 5px solid var(--blue-color);
+        border-radius: 25px;
+
+
+        font: 700 26px/30px 'Roboto', sans-serif;
+        color: var(--white-color);
+      }
+
+      .descr {
+        position: relative;
+        top: -40px;
+        border: 5px solid #E5F1FF;
+        border-radius: 25px;
+        border-top: none;
+        padding: 59px 22px 23px 36px;
+        z-index: -1;
+
+        &__list {
+          margin-bottom: 23px;
+        }
+
+        &__list-item {
+          display: flex;
+
+          font-size: 18px;
+          line-height: 21px;
+
+          span {
+            margin-left: 12px;
+          }
+        }
+
+        &__list-item:not(:last-child) {
+          margin-bottom: 9px;
+        }
+
+        &__span {
+          font: 700 18px/21px 'Roboto', sans-serif;
+          font-style: italic;
+          color: #B6E300;
+        }
+      }
+
+
+    }
+
+    .right {
+      margin-right: 15px;
+
+      &__list-item {
+        display: flex;
+        margin-bottom: 16px;
+
+        span {
+          display: block;
+          padding-left: 25px;
+          font: 700 22px/26px 'Roboto', sans-serif;
+        }
+      }
+
+      &__list-item:nth-child(1) {
+        span {
+          padding-left: 37px;
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 1199.98px) {
+  .help {
+
+    &__title {
+      margin-bottom: 32px;
+    }
+
+    .content {
+      flex-direction: column;
+      align-items: inherit;
+
+      .left {
+
+        .del {
+          display: none;
+        }
+
+        .descr {
+
+          &__list {
+            column-count: 2;
+            flex-wrap: wrap;
+          }
+        }
+      }
+    }
+  }
+
+}

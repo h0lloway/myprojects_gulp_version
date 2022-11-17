@@ -1,0 +1,276 @@
+.header {
+
+  background-color: #fff;
+
+  &__container {
+    padding: 8px 8px 15px;
+  }
+
+  &__top {
+    margin-bottom: 15px;
+  }
+
+  &__swiper-button-prev,
+  &__swiper-button-next {
+    width: 10px;
+    height: 10px;
+  }
+
+  .navigation {
+    width: 10px;
+    height: 10px;
+  }
+
+  &__swiper-button-prev svg,
+  &__swiper-button-next svg {
+    fill: var(--white-color);
+  }
+
+  .swiper-button-prev:after, 
+  .swiper-button-next:after {
+    content: '';
+  }
+
+  .swiper-button-next, 
+  .swiper-button-prev {
+    top: 81%;
+  }
+
+  &__swiper-slide {
+    padding: 8px 28px;
+    border-radius: 4px;
+    background-color: #7F56D9;
+  }
+  
+  .swiper-slide {
+    &__content {
+      text-align: center;
+    }
+
+    &__text {
+      font-weight: 400;
+      font-size: 14px;
+      line-height: 20px;
+      color: #fff;
+    }
+  }
+
+  &__place {
+    display: none;
+  }
+
+  &__bottom {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+
+    .tools {
+      display: none;
+    }
+  }
+
+  .for-large {
+    display: none;
+  }
+}
+
+@media (min-width: 550px) {
+  .header {
+
+    .swiper-button-next, 
+    .swiper-button-prev {
+      top: 94%;
+    }
+
+    .swiper-slide {
+
+      &__text {
+        letter-spacing: normal;
+      }
+    }
+
+    .for-large {
+      display: none;
+    }
+  }
+  
+}
+
+@media (min-width: 800px) {
+  .header {
+
+
+
+    &__container {
+      padding: 8px 8px 22px;
+    }
+
+    .swiper-button-next, 
+    .swiper-button-prev {
+      top: 93%;
+    }
+
+    &__swiper-button-next {
+      right: 2.8%;
+    }
+
+    &__swiper-button-prev {
+      left: 2.8%;
+    }
+
+    .swiper-slide {
+
+      &__text {
+        font-size: 16px;
+        line-height: 24px;
+        letter-spacing: normal;
+      }
+    }
+
+    &__top {
+      margin-bottom: 24px;
+    }
+
+    &__place {
+      display: flex;
+      align-items: center;
+      
+
+      span {
+        margin-left: 12px;
+        font-family: "Inter", "sans-serif";
+        font-size: 14px;
+        line-height: 20px;
+
+        color: #667085;
+      }
+    }
+
+    &__logo {
+      padding-right: 59px;
+    }
+
+    &__bottom {
+      flex-direction: row;
+      justify-content: space-between;
+
+      padding-left: 16px;
+      padding-right: 16px;
+    }
+
+    .tools {
+      position: relative;
+      display: flex;
+
+      &__item:not(:last-child) {
+        margin-right: 44px;
+      }
+
+
+      &__btn {
+        width: 18px;
+        height: 16px;
+      }
+
+      &__btn:hover svg {
+        fill: var(--purple-color);
+      }
+
+      &__btn:focus-visible svg {
+        fill: var(--dark-purple);
+      }
+
+      &__btn:active svg {
+        fill: var(--dark-purple);
+      }
+    }
+
+    .header-search,
+    .header-account,
+    .header-cart,
+    .header-place {
+      width: 16px;
+      height: 16px;
+      transition: all .3s ease;
+    }
+
+
+    .for-large {
+
+      display: block; 
+      box-shadow: 0px 12px 12px -4px rgb(16 24 40 / 2%);
+
+      &__container {
+        border-top: 1px solid #EAECF0;
+      }
+
+      &__list {
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+        padding-top: 20px;
+        padding-bottom: 20px;
+      }
+
+      &__item-link {
+
+
+        font-family: "Inter", "sans-serif";
+        font-weight: 500;
+        font-size: 16px;
+        line-height: 24px;
+
+        color: var(--main-black);
+        transition: color .3s ease;
+      }
+
+      &__list-item:not(:last-child) {
+        margin-right: 20px;
+      }
+
+    
+      &__item-link:hover {
+        color: var(--purple-color);
+      }
+
+      &__item-link:focus-visible {
+        color: #7033ac;
+        background: #ebd1ff;
+      }
+
+      &__item-link:active {
+        color: var(--dark-purple);
+      }
+    }
+  }
+  
+}
+
+@media (min-width: 1200px) {
+  .header {
+
+    &__swiper-button-next {
+      right: 2%;
+    }
+
+    &__swiper-button-prev {
+      left: 2%;
+    }
+
+    &__bottom {
+      padding-left: 104px;
+      padding-right: 104px;
+    }
+
+    .for-large {
+
+      &__list-item:not(:last-child) {
+        margin-right: 50px;
+      }
+    }
+  }
+}
+
+
+

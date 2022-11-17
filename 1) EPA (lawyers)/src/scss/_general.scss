@@ -1,0 +1,158 @@
+@font-face {
+  font-family: "Rubik";
+  src: local("Rubik"),
+    url(../fonts/Rubik-Regular.woff2) format("woff2"),
+    url(../fonts/Rubik-Regular.woff) format("woff");
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Rubik";
+  src: local("Rubik"),
+    url(../fonts/Rubik-Medium.woff2) format("woff2"),
+    url(../fonts/Rubik-Medium.woff) format("woff");
+  font-weight: 500;
+  font-style: normal;
+  font-display: swap;
+}
+
+html {
+  box-sizing: border-box;
+}
+
+// пример // пример // пример // пример // пример // пример 
+
+// $bg: #fff;
+// $text: #373737;
+// $light-pink: #fff0f0;
+// $pink: #ffe9e9;
+// $dark-pink: #f9c4d2;
+// $pink-border: #b18597;
+// $pink-shadow: #ffe3e2;
+
+// пример // пример // пример // пример // пример // пример 
+
+:root {
+  --main-black: #000;
+  --white-color: #fff;
+  --carbonic: #373737;
+
+
+  --eaeaea-color: #eaeaea;
+  --almost-white: #f4f4f4;
+  --f7f7f7-color: #F7F7F7;
+  --cacaca-color: #cacaca;
+  --e9e9e9-color: #e9e9e9;
+  --grey-color: #999;
+  --dark-grey: #666;
+
+
+  --e0e0e0: #e0e0e0;
+
+
+  --purple-color: #7F56D9;
+  --dark-purple: #6941C6;
+
+  --main-blue: #073BA1;
+  --dark-blue: #042668;
+
+
+  --orange-color: #FF862F;
+  --light-orange: #b89c72;
+  --dark-orange: #BB370E;
+}
+
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+*:focus-visible {
+  outline: none;
+}
+
+*:focus {
+  outline: none;
+}
+
+a {
+  position: relative;
+  color: inherit;
+  text-decoration: none;
+}
+
+input,
+textarea {
+  outline: none;
+  border: none;
+}
+
+input[type=text]::-ms-clear {
+  display: none;
+  width: 0;
+  height: 0;
+}
+
+input[type=text]::-ms-reveal {
+  display: none;
+  width: 0;
+  height: 0;
+}
+
+input[type=search]::-webkit-search-decoration,
+input[type=search]::-webkit-search-cancel-button,
+input[type=search]::-webkit-search-results-button,
+input[type=search]::-webkit-search-results-decoration {
+  display: none;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  margin: 0;
+  padding: 0;
+}
+
+img,
+svg {
+  max-width: 100%;
+}
+
+body {
+  margin: 0;
+  padding-top: 70px;
+  font-family: "Rubik", sans-serif;
+  font-weight: 400;
+  background-color: var(--white-color);
+  color: var(--main-blue);
+}
+
+.container {
+  max-width: 1220px;
+  margin: 0 auto;
+  padding-right: 20px;
+  padding-left: 20px;
+}
+
+.list-reset {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.my-btn {
+  padding: 0;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  background: transparent;
+}
