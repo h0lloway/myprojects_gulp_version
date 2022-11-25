@@ -1,0 +1,326 @@
+// Общие настройки модального окна // Общие настройки модального окна // Общие настройки модального окна
+
+.disable-scroll {
+  position: relative;
+  overflow: hidden;
+  height: 100vh;
+  position: fixed;
+  left: 0;
+  top: 0;
+  width: 100%;
+}
+
+.modal {
+  --transition-time: 0.3s;
+  position: fixed;
+  left: 0;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  z-index: 1000;
+  background-color: rgba(0, 0, 0, 0.7);
+  backdrop-filter: blur(9px);
+  cursor: pointer;
+  overflow-y: auto;
+  overflow-x: hidden;
+  text-align: center;
+  opacity: 0;
+  visibility: hidden;
+  transition: var(--transition-time);
+}
+
+.modal::before {
+  content: "";
+  display: inline-block;
+  vertical-align: middle;
+  height: 100%;
+}
+
+.modal__container {
+  position: relative;
+  width: 1000px;
+  margin: 50px auto;
+  display: inline-block;
+  vertical-align: middle;
+  background-color: #fff;
+  border-radius: 10px;
+  padding: 20px;
+  cursor: default;
+  text-align: left;
+  display: none;
+}
+
+.modal__close {
+  position: absolute;
+  right: 0;
+  top: 0;
+}
+
+.modal.is-open {
+  opacity: 1;
+  visibility: visible;
+  transition: var(--transition-time);
+}
+
+.modal-open {
+  display: inline-block;
+}
+
+.fade {
+  opacity: 0;
+  transition: var(--transition-time);
+}
+
+.fade.animate-open {
+  opacity: 1;
+  transition: var(--transition-time);
+}
+
+.fadeInUp {
+  opacity: 0;
+  transform: translateY(-100px);
+  transition: var(--transition-time);
+}
+
+.fadeInUp.animate-open {
+  opacity: 1;
+  transform: translateY(0);
+  transition: var(--transition-time);
+}
+
+// настройки определенных модальных окон // настройки определенных модальных окон // настройки определенных модальных окон
+// модалка заказа // модалка заказа // модалка заказа 
+
+.order-modal {
+  padding: 40px;
+  width: 592px;
+  min-height: 542px;
+
+  &__top {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    margin-bottom: 40px;
+  }
+
+  &__title {
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 20px;
+    color: #5f9f9c;
+  }
+
+  &__number {
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 20px;
+    text-align: right;
+    color: #808080;
+  }
+
+  &__info {
+    margin-bottom: 20px;
+
+    border: 1px solid #d9d9d9;
+    border-radius: 4px;
+    padding: 34px 40px;
+
+    font-size: 14px;
+    line-height: 19px;
+    color: #808080;
+
+    span {
+      font-weight: 600;
+    }
+  }
+
+  &__info-item:not(:last-child) {
+    margin-bottom: 15px;
+  }
+
+  &__btn {
+    position: relative;
+    font-size: 14px;
+    line-height: 19px;
+    color: #808080;
+  }
+
+  &__btn::after {
+    content: '';
+    position: absolute;
+    right: -10px;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 7px;
+    height: 7px;
+    background-image: url("../img/arrow-down.svg");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+  }
+
+  &__btn.open::after {
+    transform: translateY(-50%) rotate(180deg);
+  }
+
+  &__list {
+    padding-top: 20px;
+    padding-bottom: 20px;
+
+    display: none;
+  }
+
+  // карточка внутри "заказа" // карточка внутри "заказа" // карточка внутри "заказа" // карточка внутри "заказа" 
+
+  &__item:not(:last-child) {
+    margin-bottom: 14px;
+  }
+
+  .order-product {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    &__img {
+      max-width: 70px;
+      max-height: 70px;
+      object-fit: cover;
+
+      margin-right: 10px;
+    }
+
+    &__text {
+      margin-right: 10px;
+      width: 60%;
+
+    }
+
+    &__title {
+      margin-bottom: 5px;
+
+      font-weight: 400;
+      font-size: 12px;
+      line-height: 20px;
+      color: #4d4d4d;
+    }
+
+    &__price {
+      font-weight: 700;
+      font-size: 14px;
+      line-height: 16px;
+      color: #4d4d4d;
+    }
+
+    &__delete {
+      font-weight: 400;
+      font-size: 12px;
+      line-height: 20px;
+      text-align: right;
+      color: #808080;
+    }
+  }
+
+
+
+  .order {
+    padding: 0 40px;
+
+    &__label {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+
+      margin-bottom: 14px;
+
+      font-weight: 500;
+      font-size: 14px;
+      line-height: 20px;
+      color: #808080;
+    }
+
+    &__input {
+      padding-left: 14px;
+      padding-right: 14px;
+      width: 240px;
+      height: 45px;
+      background: #efefef;
+      border-radius: 4px;
+      border: none;
+    }
+
+    &__input::placeholder {
+      color: #b1b1b1;
+    }
+
+    &__btn {
+      width: 100%;
+      color: #808080;
+    }
+  }
+}
+
+@media (max-width: 499.98px) {
+  .order-modal {
+    width: 360px;
+    padding: 20px;
+
+    &__info {
+      padding: 20px;
+    }
+
+    .order {
+
+      padding: 0;
+
+      &__label {
+        display: block;
+      }
+
+      &__input {
+        width: 100%;
+      }
+    }
+  }
+}
+
+// модалка спасибо // модалка спасибо // модалка спасибо 
+
+.thanks-modal {
+  padding: 40px;
+  width: 624px;
+  min-height: 360px;
+
+  .thanks-content {
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    &__img {
+      img {
+        margin-left: 15px;
+      }
+    }
+
+    &__text {
+      text-align: center;
+      font-size: 32px;
+      line-height: 130%;
+    }
+  }
+}
+
+@media (max-width: 679.98px) {
+  .thanks-modal {
+    width: 350px;
+    min-height: 260px;
+
+    .thanks-content {
+
+      &__text {
+        font-size: 24px;
+      }
+    }
+  }
+}

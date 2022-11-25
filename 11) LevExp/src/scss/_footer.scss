@@ -1,0 +1,22 @@
+.footer {
+  background: #5f9f9c;
+
+  .content {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 30px 0px;
+
+
+    &__mid {
+      font-size: 18px;
+    }
+
+
+    &__right {
+      text-align: center;
+      font-size: 16px;
+    }
+  }
+  // height: 400px;
+}

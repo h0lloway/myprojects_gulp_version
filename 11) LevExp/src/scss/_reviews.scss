@@ -1,0 +1,13 @@
+.reviews {
+	padding-bottom: 60px;
+
+	&__content {
+		display: flex;
+		justify-content: center;
+		align-items: center;
+	}
+
+	&__title {
+		margin-bottom: 0;
+	}
+}
