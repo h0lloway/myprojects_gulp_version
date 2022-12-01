@@ -1,9 +1,9 @@
 // swiper // swiper // swiper // swiper // swiper // swiper // swiper // swiper // swiper // swiper 
 
 const HeroSwiper = new Swiper('.hero__swiper', {
-  autoplay: {
-    delay: 4000,
-  },
+  // autoplay: {
+  //   delay: 4000,
+  // },
   speed: 1300,
   // Optional parameters
   loop: true,

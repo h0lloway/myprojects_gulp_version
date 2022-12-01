@@ -7,10 +7,13 @@ var swiper = new Swiper(".small-swiper", {
     320: {
       direction: "horizontal",
       slidesPerView: 'auto',
+      spaceBetween: 38,
     },
-    720: {
+    740: {
       direction: "vertical",
-      slidesPerGroup: 5,
+      // slidesPerGroup: 5,
+      slidesPerView: 4,
+      spaceBetween: 14,
     },
     1010: {
       direction: "horizontal",
